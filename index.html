@@ -1,0 +1,2051 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#041E42">
+<title>Konidas Store Euronics — Οικιακές Συσκευές | Αθήνα</title>
+<meta name="description" content="40 χρόνια εμπειρία στις οικιακές συσκευές. Bosch, Siemens, Miele, LG, Samsung. Δωρεάν μεταφορά και επαγγελματική εγκατάσταση.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#041E42;--navy2:#06285a;--navy3:#0a2d5e;
+  --gold:#f5a623;--gold2:#d48c10;--gold3:#fbbf50;
+  --red:#cc2222;--green:#1a7a30;
+  --white:#fff;
+  --g50:#f7f8fb;--g100:#eef0f5;--g200:#e0e4ec;--g300:#c8ced9;--g500:#7b8599;--g700:#3d4459;--g900:#0f1423;
+  --fh:'Montserrat',sans-serif;--fb:'Inter',sans-serif;
+  --r:6px;--rl:10px;--rx:16px;
+  --s1:0 1px 3px rgba(4,30,66,.07),0 1px 6px rgba(4,30,66,.05);
+  --s2:0 3px 14px rgba(4,30,66,.1),0 1px 4px rgba(4,30,66,.06);
+  --s3:0 8px 32px rgba(4,30,66,.14);
+  --t:.17s ease;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-rendering:optimizeLegibility}
+body{font-family:var(--fb);color:var(--g900);background:var(--white);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;font-family:var(--fb);border:none;background:none}
+img{display:block;max-width:100%}
+svg{display:block}
+
+.ct{max-width:1380px;margin:0 auto;padding:0 20px}
+@media(max-width:580px){.ct{padding:0 14px}}
+
+/* ── ANNOUNCEMENT ── */
+.ann{background:var(--navy);color:#fff;font-size:11.5px;font-weight:500}
+.ann-in{height:34px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.ann-wrap{flex:1;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.ann-tick{display:flex;white-space:nowrap;animation:tick 28s linear infinite}
+.ann-tick:hover{animation-play-state:paused}
+@keyframes tick{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.a-it{display:inline-flex;align-items:center;gap:6px;padding:0 22px;border-right:1px solid rgba(255,255,255,.1)}
+.a-it svg{width:12px;height:12px;fill:var(--gold);flex-shrink:0}
+.ann-r{display:flex;align-items:center;gap:14px;flex-shrink:0;padding-left:10px}
+.ann-ph{display:flex;align-items:center;gap:5px;font-weight:700;color:var(--gold);font-size:12px;white-space:nowrap}
+.ann-ph svg{width:11px;height:11px;fill:var(--gold)}
+.ann-shops{font-size:11px;color:rgba(255,255,255,.55);white-space:nowrap}
+@media(max-width:560px){.ann-shops{display:none}}
+
+/* ── HEADER ── */
+.hdr{background:var(--white);border-bottom:1px solid var(--g200);position:sticky;top:0;z-index:800;transition:box-shadow .2s}
+.hdr.sc{box-shadow:var(--s2)}
+.hdr-in{height:62px;display:flex;align-items:center;gap:14px}
+
+.logo{display:flex;flex-direction:column;gap:2px;flex-shrink:0;line-height:1;text-decoration:none}
+.logo-top{font-family:var(--fh);font-size:16.5px;font-weight:900;color:var(--navy);letter-spacing:-.2px}
+.logo-bot{display:flex;align-items:center;gap:3px}
+.logo-star{color:var(--gold);font-size:10px;font-weight:900;line-height:1}
+.logo-eur{font-size:10.5px;font-weight:700;color:#0057b8;letter-spacing:.9px}
+@media(max-width:420px){.logo-top{font-size:14px}}
+
+.srch{flex:1;max-width:500px;position:relative}
+.srch input{width:100%;height:40px;border:1.5px solid var(--g200);border-radius:20px;padding:0 46px 0 17px;font-size:13.5px;font-family:var(--fb);color:var(--g900);background:var(--g50);outline:none;transition:var(--t)}
+.srch input::placeholder{color:var(--g300)}
+.srch input:focus{border-color:var(--navy);background:var(--white);box-shadow:0 0 0 3px rgba(4,30,66,.07)}
+.srch-btn{position:absolute;right:0;top:0;height:40px;width:42px;background:var(--navy);border-radius:0 20px 20px 0;display:flex;align-items:center;justify-content:center;transition:background var(--t)}
+.srch-btn:hover{background:var(--navy2)}
+.srch-btn svg{width:16px;height:16px;fill:none;stroke:#fff;stroke-width:2.2;stroke-linecap:round}
+@media(max-width:660px){.srch{display:none}}
+
+.hacts{display:flex;align-items:center;gap:1px;margin-left:auto;flex-shrink:0}
+.hb{display:flex;flex-direction:column;align-items:center;gap:2px;padding:5px 9px;border-radius:var(--r);color:var(--g500);font-size:9.5px;font-weight:600;min-width:42px;min-height:42px;justify-content:center;transition:var(--t);position:relative;font-family:var(--fb)}
+.hb:hover{background:var(--g100);color:var(--navy)}
+.hb svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.hb-bdg{position:absolute;top:4px;right:4px;background:var(--gold);color:var(--navy);font-size:9px;font-weight:800;min-width:15px;height:15px;border-radius:8px;display:flex;align-items:center;justify-content:center;padding:0 3px;font-family:var(--fh)}
+.hb-mob{display:none}
+@media(max-width:660px){.hb-mob{display:flex}.hb-lbl{display:none}}
+@media(max-width:360px){.hb-acct{display:none}}
+
+/* ── MOBILE SEARCH OVERLAY ── */
+.msrch{display:none;position:fixed;inset:0;background:rgba(4,18,42,.65);z-index:960;flex-direction:column;backdrop-filter:blur(3px)}
+.msrch.open{display:flex}
+.msrch-box{background:var(--white);padding:12px 14px;display:flex;gap:10px;align-items:center;box-shadow:var(--s2)}
+.msrch-box input{flex:1;height:44px;border:1.5px solid var(--g200);border-radius:22px;padding:0 18px;font-size:15px;font-family:var(--fb);color:var(--g900);outline:none;background:var(--g50)}
+.msrch-box input:focus{border-color:var(--navy);background:var(--white)}
+.msrch-cls{font-size:22px;color:var(--g500);padding:8px;flex-shrink:0;line-height:1}
+
+/* ── NAVBAR ── */
+.nb{background:var(--navy);display:block}
+.nb-in{display:flex;align-items:stretch;height:42px}
+.nb-cat{display:flex;align-items:center;gap:8px;padding:0 16px;background:rgba(255,255,255,.08);border-right:1px solid rgba(255,255,255,.1);font-size:12.5px;font-weight:700;color:#fff;cursor:pointer;white-space:nowrap;flex-shrink:0;font-family:var(--fh);letter-spacing:.2px;transition:var(--t);-webkit-tap-highlight-color:transparent}
+.nb-cat:hover{background:rgba(255,255,255,.14)}
+.nb-cat svg{width:14px;height:14px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round}
+.nb-links{display:flex;align-items:stretch;overflow-x:auto;scrollbar-width:none;flex:1}
+.nb-links::-webkit-scrollbar{display:none}
+.nb-a{display:flex;align-items:center;padding:0 13px;font-size:12.5px;font-weight:600;color:rgba(255,255,255,.8);white-space:nowrap;border-right:1px solid rgba(255,255,255,.06);transition:var(--t);font-family:var(--fb);-webkit-tap-highlight-color:transparent}
+.nb-a:hover{background:rgba(255,255,255,.1);color:#fff}
+.nb-a.sale{color:var(--gold);font-weight:700}
+.nb-a.sale:hover{background:rgba(245,166,35,.12)}
+@media(max-width:768px){.nb{display:none}}
+
+/* ── HERO ── */
+.hero{position:relative;overflow:hidden;height:460px;background:#03121f}
+@media(max-width:900px){.hero{height:400px}}
+@media(max-width:600px){.hero{height:auto;min-height:340px}}
+.hero-track{display:flex;height:100%;transition:transform .65s cubic-bezier(.4,0,.2,1);will-change:transform}
+.hs{flex:0 0 100%;height:460px;position:relative;overflow:hidden;display:flex;align-items:center}
+@media(max-width:900px){.hs{height:400px}}
+@media(max-width:600px){.hs{height:auto;min-height:340px;padding:44px 0 60px}}
+
+/* Slide bg — deep cinematic neutrals */
+.hs1{background:#050f1c}
+.hs2{background:#080604}
+.hs3{background:#040c14}
+
+/* Right visual panel */
+.h-vis{position:absolute;right:0;top:0;width:52%;height:100%;overflow:hidden;pointer-events:none}
+@media(max-width:700px){.h-vis{width:100%;height:100%;opacity:.18}}
+/* cinematic gradient over the visual */
+.h-grad{position:absolute;inset:0;z-index:2}
+/* left-side text scrim */
+.h-scrim{position:absolute;left:0;top:0;width:62%;height:100%;background:linear-gradient(90deg,rgba(3,10,22,.98) 0%,rgba(3,10,22,.88) 45%,transparent 100%);z-index:2;pointer-events:none}
+@media(max-width:700px){.h-scrim{width:100%;background:linear-gradient(0deg,rgba(3,10,22,.97) 0%,rgba(3,10,22,.82) 50%,rgba(3,10,22,.3) 100%)}}
+
+/* Text content */
+.hc{position:relative;z-index:4;padding:0 60px;width:52%;max-width:600px}
+@media(max-width:900px){.hc{padding:0 32px;width:58%}}
+@media(max-width:700px){.hc{width:100%;padding:0 20px}}
+
+/* Eyebrow label */
+.h-eye{display:inline-flex;align-items:center;gap:8px;font-size:9.5px;font-weight:700;color:var(--gold);letter-spacing:2.5px;text-transform:uppercase;font-family:var(--fh);margin-bottom:14px;opacity:.9}
+.h-eye-line{width:22px;height:1px;background:var(--gold);opacity:.6;flex-shrink:0}
+
+/* Main heading — large, clean, no italic gimmick */
+.h-title{font-family:var(--fh);font-size:42px;font-weight:900;color:#fff;line-height:1.04;letter-spacing:-1.2px;margin-bottom:6px}
+.h-title em{color:var(--gold);font-style:normal;font-weight:900}
+@media(max-width:900px){.h-title{font-size:32px;letter-spacing:-.6px}}
+@media(max-width:480px){.h-title{font-size:26px;letter-spacing:-.3px}}
+
+/* Sub-heading — clean, lighter */
+.h-sub{font-family:var(--fh);font-size:15px;font-weight:600;color:rgba(255,255,255,.35);letter-spacing:-.1px;margin-bottom:16px;line-height:1.3}
+@media(max-width:480px){.h-sub{font-size:13px;margin-bottom:12px}}
+
+/* Description */
+.h-desc{font-size:14px;color:rgba(255,255,255,.52);line-height:1.7;margin-bottom:28px;max-width:380px;font-weight:400}
+@media(max-width:480px){.h-desc{font-size:12.5px;margin-bottom:18px;max-width:100%}}
+
+/* KPIs */
+.h-kpis{display:flex;align-items:center;gap:0;margin-bottom:28px}
+@media(max-width:480px){.h-kpis{margin-bottom:20px}}
+.h-kpi{display:flex;flex-direction:column;gap:2px;padding-right:20px}
+.h-kpi-v{font-family:var(--fh);font-size:22px;font-weight:900;color:#fff;line-height:1;letter-spacing:-.5px}
+@media(max-width:480px){.h-kpi-v{font-size:17px}}
+.h-kpi-k{font-size:9px;color:rgba(255,255,255,.4);font-weight:600;text-transform:uppercase;letter-spacing:.8px;margin-top:1px}
+.h-div{width:1px;background:rgba(255,255,255,.12);align-self:stretch;margin:2px 20px 2px 0;flex-shrink:0}
+
+/* CTAs */
+.h-ctas{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.btn-p{display:inline-flex;align-items:center;gap:7px;background:var(--gold);color:var(--navy);font-size:13px;font-weight:800;padding:13px 26px;border-radius:var(--r);font-family:var(--fh);letter-spacing:.2px;transition:background var(--t),transform var(--t),box-shadow var(--t);white-space:nowrap;min-height:46px;-webkit-tap-highlight-color:transparent;line-height:1}
+.btn-p:hover{background:var(--gold2);transform:translateY(-1px);box-shadow:0 6px 20px rgba(245,166,35,.3)}
+.btn-p:active{transform:scale(.97)}
+.btn-p svg{width:14px;height:14px;stroke:var(--navy);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.btn-g{display:inline-flex;align-items:center;gap:6px;background:transparent;color:rgba(255,255,255,.75);border:1px solid rgba(255,255,255,.22);font-size:13px;font-weight:600;padding:13px 22px;border-radius:var(--r);font-family:var(--fb);transition:var(--t);min-height:46px;-webkit-tap-highlight-color:transparent;white-space:nowrap}
+.btn-g:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.4);color:#fff}
+@media(max-width:420px){.btn-g{display:none}}
+
+/* Slide counter badge top-right */
+.h-counter{position:absolute;top:24px;right:28px;z-index:6;font-family:var(--fh);font-size:11px;font-weight:700;color:rgba(255,255,255,.3);letter-spacing:1px}
+@media(max-width:600px){.h-counter{display:none}}
+
+/* Nav dots */
+.h-ctrl{position:absolute;bottom:18px;left:60px;display:flex;gap:7px;z-index:6}
+@media(max-width:700px){.h-ctrl{left:20px;bottom:14px}}
+.h-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.22);border:none;padding:0;cursor:pointer;transition:var(--t)}
+.h-dot.on{background:var(--gold);width:18px;border-radius:3px}
+
+/* Arrow buttons */
+.h-arr{position:absolute;top:50%;transform:translateY(-50%);z-index:6;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);color:rgba(255,255,255,.6);font-size:19px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--t);line-height:1;-webkit-tap-highlight-color:transparent}
+.h-arr:hover{background:rgba(255,255,255,.15);color:#fff;border-color:rgba(255,255,255,.3)}
+.h-prev{left:16px}
+.h-next{right:16px}
+@media(max-width:500px){.h-arr{display:none}}
+
+/* ── TRUST STRIP ── */
+.tstrip{background:var(--white);border-bottom:1px solid var(--g100)}
+.ts-in{display:grid;grid-template-columns:repeat(4,1fr)}
+@media(max-width:780px){.ts-in{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:380px){.ts-in{grid-template-columns:1fr 1fr}}
+.ts-i{display:flex;align-items:center;gap:11px;padding:14px 16px;border-right:1px solid var(--g100);transition:background var(--t);cursor:default}
+.ts-i:last-child{border-right:none}
+.ts-ico{width:36px;height:36px;background:var(--navy);border-radius:var(--r);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ts-ico svg{width:18px;height:18px;stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ts-t{font-size:12px;font-weight:700;color:var(--g900);font-family:var(--fh);line-height:1.25}
+.ts-s{font-size:11px;color:var(--g500);margin-top:1px}
+@media(max-width:380px){.ts-i{padding:10px 8px;gap:8px}.ts-t{font-size:10.5px}.ts-s{display:none}}
+
+/* ── CAT SCROLL ── */
+.catrow{background:var(--white);border-bottom:1.5px solid var(--g200)}
+.cat-sc{display:flex;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;scroll-snap-type:x mandatory}
+.cat-sc::-webkit-scrollbar{display:none}
+.cat-i{display:flex;flex-direction:column;align-items:center;gap:5px;padding:12px 16px;border-bottom:2.5px solid transparent;transition:var(--t);flex-shrink:0;min-width:78px;scroll-snap-align:start;text-align:center;min-height:72px;justify-content:center;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.cat-i:hover,.cat-i.on{border-bottom-color:var(--navy)}
+.cat-i.on .cat-nm{color:var(--navy);font-weight:700}
+.cat-ic{font-size:26px;line-height:1}
+.cat-nm{font-size:10.5px;font-weight:600;color:var(--g700);white-space:nowrap;margin-top:1px}
+@media(max-width:420px){.cat-i{padding:10px 12px;min-width:66px}.cat-ic{font-size:22px}.cat-nm{font-size:9.5px}}
+
+/* ── SECTION ── */
+.sec{padding:44px 0}
+@media(max-width:580px){.sec{padding:28px 0}}
+.sec-hd{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:22px;gap:10px}
+.sec-tag{font-size:10px;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:1.2px;display:flex;align-items:center;gap:6px;font-family:var(--fh);margin-bottom:4px}
+.sec-tag::before{content:'';width:16px;height:2px;background:var(--gold);border-radius:1px;flex-shrink:0}
+.sec-ttl{font-family:var(--fh);font-size:21px;font-weight:800;color:var(--navy);letter-spacing:-.2px;line-height:1.2}
+@media(max-width:420px){.sec-ttl{font-size:17px}}
+.lkall{font-size:12.5px;font-weight:600;color:var(--navy);display:inline-flex;align-items:center;gap:4px;transition:var(--t);white-space:nowrap;min-height:36px;padding:0 4px;-webkit-tap-highlight-color:transparent;font-family:var(--fh)}
+.lkall:hover{color:var(--gold2)}
+
+/* ── PRODUCT GRID ── */
+.pgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+@media(max-width:1100px){.pgrid{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:860px){.pgrid{grid-template-columns:repeat(3,1fr);gap:11px}}
+@media(max-width:540px){.pgrid{grid-template-columns:repeat(2,1fr);gap:9px}}
+
+.pc{background:var(--white);border:1px solid var(--g200);border-radius:var(--rl);overflow:hidden;transition:border-color var(--t),box-shadow var(--t),transform var(--t);position:relative;display:flex;flex-direction:column;-webkit-tap-highlight-color:transparent}
+.pc:hover{border-color:var(--g300);box-shadow:var(--s2);transform:translateY(-3px)}
+@media(hover:none){.pc:hover{transform:none;box-shadow:none}}
+.pc-img{position:relative;background:var(--g50);padding-top:85%;overflow:hidden}
+.pc-img-in{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;transition:transform .3s}
+.pc:hover .pc-img-in{transform:scale(1.05)}
+.pc-tag{position:absolute;top:9px;left:9px;z-index:2;background:var(--red);color:#fff;font-size:10px;font-weight:800;padding:3px 8px;border-radius:4px;font-family:var(--fh);letter-spacing:.3px}
+.pc-tag.new{background:var(--green)}
+.pc-wsh{position:absolute;top:8px;right:8px;z-index:2;width:30px;height:30px;border-radius:50%;background:#fff;border:1px solid var(--g200);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--t);-webkit-tap-highlight-color:transparent}
+.pc-wsh:hover{border-color:#cc2222;background:#fff0f0}
+.pc-wsh svg{width:14px;height:14px;stroke:var(--g300);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:var(--t)}
+.pc-wsh.on svg{stroke:#cc2222;fill:#cc2222}
+.pc-body{padding:12px 12px 14px;display:flex;flex-direction:column;flex:1}
+@media(max-width:540px){.pc-body{padding:9px 9px 11px}}
+.pc-brand{font-size:9.5px;font-weight:700;color:var(--g500);text-transform:uppercase;letter-spacing:1.1px;margin-bottom:3px;font-family:var(--fh)}
+.pc-name{font-size:12.5px;font-weight:600;color:var(--g900);line-height:1.38;margin-bottom:7px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;flex:1}
+@media(max-width:540px){.pc-name{font-size:11.5px}}
+.pc-st{display:flex;align-items:center;gap:4px;margin-bottom:8px}
+.stars{color:var(--gold);font-size:11.5px;letter-spacing:.2px}
+.stars-n{font-size:10px;color:var(--g500)}
+.pc-pr{display:flex;align-items:baseline;gap:7px;margin-bottom:3px;flex-wrap:wrap}
+.pc-p{font-family:var(--fh);font-size:19px;font-weight:900;color:var(--navy);line-height:1}
+.pc-po{font-size:12px;color:var(--g300);text-decoration:line-through}
+@media(max-width:540px){.pc-p{font-size:16px}}
+.pc-inst{font-size:10.5px;color:var(--g500);margin-bottom:11px;font-weight:500;line-height:1.4}
+.pc-inst strong{color:var(--navy2);font-weight:700}
+@media(max-width:540px){.pc-inst{margin-bottom:8px}}
+.pc-atc{width:100%;background:var(--navy);color:#fff;border-radius:var(--r);padding:10px 0;font-size:12px;font-weight:700;font-family:var(--fh);letter-spacing:.2px;transition:background var(--t),color var(--t);min-height:40px;display:flex;align-items:center;justify-content:center;gap:6px;-webkit-tap-highlight-color:transparent;margin-top:auto}
+.pc-atc:hover{background:var(--gold);color:var(--navy)}
+.pc-atc:active{transform:scale(.98)}
+.pc-atc.done{background:var(--green)!important;color:#fff!important}
+@media(max-width:540px){.pc-atc{font-size:11px;padding:9px 0}}
+
+/* ── BRANDS ── */
+.brands{background:var(--navy);padding:13px 0}
+.brands-in{display:flex;align-items:center;justify-content:space-between;overflow-x:auto;scrollbar-width:none;gap:0;-webkit-overflow-scrolling:touch;padding:0 4px}
+.brands-in::-webkit-scrollbar{display:none}
+.br{flex-shrink:0;color:rgba(255,255,255,.48);font-family:var(--fh);font-size:13.5px;font-weight:800;letter-spacing:.3px;cursor:pointer;transition:var(--t);padding:5px 12px;border-radius:4px;white-space:nowrap;-webkit-tap-highlight-color:transparent}
+.br:hover{color:var(--gold);background:rgba(255,255,255,.05)}
+@media(max-width:560px){.br{font-size:12px;padding:4px 8px}}
+
+/* ── WHY — PREMIUM TRUST BLOCK ── */
+.why{background:var(--g50);border-top:1px solid var(--g200);border-bottom:1px solid var(--g200);padding:60px 0}
+@media(max-width:580px){.why{padding:36px 0}}
+.why-head{text-align:center;margin-bottom:48px}
+@media(max-width:580px){.why-head{margin-bottom:28px}}
+.why-eye{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:700;color:var(--gold);letter-spacing:1.5px;text-transform:uppercase;font-family:var(--fh);margin-bottom:10px}
+.why-eye::before,.why-eye::after{content:'';display:block;width:24px;height:1px;background:var(--gold);opacity:.5}
+.why-ttl{font-family:var(--fh);font-size:26px;font-weight:900;color:var(--navy);letter-spacing:-.3px;margin-bottom:8px}
+@media(max-width:580px){.why-ttl{font-size:20px}}
+.why-sub{font-size:14px;color:var(--g500);max-width:500px;margin:0 auto;line-height:1.65;font-weight:400}
+@media(max-width:580px){.why-sub{font-size:13px}}
+
+/* Stats row */
+.why-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-bottom:40px;border:1px solid var(--g200);border-radius:var(--rx);overflow:hidden;background:var(--white);box-shadow:var(--s1)}
+@media(max-width:700px){.why-stats{grid-template-columns:repeat(2,1fr)}}
+.ws{padding:28px 24px;border-right:1px solid var(--g200);border-bottom:1px solid var(--g200);text-align:center;transition:background var(--t)}
+.ws:hover{background:var(--g50)}
+@media(max-width:700px){.ws:nth-child(2n){border-right:none}}
+@media(min-width:701px){.ws:last-child{border-right:none}}
+.ws-val{font-family:var(--fh);font-size:34px;font-weight:900;color:var(--navy);line-height:1;margin-bottom:5px}
+.ws-val span{color:var(--gold)}
+.ws-key{font-size:12px;font-weight:600;color:var(--g500);line-height:1.4;letter-spacing:.1px}
+@media(max-width:580px){.ws{padding:20px 14px}.ws-val{font-size:26px}}
+
+/* Promise rows */
+.why-rows{display:flex;flex-direction:column;gap:0;border:1px solid var(--g200);border-radius:var(--rx);overflow:hidden;background:var(--white);box-shadow:var(--s1)}
+.wr{display:grid;grid-template-columns:56px 1fr;align-items:start;gap:0;padding:22px 24px;border-bottom:1px solid var(--g100);transition:background var(--t)}
+.wr:last-child{border-bottom:none}
+.wr:hover{background:var(--g50)}
+@media(max-width:580px){.wr{padding:16px 16px;gap:0;grid-template-columns:44px 1fr}}
+.wr-ico{width:40px;height:40px;background:var(--navy);border-radius:var(--r);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.wr-ico svg{width:20px;height:20px;stroke:#fff;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:580px){.wr-ico{width:34px;height:34px}}
+.wr-ico svg{width:17px;height:17px}
+.wr-body{}
+.wr-ttl{font-family:var(--fh);font-size:14px;font-weight:800;color:var(--navy);margin-bottom:3px;line-height:1.3}
+@media(max-width:580px){.wr-ttl{font-size:13px}}
+.wr-desc{font-size:13px;color:var(--g500);line-height:1.6;font-weight:400}
+@media(max-width:580px){.wr-desc{font-size:12px}}
+
+/* ── LIFESTYLE BANNER ── */
+.lfc{background:var(--navy);border-radius:var(--rx);display:grid;grid-template-columns:1fr 1fr;overflow:hidden;min-height:220px}
+@media(max-width:720px){.lfc{grid-template-columns:1fr}}
+.lf-l{padding:44px 48px;display:flex;flex-direction:column;justify-content:center;gap:14px}
+@media(max-width:768px){.lf-l{padding:32px 28px}}
+@media(max-width:420px){.lf-l{padding:24px 20px;gap:10px}}
+.lf-eye{font-size:9.5px;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:1.8px;font-family:var(--fh)}
+.lf-ttl{font-family:var(--fh);font-size:24px;font-weight:900;color:#fff;line-height:1.18;letter-spacing:-.3px}
+@media(max-width:420px){.lf-ttl{font-size:20px}}
+.lf-desc{font-size:13.5px;color:rgba(255,255,255,.54);line-height:1.65;max-width:340px;font-weight:400}
+.lf-feats{display:flex;gap:18px;flex-wrap:wrap}
+.lf-ft{display:flex;align-items:center;gap:8px}
+.lf-ft-ic{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
+.lf-ft-l{font-size:11.5px;color:rgba(255,255,255,.6);font-weight:600;font-family:var(--fh)}
+.btn-w{display:inline-flex;align-items:center;gap:6px;background:#fff;color:var(--navy);font-size:13px;font-weight:800;padding:11px 22px;border-radius:var(--r);font-family:var(--fh);transition:var(--t);min-height:44px;-webkit-tap-highlight-color:transparent;width:fit-content}
+.btn-w:hover{background:var(--gold)}
+.lf-r{background:linear-gradient(135deg,#082040 0%,#103060 100%);display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+@media(max-width:720px){.lf-r{display:none}}
+.lf-r-visual{opacity:.2;position:absolute}
+
+/* ── NEWSLETTER ── */
+.nl{background:var(--navy);padding:28px 0}
+.nl-grid{display:grid;grid-template-columns:1fr 1.5fr 1fr 1fr;align-items:center;gap:22px}
+@media(max-width:900px){.nl-grid{grid-template-columns:1fr 1fr;gap:16px}}
+@media(max-width:520px){.nl-grid{grid-template-columns:1fr;gap:14px}}
+.nl-info{display:flex;align-items:center;gap:12px}
+.nl-ico{width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.17);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.nl-ico svg{width:18px;height:18px;stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round}
+.nl-t{font-size:13px;font-weight:700;color:#fff;font-family:var(--fh)}
+.nl-s{font-size:11px;color:rgba(255,255,255,.48)}
+.nl-form{display:flex;gap:8px}
+.nl-inp{flex:1;height:42px;border:1.5px solid rgba(255,255,255,.16);border-radius:var(--r);background:rgba(255,255,255,.07);padding:0 15px;font-size:13.5px;color:#fff;font-family:var(--fb);outline:none;min-width:0;transition:border-color var(--t)}
+.nl-inp::placeholder{color:rgba(255,255,255,.34)}
+.nl-inp:focus{border-color:var(--gold)}
+.nl-btn{height:42px;background:var(--gold);color:var(--navy);border-radius:var(--r);padding:0 18px;font-size:12.5px;font-weight:800;font-family:var(--fh);white-space:nowrap;transition:background var(--t);-webkit-tap-highlight-color:transparent}
+.nl-btn:hover{background:var(--gold2)}
+.nl-ft{display:flex;align-items:center;gap:9px}
+.nl-fi{width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.11);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.nl-fi svg{width:14px;height:14px;stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round}
+.nl-f-t{font-size:11.5px;font-weight:700;color:#fff;font-family:var(--fh)}
+.nl-f-s{font-size:10.5px;color:rgba(255,255,255,.44)}
+
+/* ── FOOTER ── */
+.footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.07)}
+.ft-top{padding:40px 0 32px;display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr 1fr;gap:32px}
+@media(max-width:1000px){.ft-top{grid-template-columns:1fr 1fr 1fr;gap:24px}}
+@media(max-width:620px){.ft-top{grid-template-columns:1fr 1fr;gap:20px;padding:26px 0 20px}}
+@media(max-width:380px){.ft-top{grid-template-columns:1fr}}
+.ft-ln{font-family:var(--fh);font-size:16px;font-weight:900;color:#fff;display:block;line-height:1;margin-bottom:2px}
+.ft-le{display:flex;align-items:center;gap:3px;margin-bottom:13px}
+.ft-ls{color:var(--gold);font-size:10px}
+.ft-le-e{font-size:10.5px;font-weight:700;color:#6aa3e8;letter-spacing:.8px}
+.ft-desc{font-size:12px;color:rgba(255,255,255,.42);line-height:1.7;margin-bottom:16px;max-width:240px}
+.ft-soc{display:flex;gap:7px}
+.soc{width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.11);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:10.5px;font-weight:700;color:rgba(255,255,255,.48);transition:var(--t)}
+.soc:hover{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.ft-ct{font-size:11px;font-weight:700;color:rgba(255,255,255,.7);letter-spacing:.6px;text-transform:uppercase;margin-bottom:14px;font-family:var(--fh)}
+.ft-ul{display:flex;flex-direction:column;gap:8px}
+.ft-ul a{font-size:12px;color:rgba(255,255,255,.42);transition:color var(--t);line-height:1.4}
+.ft-ul a:hover{color:var(--gold)}
+.ft-cl{display:flex;align-items:flex-start;gap:8px;margin-bottom:8px}
+.ft-cl svg{width:12px;height:12px;stroke:var(--gold);fill:none;stroke-width:2;stroke-linecap:round;margin-top:2px;flex-shrink:0}
+.ft-cl span,.ft-cl a{font-size:11.5px;color:rgba(255,255,255,.44);line-height:1.55;transition:color var(--t)}
+.ft-cl a:hover{color:var(--gold)}
+.ft-bot{border-top:1px solid rgba(255,255,255,.07);padding:16px 0}
+.ft-bi{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.ft-cp{font-size:11px;color:rgba(255,255,255,.28)}
+.ft-leg{display:flex;gap:14px}
+.ft-leg a{font-size:11px;color:rgba(255,255,255,.28);transition:color var(--t)}
+.ft-leg a:hover{color:var(--gold)}
+.pays{display:flex;gap:5px;align-items:center;flex-wrap:wrap}
+.pay{border-radius:4px;padding:3px 7px;font-size:9.5px;font-weight:700}
+
+/* ── MOBILE BOTTOM NAV ── */
+.mnav{display:none;position:fixed;bottom:0;left:0;right:0;background:var(--white);border-top:1px solid var(--g200);z-index:850;padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -2px 14px rgba(4,30,66,.09)}
+.mnav-in{display:grid;grid-template-columns:repeat(5,1fr)}
+.mni{display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 4px 9px;cursor:pointer;-webkit-tap-highlight-color:transparent;position:relative}
+.mni:active{background:var(--g50)}
+.mni svg{width:21px;height:21px;stroke:var(--g300);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:stroke var(--t)}
+.mni span{font-size:9px;font-weight:600;color:var(--g300);font-family:var(--fb);transition:color var(--t)}
+.mni.on svg{stroke:var(--navy)}
+.mni.on span{color:var(--navy)}
+.mni-bdg{position:absolute;top:5px;right:calc(50% - 18px);background:var(--gold);color:var(--navy);font-size:8.5px;font-weight:800;min-width:15px;height:15px;border-radius:8px;display:flex;align-items:center;justify-content:center;padding:0 3px}
+@media(max-width:768px){.mnav{display:block};body{padding-bottom:calc(60px + env(safe-area-inset-bottom))}}
+
+/* ── PRODUCT TAB BAR ── */
+.ptabs{display:flex;gap:0;border-bottom:1.5px solid var(--g200);margin-bottom:24px;overflow-x:auto;scrollbar-width:none}
+.ptabs::-webkit-scrollbar{display:none}
+.ptab{padding:10px 20px;font-size:13px;font-weight:600;color:var(--g500);font-family:var(--fh);border-bottom:2.5px solid transparent;cursor:pointer;white-space:nowrap;transition:var(--t);margin-bottom:-1.5px;-webkit-tap-highlight-color:transparent;min-height:44px;display:flex;align-items:center}
+.ptab:hover{color:var(--navy)}
+.ptab.on{color:var(--navy);border-bottom-color:var(--navy);font-weight:700}
+
+/* ── PROMO BANNER ── */
+.promo-wrap{padding:0 0 44px}
+@media(max-width:580px){.promo-wrap{padding:0 0 28px}}
+.promo{border-radius:var(--rx);overflow:hidden;display:grid;grid-template-columns:1fr auto;align-items:center;gap:24px;padding:44px 52px;background:var(--navy);position:relative}
+@media(max-width:760px){.promo{padding:32px 28px;grid-template-columns:1fr}}
+.promo::before{content:'';position:absolute;right:-80px;top:-80px;width:340px;height:340px;border-radius:50%;background:rgba(245,166,35,.06);pointer-events:none}
+.promo::after{content:'';position:absolute;right:120px;bottom:-60px;width:200px;height:200px;border-radius:50%;background:rgba(245,166,35,.04);pointer-events:none}
+.promo-tag{font-size:9.5px;font-weight:700;color:var(--gold);letter-spacing:2px;text-transform:uppercase;font-family:var(--fh);margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.promo-tag::before{content:'';width:18px;height:1px;background:var(--gold)}
+.promo-ttl{font-family:var(--fh);font-size:28px;font-weight:900;color:#fff;line-height:1.12;margin-bottom:8px;letter-spacing:-.4px}
+@media(max-width:580px){.promo-ttl{font-size:22px}}
+.promo-desc{font-size:13.5px;color:rgba(255,255,255,.56);line-height:1.65;margin-bottom:22px;max-width:420px}
+.promo-ctas{display:flex;gap:10px;flex-wrap:wrap}
+.promo-vis{flex-shrink:0;position:relative;z-index:1}
+@media(max-width:760px){.promo-vis{display:none}}
+.btn-po{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.22);font-size:13px;font-weight:600;padding:11px 20px;border-radius:var(--r);font-family:var(--fb);transition:var(--t);min-height:44px;-webkit-tap-highlight-color:transparent}
+.btn-po:hover{background:rgba(255,255,255,.18)}
+
+/* ── ROOM CARDS ── */
+.room-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media(max-width:900px){.room-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.room-grid{grid-template-columns:repeat(2,1fr);gap:9px}}
+.room-card{border-radius:var(--rx);overflow:hidden;position:relative;cursor:pointer;display:flex;align-items:flex-end;transition:transform var(--t),box-shadow var(--t);min-height:200px}
+@media(max-width:480px){.room-card{min-height:150px}}
+.room-card:hover{transform:translateY(-3px);box-shadow:var(--s3)}
+.rc-bg{position:absolute;inset:0}
+.rc-bg-1{background:linear-gradient(140deg,#06182e 0%,#0a2848 100%)}
+.rc-bg-2{background:linear-gradient(140deg,#0d1e0a 0%,#182e12 100%)}
+.rc-bg-3{background:linear-gradient(140deg,#1e1008 0%,#341c0a 100%)}
+.rc-bg-4{background:linear-gradient(140deg,#0a0d1e 0%,#14183a 100%)}
+.rc-grad{position:absolute;inset:0;background:linear-gradient(to top,rgba(4,18,42,.9) 0%,rgba(4,18,42,.3) 55%,transparent 100%)}
+.rc-emoji{position:absolute;right:16px;top:50%;transform:translateY(-60%);font-size:60px;opacity:.14;pointer-events:none;filter:blur(.5px)}
+@media(max-width:480px){.rc-emoji{font-size:42px}}
+.rc-content{position:relative;z-index:2;padding:20px 18px;width:100%}
+@media(max-width:480px){.rc-content{padding:14px 12px}}
+.rc-eye{font-size:9px;font-weight:700;color:rgba(255,255,255,.52);letter-spacing:2px;text-transform:uppercase;font-family:var(--fh);margin-bottom:4px}
+.rc-ttl{font-family:var(--fh);font-size:15px;font-weight:800;color:#fff;line-height:1.2;margin-bottom:8px}
+@media(max-width:480px){.rc-ttl{font-size:13px;margin-bottom:5px}}
+.rc-cta{font-size:11.5px;font-weight:700;color:var(--gold);font-family:var(--fh);display:flex;align-items:center;gap:4px}
+
+/* ── BRAND GRID ── */
+.brand-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+@media(max-width:760px){.brand-grid{grid-template-columns:repeat(4,1fr);gap:8px}}
+@media(max-width:420px){.brand-grid{grid-template-columns:repeat(2,1fr)}}
+.bg-card{background:var(--white);border:1px solid var(--g200);border-radius:var(--rl);padding:22px 16px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;cursor:pointer;transition:var(--t);text-align:center;min-height:90px;-webkit-tap-highlight-color:transparent}
+.bg-card:hover{border-color:var(--navy);box-shadow:var(--s1);transform:translateY(-2px)}
+.bg-name{font-family:var(--fh);font-size:16px;font-weight:900;color:var(--g700);letter-spacing:-.2px;line-height:1;transition:color var(--t)}
+.bg-card:hover .bg-name{color:var(--navy)}
+.bg-count{font-size:10.5px;color:var(--g500);font-weight:500}
+@media(max-width:760px){.bg-card{padding:16px 10px;min-height:76px}.bg-name{font-size:13.5px}}
+
+/* ── SECTION BG ── */
+.sec-alt{background:var(--g50);border-top:1px solid var(--g200);border-bottom:1px solid var(--g200)}
+
+/* ── MISC ── */
+.prg{position:fixed;top:0;left:0;height:2px;background:var(--gold);z-index:1000;pointer-events:none;transition:width .12s linear}
+.toast{position:fixed;bottom:72px;left:50%;transform:translateX(-50%) translateY(64px);background:var(--g700);color:#fff;font-size:13px;font-weight:600;padding:10px 20px;border-radius:8px;z-index:999;opacity:0;transition:opacity .2s,transform .2s;white-space:nowrap;pointer-events:none;font-family:var(--fb);box-shadow:var(--s3)}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media(max-width:768px){.toast{bottom:78px;font-size:12.5px}}
+</style>
+</head>
+<body>
+
+<div class="prg" id="prg"></div>
+
+<!-- ANNOUNCEMENT -->
+<div class="ann" aria-live="off">
+  <div class="ct">
+    <div class="ann-in">
+      <div class="ann-wrap" aria-hidden="true">
+        <div class="ann-tick">
+          <span class="a-it"><svg viewBox="0 0 24 24"><path d="M1 3h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/></svg>Δωρεάν μεταφορά σε όλη την Ελλάδα</span>
+          <span class="a-it"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>Άτοκες δόσεις έως 24 μήνες</span>
+          <span class="a-it"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Επαγγελματική εγκατάσταση &amp; απόσυρση</span>
+          <span class="a-it"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>After Sales Support χωρίς συμβόλαιο</span>
+          <span class="a-it"><svg viewBox="0 0 24 24"><path d="M1 3h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/></svg>Δωρεάν μεταφορά σε όλη την Ελλάδα</span>
+          <span class="a-it"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>Άτοκες δόσεις έως 24 μήνες</span>
+          <span class="a-it"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Επαγγελματική εγκατάσταση &amp; απόσυρση</span>
+          <span class="a-it"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>After Sales Support χωρίς συμβόλαιο</span>
+        </div>
+      </div>
+      <div class="ann-r">
+        <div class="ann-ph"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.95a16 16 0 0 0 6.29 6.29l.98-.98a2 2 0 0 1 2.1-.45c.91.339 1.853.573 2.81.7a2 2 0 0 1 1.72 2.01z"/></svg>210 1234567</div>
+        <div class="ann-shops">📍 Καταστήματα</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="hdr" id="hdr">
+  <div class="ct">
+    <div class="hdr-in">
+      <a href="#" class="logo" aria-label="Konidas Store Euronics — Αρχική">
+        <span class="logo-top">KONIDAS STORE</span>
+        <div class="logo-bot"><span class="logo-star">✦</span><span class="logo-eur">euronics</span></div>
+      </a>
+      <div class="srch">
+        <input type="search" placeholder="Αναζήτηση προϊόντων, brands, κατηγοριών..." autocomplete="off" aria-label="Αναζήτηση">
+        <button class="srch-btn" aria-label="Αναζήτηση"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+      </div>
+      <div class="hacts">
+        <button class="hb hb-mob" onclick="openSrch()" aria-label="Αναζήτηση"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+        <button class="hb hb-acct" aria-label="Λογαριασμός"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span class="hb-lbl">Λογαριασμός</span></button>
+        <button class="hb" aria-label="Αγαπημένα"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg><span class="hb-lbl">Αγαπημένα</span></button>
+        <button class="hb" id="hdrCart" aria-label="Καλάθι"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span class="hb-bdg" id="hCartN">2</span><span class="hb-lbl">Καλάθι</span></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE SEARCH -->
+<div class="msrch" id="msrch" role="dialog" aria-label="Αναζήτηση">
+  <div class="msrch-box">
+    <input type="search" placeholder="Αναζήτηση προϊόντων..." autocomplete="off">
+    <button class="msrch-cls" onclick="closeSrch()" aria-label="Κλείσιμο">✕</button>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="nb" aria-label="Κύριο μενού">
+  <div class="ct">
+    <div class="nb-in">
+      <button class="nb-cat"><svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>ΟΛΕΣ ΟΙ ΚΑΤΗΓΟΡΙΕΣ</button>
+      <div class="nb-links">
+        <a class="nb-a" href="#">Λευκές Συσκευές</a>
+        <a class="nb-a" href="#">Κουζίνα</a>
+        <a class="nb-a" href="#">Πλύση &amp; Στέγνωση</a>
+        <a class="nb-a" href="#">Ψύξη</a>
+        <a class="nb-a" href="#">Κλιματισμός</a>
+        <a class="nb-a" href="#">Μικροσυσκευές</a>
+        <a class="nb-a" href="#">TV &amp; Ήχος</a>
+        <a class="nb-a sale" href="#">🔥 Προσφορές</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════ HERO ═══════════════════════════════════ -->
+<section class="hero" aria-label="Κύριο banner">
+  <div class="hero-track" id="ht">
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         SLIDE 1 — Premium Refrigerator | Side-by-Side Inox
+         Background: deep midnight blue, warm ambient light from right
+    ═══════════════════════════════════════════════════════════════════ -->
+    <div class="hs hs1" role="group" aria-label="Ψύξη — Slide 1">
+
+      <!-- Right-side visual panel -->
+      <div class="h-vis" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 420" preserveAspectRatio="xMidYMid meet"
+          style="width:100%;height:100%;position:absolute;inset:0">
+          <defs>
+            <!-- Ambient light bloom from top-right -->
+            <radialGradient id="s1-bloom" cx="75%" cy="20%" r="55%">
+              <stop offset="0%" stop-color="#4a7aaf" stop-opacity=".18"/>
+              <stop offset="100%" stop-color="#041228" stop-opacity="0"/>
+            </radialGradient>
+            <!-- Floor reflection -->
+            <linearGradient id="s1-floor" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#1a2e48" stop-opacity=".6"/>
+              <stop offset="100%" stop-color="#040f1e" stop-opacity="0"/>
+            </linearGradient>
+            <!-- Fridge body metallic gradient -->
+            <linearGradient id="s1-body" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#b0bcc8"/>
+              <stop offset="40%" stop-color="#dde4ec"/>
+              <stop offset="70%" stop-color="#c8d4de"/>
+              <stop offset="100%" stop-color="#a8b8c6"/>
+            </linearGradient>
+            <!-- Door specular highlight -->
+            <linearGradient id="s1-spec" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#fff" stop-opacity=".14"/>
+              <stop offset="50%" stop-color="#fff" stop-opacity=".03"/>
+              <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+            </linearGradient>
+            <!-- Handle gradient -->
+            <linearGradient id="s1-handle" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#8090a0"/>
+              <stop offset="50%" stop-color="#b0bcc8"/>
+              <stop offset="100%" stop-color="#6878888"/>
+            </linearGradient>
+            <!-- Left-side scene fade -->
+            <linearGradient id="s1-fade" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#04172e" stop-opacity="1"/>
+              <stop offset="38%" stop-color="#04172e" stop-opacity=".7"/>
+              <stop offset="62%" stop-color="#04172e" stop-opacity="0"/>
+            </linearGradient>
+            <!-- Drop shadow filter -->
+            <filter id="s1-shadow" x="-8%" y="-3%" width="120%" height="110%">
+              <feDropShadow dx="-12" dy="0" stdDeviation="22" flood-color="#000" flood-opacity=".55"/>
+            </filter>
+            <!-- Screen inner glow -->
+            <radialGradient id="s1-screen" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#60aaff" stop-opacity=".22"/>
+              <stop offset="100%" stop-color="#060e18" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+
+          <!-- Background scene fill -->
+          <rect width="580" height="420" fill="#04172e"/>
+          <rect width="580" height="420" fill="url(#s1-bloom)"/>
+
+          <!-- Kitchen counter surface -->
+          <rect x="60" y="380" width="520" height="40" rx="2" fill="#0d1e30" opacity=".9"/>
+          <rect x="60" y="376" width="520" height="5" rx="1" fill="#1a3050" opacity=".8"/>
+
+          <!-- Floor reflection strip -->
+          <rect x="100" y="405" width="360" height="15" rx="2" fill="url(#s1-floor)" opacity=".4"/>
+
+          <!-- ── SIDE-BY-SIDE FRIDGE (premium Inox) ── -->
+          <g filter="url(#s1-shadow)" transform="translate(118,18)">
+            <!-- Main body -->
+            <rect x="0" y="0" width="340" height="365" rx="12" fill="url(#s1-body)"/>
+
+            <!-- ── LEFT DOOR (Freezer) ── -->
+            <rect x="4" y="4" width="164" height="357" rx="9" fill="#ccd8e2"/>
+            <!-- Door edge shadow -->
+            <rect x="4" y="4" width="8" height="357" rx="9" fill="#a8b8c8" opacity=".6"/>
+            <!-- Specular reflection -->
+            <rect x="4" y="4" width="164" height="357" rx="9" fill="url(#s1-spec)"/>
+            <!-- Left door handle (vertical bar) -->
+            <rect x="152" y="60" width="7" height="120" rx="3.5" fill="url(#s1-handle)"/>
+            <rect x="153" y="60" width="2" height="120" rx="1" fill="#fff" opacity=".25"/>
+            <!-- Ice/water dispenser panel -->
+            <rect x="22" y="280" width="120" height="62" rx="6" fill="#b0bcc8"/>
+            <rect x="26" y="284" width="112" height="54" rx="4" fill="#0d1a28"/>
+            <!-- Dispenser buttons -->
+            <rect x="30" y="290" width="34" height="14" rx="3" fill="#1a2e44"/>
+            <rect x="70" y="290" width="34" height="14" rx="3" fill="#1a2e44"/>
+            <rect x="110" y="290" width="24" height="14" rx="3" fill="#162440"/>
+            <!-- Dispenser slot -->
+            <rect x="46" y="318" width="60" height="10" rx="3" fill="#0a1220"/>
+            <!-- Logo on left door -->
+            <rect x="22" y="28" width="60" height="6" rx="2" fill="#9aaaba" opacity=".7"/>
+
+            <!-- ── RIGHT DOOR (Fridge) ── -->
+            <rect x="172" y="4" width="164" height="357" rx="9" fill="#d4dfe8"/>
+            <!-- Specular on right -->
+            <rect x="172" y="4" width="164" height="357" rx="9" fill="url(#s1-spec)"/>
+            <!-- Right door edge highlight -->
+            <rect x="328" y="4" width="8" height="357" rx="4" fill="#a0b0c0" opacity=".5"/>
+            <!-- Right door handle -->
+            <rect x="177" y="60" width="7" height="120" rx="3.5" fill="url(#s1-handle)"/>
+            <rect x="178" y="60" width="2" height="120" rx="1" fill="#fff" opacity=".25"/>
+            <!-- Screen display on right door -->
+            <rect x="192" y="22" width="96" height="50" rx="5" fill="#080e18"/>
+            <rect x="194" y="24" width="92" height="46" rx="4" fill="url(#s1-screen)"/>
+            <!-- Display text lines -->
+            <rect x="200" y="32" width="40" height="3" rx="1.5" fill="#60aaff" opacity=".5"/>
+            <rect x="200" y="40" width="60" height="3" rx="1.5" fill="#4488cc" opacity=".4"/>
+            <rect x="200" y="48" width="50" height="3" rx="1.5" fill="#3366aa" opacity=".35"/>
+            <!-- Temperature readout -->
+            <rect x="252" y="30" width="28" height="16" rx="3" fill="#0d1a2a"/>
+            <rect x="255" y="33" width="22" height="10" rx="2" fill="#60aaff" opacity=".3"/>
+            <!-- Right door brand plate -->
+            <rect x="192" y="86" width="68" height="6" rx="2" fill="#9aaaba" opacity=".6"/>
+
+            <!-- Center gap / hinge line -->
+            <rect x="168" y="0" width="4" height="365" rx="1" fill="#8090a0" opacity=".9"/>
+            <rect x="169" y="0" width="1" height="365" fill="#fff" opacity=".12"/>
+
+            <!-- Base grille -->
+            <rect x="0" y="352" width="340" height="13" rx="6" fill="#8898a8"/>
+            <rect x="8" y="354" width="324" height="2" rx="1" fill="#6878888" opacity=".6"/>
+            <rect x="8" y="358" width="324" height="2" rx="1" fill="#6878888" opacity=".4"/>
+            <rect x="8" y="362" width="324" height="2" rx="1" fill="#6878888" opacity=".3"/>
+
+            <!-- Top cap -->
+            <rect x="0" y="0" width="340" height="6" rx="3" fill="#a8b8c8"/>
+          </g>
+
+          <!-- Ambient light on floor under fridge -->
+          <ellipse cx="295" cy="398" rx="130" ry="8" fill="#4a7aaf" opacity=".06"/>
+
+          <!-- Left fade to let content show through -->
+          <rect width="580" height="420" fill="url(#s1-fade)"/>
+        </svg>
+      </div>
+
+      <!-- Left content -->
+      <div class="hc">
+        <div class="h-eye">Νέα Συλλογή 2025</div>
+        <h1 class="h-title">Ψύξη που<br><em>κάνει τη διαφορά.</em></h1>
+        <p class="h-desc">Side-by-Side &amp; NoFrost ψυγεία από Bosch, Siemens &amp; Miele. Δωρεάν εγκατάσταση και απόσυρση παλιάς συσκευής.</p>
+        <div class="h-kpis">
+          <div class="h-kpi"><span class="h-kpi-v">40+</span><span class="h-kpi-k">Χρόνια εμπειρίας</span></div>
+          <div class="h-div"></div>
+          <div class="h-kpi"><span class="h-kpi-v">250+</span><span class="h-kpi-k">Μοντέλα ψυγείων</span></div>
+          <div class="h-div"></div>
+          <div class="h-kpi"><span class="h-kpi-v">0%</span><span class="h-kpi-k">Άτοκες δόσεις</span></div>
+        </div>
+        <div class="h-ctas">
+          <a href="#" class="btn-p">Δείτε Ψυγεία →</a>
+          <a href="#" class="btn-g">Ζητήστε Συμβουλή</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         SLIDE 2 — Premium Built-in Kitchen | Dark Elegance
+         Background: deep charcoal-graphite, warm golden accent light
+    ═══════════════════════════════════════════════════════════════════ -->
+    <div class="hs hs2" role="group" aria-label="Kitchen Premium — Slide 2">
+
+      <div class="h-vis" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 420" preserveAspectRatio="xMidYMid meet"
+          style="width:100%;height:100%;position:absolute;inset:0">
+          <defs>
+            <!-- Warm ambient bloom -->
+            <radialGradient id="s2-bloom" cx="70%" cy="35%" r="50%">
+              <stop offset="0%" stop-color="#c07820" stop-opacity=".13"/>
+              <stop offset="100%" stop-color="#120800" stop-opacity="0"/>
+            </radialGradient>
+            <!-- Left fade -->
+            <linearGradient id="s2-fade" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#130800" stop-opacity="1"/>
+              <stop offset="36%" stop-color="#130800" stop-opacity=".72"/>
+              <stop offset="60%" stop-color="#130800" stop-opacity="0"/>
+            </linearGradient>
+            <!-- Cabinet wood dark -->
+            <linearGradient id="s2-cab" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#1a1208"/>
+              <stop offset="100%" stop-color="#0d0900"/>
+            </linearGradient>
+            <!-- Countertop marble -->
+            <linearGradient id="s2-marbletop" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#2a2420"/>
+              <stop offset="100%" stop-color="#1a1610"/>
+            </linearGradient>
+            <!-- Oven stainless -->
+            <linearGradient id="s2-oven" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#2a2624"/>
+              <stop offset="40%" stop-color="#3e3a38"/>
+              <stop offset="70%" stop-color="#323030"/>
+              <stop offset="100%" stop-color="#222020"/>
+            </linearGradient>
+            <!-- Oven glass glow -->
+            <radialGradient id="s2-glow" cx="50%" cy="60%" r="48%">
+              <stop offset="0%" stop-color="#cc4400" stop-opacity=".18"/>
+              <stop offset="60%" stop-color="#882200" stop-opacity=".08"/>
+              <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+            </radialGradient>
+            <!-- Induction hob surface -->
+            <linearGradient id="s2-hob" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#1a1818"/>
+              <stop offset="100%" stop-color="#0e0c0c"/>
+            </linearGradient>
+            <!-- Scene shadow/depth -->
+            <filter id="s2-depth" x="-5%" y="-5%" width="115%" height="115%">
+              <feDropShadow dx="-6" dy="4" stdDeviation="18" flood-color="#000" flood-opacity=".7"/>
+            </filter>
+            <!-- Hood steel -->
+            <linearGradient id="s2-hood" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#3a3836"/>
+              <stop offset="100%" stop-color="#1e1c1a"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Base fill -->
+          <rect width="580" height="420" fill="#110800"/>
+          <rect width="580" height="420" fill="url(#s2-bloom)"/>
+
+          <!-- ── KITCHEN SCENE ── -->
+          <g filter="url(#s2-depth)">
+
+            <!-- Back wall -->
+            <rect x="80" y="0" width="500" height="420" fill="#0e0b08"/>
+
+            <!-- Upper cabinet row -->
+            <rect x="80" y="20" width="180" height="130" rx="4" fill="url(#s2-cab)"/>
+            <rect x="84" y="24" width="172" height="122" rx="3" fill="#161008"/>
+            <rect x="84" y="24" width="80" height="122" rx="2" fill="#181209"/>
+            <!-- Upper cab handles -->
+            <rect x="154" y="80" width="22" height="3" rx="1.5" fill="#3a3028" opacity=".9"/>
+            <rect x="240" y="80" width="22" height="3" rx="1.5" fill="#3a3028" opacity=".9"/>
+
+            <rect x="270" y="20" width="290" height="60" rx="4" fill="url(#s2-cab)"/>
+            <rect x="274" y="24" width="282" height="52" rx="3" fill="#161008"/>
+
+            <!-- ── RANGE HOOD (prominent, over hob) ── -->
+            <rect x="310" y="78" width="210" height="80" rx="6" fill="url(#s2-hood)"/>
+            <!-- Hood chimney -->
+            <rect x="370" y="20" width="90" height="60" rx="2" fill="#2a2826"/>
+            <!-- Hood bottom slot/light -->
+            <rect x="314" y="150" width="202" height="6" rx="2" fill="#1a1816"/>
+            <rect x="318" y="151" width="194" height="3" rx="1" fill="#ff9930" opacity=".12"/>
+            <!-- Hood controls -->
+            <rect x="322" y="86" width="60" height="8" rx="2" fill="#1e1c1a"/>
+            <circle cx="332" cy="90" r="3" fill="#2e2c2a"/>
+            <circle cx="342" cy="90" r="3" fill="#f5a623" opacity=".5"/>
+            <circle cx="352" cy="90" r="3" fill="#2e2c2a"/>
+            <circle cx="362" cy="90" r="3" fill="#2e2c2a"/>
+            <!-- Hood left edge highlight -->
+            <rect x="310" y="78" width="3" height="80" rx="1.5" fill="#5a5856" opacity=".5"/>
+
+            <!-- ── COUNTERTOP ── -->
+            <rect x="80" y="290" width="500" height="22" rx="3" fill="url(#s2-marbletop)"/>
+            <!-- Marble veining -->
+            <line x1="120" y1="292" x2="280" y2="308" stroke="#2e2820" stroke-width="1" opacity=".5"/>
+            <line x1="200" y1="290" x2="340" y2="312" stroke="#242018" stroke-width=".5" opacity=".4"/>
+            <line x1="380" y1="291" x2="460" y2="310" stroke="#2a2419" stroke-width=".7" opacity=".4"/>
+            <!-- Countertop edge highlight -->
+            <rect x="80" y="290" width="500" height="2" rx="1" fill="#3a3428" opacity=".8"/>
+            <rect x="80" y="308" width="500" height="4" rx="2" fill="#0a0804" opacity=".6"/>
+
+            <!-- ── LOWER CABINET ROW ── -->
+            <rect x="80" y="312" width="290" height="108" rx="2" fill="url(#s2-cab)"/>
+            <rect x="84" y="316" width="140" height="104" rx="2" fill="#141008"/>
+            <rect x="228" y="316" width="138" height="104" rx="2" fill="#141008"/>
+            <!-- Drawer handles -->
+            <rect x="130" y="354" width="40" height="3" rx="1.5" fill="#3a3028" opacity=".8"/>
+            <rect x="266" y="354" width="40" height="3" rx="1.5" fill="#3a3028" opacity=".8"/>
+
+            <rect x="380" y="312" width="200" height="108" rx="2" fill="url(#s2-cab)"/>
+            <rect x="384" y="316" width="192" height="104" rx="2" fill="#141008"/>
+            <rect x="462" y="354" width="40" height="3" rx="1.5" fill="#3a3028" opacity=".8"/>
+
+            <!-- ── BUILT-IN OVEN (center feature) ── -->
+            <rect x="80" y="155" width="220" height="136" rx="4" fill="url(#s2-oven)"/>
+            <!-- Oven trim top -->
+            <rect x="80" y="155" width="220" height="14" rx="4" fill="#2a2826"/>
+            <!-- Oven control strip -->
+            <rect x="84" y="157" width="170" height="10" rx="2" fill="#1e1c1a"/>
+            <!-- Oven knobs -->
+            <circle cx="102" cy="162" r="5" fill="#2e2c2a" stroke="#3a3836" stroke-width="1"/>
+            <circle cx="102" cy="162" r="2.5" fill="#4a4846"/>
+            <circle cx="118" cy="162" r="5" fill="#2e2c2a" stroke="#3a3836" stroke-width="1"/>
+            <circle cx="118" cy="162" r="2.5" fill="#4a4846"/>
+            <!-- Digital display on oven -->
+            <rect x="142" y="158" width="48" height="8" rx="2" fill="#080604"/>
+            <rect x="144" y="159" width="20" height="6" rx="1" fill="#f5a623" opacity=".28"/>
+            <rect x="167" y="160" width="18" height="4" rx="1" fill="#cc8820" opacity=".22"/>
+            <!-- Oven door glass -->
+            <rect x="84" y="171" width="212" height="108" rx="4" fill="#0c0a08"/>
+            <rect x="88" y="175" width="204" height="100" rx="3" fill="#080604"/>
+            <!-- Inner glow (heat) -->
+            <rect x="88" y="175" width="204" height="100" rx="3" fill="url(#s2-glow)"/>
+            <!-- Glass reflection stripe -->
+            <rect x="90" y="177" width="60" height="96" rx="2" fill="#fff" opacity=".025"/>
+            <!-- Oven handle bar -->
+            <rect x="92" y="273" width="196" height="8" rx="4" fill="#3a3836"/>
+            <rect x="94" y="274" width="192" height="2" rx="1" fill="#5a5856" opacity=".6"/>
+
+            <!-- ── INDUCTION HOB (on countertop right section) ── -->
+            <rect x="316" y="254" width="240" height="37" rx="3" fill="url(#s2-hob)"/>
+            <!-- Hob surface rings (4 zones) -->
+            <circle cx="360" cy="272" r="22" fill="none" stroke="#2a2828" stroke-width="1.5"/>
+            <circle cx="360" cy="272" r="16" fill="none" stroke="#222020" stroke-width="1"/>
+            <circle cx="360" cy="272" r="8" fill="#1a1818"/>
+            <!-- Zone 2 -->
+            <circle cx="420" cy="272" r="18" fill="none" stroke="#2a2828" stroke-width="1.5"/>
+            <circle cx="420" cy="272" r="12" fill="none" stroke="#222020" stroke-width="1"/>
+            <!-- Zone 3 -->
+            <circle cx="472" cy="272" r="20" fill="none" stroke="#2a2828" stroke-width="1.5"/>
+            <circle cx="472" cy="272" r="13" fill="none" stroke="#222020" stroke-width="1"/>
+            <!-- Zone 4 small -->
+            <circle cx="526" cy="266" r="13" fill="none" stroke="#2a2828" stroke-width="1"/>
+            <!-- Hob control strip -->
+            <rect x="320" y="255" width="232" height="5" rx="2" fill="#141212"/>
+            <rect x="324" y="256" width="80" height="2" rx="1" fill="#f5a623" opacity=".15"/>
+
+            <!-- ── INTEGRATED SINK (right of hob) ── -->
+            <!-- Already part of right cabinet base, just hint at it -->
+            <rect x="390" y="266" width="80" height="26" rx="3" fill="#0e0c0a" opacity=".7"/>
+            <rect x="394" y="270" width="72" height="18" rx="2" fill="#080604" opacity=".9"/>
+            <!-- Tap -->
+            <rect x="426" y="258" width="4" height="14" rx="2" fill="#2e2c2a"/>
+            <rect x="421" y="258" width="14" height="3" rx="1.5" fill="#2e2c2a"/>
+
+            <!-- Warm under-cabinet lighting strip -->
+            <rect x="80" y="288" width="500" height="3" rx="1.5" fill="#ff9930" opacity=".08"/>
+            <rect x="80" y="289" width="500" height="1" rx=".5" fill="#ff9930" opacity=".12"/>
+
+          </g>
+
+          <!-- Scene floor -->
+          <rect x="80" y="408" width="500" height="12" fill="#0a0804"/>
+
+          <!-- Left fade over scene for content legibility -->
+          <rect width="580" height="420" fill="url(#s2-fade)"/>
+        </svg>
+      </div>
+
+      <div class="hc">
+        <div class="h-eye">Kitchen Premium 2025</div>
+        <h1 class="h-title">Η κουζίνα<br>που <em>ονειρεύεστε.</em></h1>
+        <p class="h-desc">Εντοιχισμένοι φούρνοι, επαγωγικές εστίες &amp; απορροφητήρες. Ολοκληρωμένες λύσεις κουζίνας από ευρωπαϊκές μάρκες.</p>
+        <div class="h-kpis">
+          <div class="h-kpi"><span class="h-kpi-v">-40%</span><span class="h-kpi-k">Εαρινές εκπτώσεις</span></div>
+          <div class="h-div"></div>
+          <div class="h-kpi"><span class="h-kpi-v">500+</span><span class="h-kpi-k">Μοντέλα κουζίνας</span></div>
+          <div class="h-div"></div>
+          <div class="h-kpi"><span class="h-kpi-v">FREE</span><span class="h-kpi-k">Εγκατάσταση</span></div>
+        </div>
+        <div class="h-ctas">
+          <a href="#" class="btn-p">Φούρνοι &amp; Εστίες →</a>
+          <a href="#" class="btn-g">Kitchen Design</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         SLIDE 3 — Premium Washing Machine | Clean White Studio
+         Background: deep slate-navy, cool white product light
+    ═══════════════════════════════════════════════════════════════════ -->
+    <div class="hs hs3" role="group" aria-label="Πλύση &amp; Στέγνωση — Slide 3">
+
+      <div class="h-vis" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 420" preserveAspectRatio="xMidYMid meet"
+          style="width:100%;height:100%;position:absolute;inset:0">
+          <defs>
+            <!-- Cool studio ambient -->
+            <radialGradient id="s3-bloom" cx="72%" cy="28%" r="52%">
+              <stop offset="0%" stop-color="#3a5a88" stop-opacity=".16"/>
+              <stop offset="100%" stop-color="#020c1a" stop-opacity="0"/>
+            </radialGradient>
+            <!-- Left fade -->
+            <linearGradient id="s3-fade" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#030e1e" stop-opacity="1"/>
+              <stop offset="36%" stop-color="#030e1e" stop-opacity=".72"/>
+              <stop offset="60%" stop-color="#030e1e" stop-opacity="0"/>
+            </linearGradient>
+            <!-- Machine body gradient -->
+            <linearGradient id="s3-body" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#b8c4d0"/>
+              <stop offset="30%" stop-color="#dce6f0"/>
+              <stop offset="65%" stop-color="#ccd8e4"/>
+              <stop offset="100%" stop-color="#a8b8c4"/>
+            </linearGradient>
+            <!-- Control panel -->
+            <linearGradient id="s3-panel" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#c8d4e0"/>
+              <stop offset="100%" stop-color="#b0bece"/>
+            </linearGradient>
+            <!-- Drum deep -->
+            <radialGradient id="s3-drum" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#0a1422"/>
+              <stop offset="70%" stop-color="#060e18"/>
+              <stop offset="100%" stop-color="#040a12"/>
+            </radialGradient>
+            <!-- Drum inner glow (wash cycle) -->
+            <radialGradient id="s3-cycleglow" cx="40%" cy="45%" r="45%">
+              <stop offset="0%" stop-color="#2060cc" stop-opacity=".18"/>
+              <stop offset="100%" stop-color="#030a18" stop-opacity="0"/>
+            </radialGradient>
+            <!-- Door glass gradient -->
+            <linearGradient id="s3-glass" x1="0" y1="0" x2=".7" y2="1">
+              <stop offset="0%" stop-color="#7090b0" stop-opacity=".22"/>
+              <stop offset="100%" stop-color="#2040608" stop-opacity="0"/>
+            </linearGradient>
+            <!-- Drop shadow -->
+            <filter id="s3-shadow" x="-8%" y="-3%" width="122%" height="110%">
+              <feDropShadow dx="-14" dy="2" stdDeviation="24" flood-color="#000" flood-opacity=".55"/>
+            </filter>
+            <!-- Display glow -->
+            <radialGradient id="s3-disp" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#80c0ff" stop-opacity=".35"/>
+              <stop offset="100%" stop-color="#80c0ff" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+
+          <!-- Background -->
+          <rect width="580" height="420" fill="#030e1e"/>
+          <rect width="580" height="420" fill="url(#s3-bloom)"/>
+
+          <!-- Floor plane -->
+          <rect x="80" y="390" width="500" height="30" rx="0" fill="#050e1c"/>
+          <!-- Floor reflection shimmer -->
+          <ellipse cx="310" cy="398" rx="150" ry="6" fill="#3a5a88" opacity=".05"/>
+
+          <!-- Laundry room shelf/counter behind -->
+          <rect x="80" y="340" width="500" height="8" rx="2" fill="#0d1a28" opacity=".7"/>
+
+          <!-- ── WASHING MACHINE (front-loader, premium white/inox) ── -->
+          <g filter="url(#s3-shadow)" transform="translate(110,26)">
+
+            <!-- ── WASHER BODY ── -->
+            <rect x="0" y="0" width="240" height="300" rx="14" fill="url(#s3-body)"/>
+
+            <!-- Side edge depth (right) -->
+            <rect x="232" y="4" width="8" height="292" rx="4" fill="#a0b0bc" opacity=".7"/>
+            <!-- Side edge depth (left) -->
+            <rect x="0" y="4" width="8" height="292" rx="4" fill="#b0c0cc" opacity=".5"/>
+
+            <!-- ── CONTROL PANEL ── -->
+            <rect x="4" y="4" width="232" height="56" rx="10" fill="url(#s3-panel)"/>
+            <!-- Panel inner line -->
+            <rect x="4" y="56" width="232" height="2" rx="1" fill="#98a8b8" opacity=".6"/>
+
+            <!-- Left knob (programme selector) -->
+            <circle cx="36" cy="30" r="16" fill="#c8d4e0" stroke="#a8b8c8" stroke-width="1.5"/>
+            <circle cx="36" cy="30" r="11" fill="#b8c8d8"/>
+            <circle cx="36" cy="30" r="5" fill="#8898a8"/>
+            <!-- Knob pointer -->
+            <rect x="35" y="14" width="2" height="6" rx="1" fill="#6878888"/>
+
+            <!-- Right knob (temperature) -->
+            <circle cx="204" cy="30" r="16" fill="#c8d4e0" stroke="#a8b8c8" stroke-width="1.5"/>
+            <circle cx="204" cy="30" r="11" fill="#b8c8d8"/>
+            <circle cx="204" cy="30" r="5" fill="#8898a8"/>
+            <rect x="203" y="14" width="2" height="6" rx="1" fill="#6878888"/>
+
+            <!-- Central display -->
+            <rect x="68" y="10" width="104" height="38" rx="5" fill="#0a1220"/>
+            <rect x="70" y="12" width="100" height="34" rx="4" fill="url(#s3-disp)"/>
+            <!-- Display elements -->
+            <rect x="76" y="18" width="30" height="5" rx="2" fill="#80c0ff" opacity=".7"/>
+            <rect x="76" y="27" width="46" height="3" rx="1.5" fill="#4a90e0" opacity=".5"/>
+            <rect x="76" y="33" width="36" height="3" rx="1.5" fill="#3a78cc" opacity=".4"/>
+            <!-- Time display (right of panel) -->
+            <rect x="130" y="17" width="34" height="22" rx="3" fill="#050c18"/>
+            <rect x="132" y="19" width="30" height="18" rx="2" fill="#0a1e34"/>
+            <!-- Clock digits -->
+            <rect x="134" y="22" width="8" height="12" rx="1" fill="#80c0ff" opacity=".55"/>
+            <rect x="145" y="22" width="8" height="12" rx="1" fill="#80c0ff" opacity=".55"/>
+            <rect x="141" y="26" width="2" height="4" rx="1" fill="#80c0ff" opacity=".7"/>
+            <!-- Small indicator lights -->
+            <circle cx="172" cy="22" r="2.5" fill="#f5a623" opacity=".7"/>
+            <circle cx="180" cy="22" r="2.5" fill="#2060cc" opacity=".5"/>
+            <circle cx="188" cy="22" r="2.5" fill="#a0b0c0" opacity=".35"/>
+            <!-- Buttons row -->
+            <rect x="68" y="52" width="18" height="5" rx="2.5" fill="#a8b8c8" opacity=".7"/>
+            <rect x="92" y="52" width="18" height="5" rx="2.5" fill="#a8b8c8" opacity=".7"/>
+            <rect x="116" y="52" width="18" height="5" rx="2.5" fill="#98a8b8" opacity=".6"/>
+            <rect x="140" y="52" width="18" height="5" rx="2.5" fill="#98a8b8" opacity=".5"/>
+
+            <!-- ── DRUM DOOR ASSEMBLY ── -->
+            <!-- Outer bezel ring -->
+            <circle cx="120" cy="185" r="110" fill="#b8c8d4" opacity=".25"/>
+            <circle cx="120" cy="185" r="102" fill="#c8d4e0"/>
+            <circle cx="120" cy="185" r="96" fill="#b8c4d0"/>
+            <!-- Door frame ring -->
+            <circle cx="120" cy="185" r="90" fill="#a8b4c0"/>
+            <!-- Rubber gasket -->
+            <circle cx="120" cy="185" r="84" fill="#9aa8b4" stroke="#8898a4" stroke-width="2"/>
+            <!-- Drum window -->
+            <circle cx="120" cy="185" r="76" fill="url(#s3-drum)"/>
+            <circle cx="120" cy="185" r="76" fill="url(#s3-cycleglow)"/>
+            <!-- Door glass reflection -->
+            <ellipse cx="94" cy="162" rx="26" ry="16" fill="url(#s3-glass)" transform="rotate(-22 94 162)"/>
+            <!-- Drum perforations (inner circle of holes) -->
+            <circle cx="120" cy="111" r="5" fill="#0e1824" opacity=".9"/>
+            <circle cx="158" cy="124" r="5" fill="#0e1824" opacity=".9"/>
+            <circle cx="178" cy="160" r="5" fill="#0e1824" opacity=".9"/>
+            <circle cx="168" cy="202" r="5" fill="#0e1824" opacity=".9"/>
+            <circle cx="140" cy="232" r="5" fill="#0e1824" opacity=".9"/>
+            <circle cx="100" cy="232" r="5" fill="#0e1824" opacity=".9"/>
+            <circle cx="72" cy="202" r="5" fill="#0e1824" opacity=".9"/>
+            <circle cx="62" cy="160" r="5" fill="#0e1824" opacity=".9"/>
+            <circle cx="82" cy="124" r="5" fill="#0e1824" opacity=".9"/>
+            <!-- Drum center boss -->
+            <circle cx="120" cy="185" r="18" fill="#0a1220"/>
+            <circle cx="120" cy="185" r="12" fill="#0e1828"/>
+            <circle cx="120" cy="185" r="6" fill="#1a2840"/>
+            <!-- Door handle (horizontal bar) -->
+            <rect x="80" y="280" width="80" height="10" rx="5" fill="#9aacb8"/>
+            <rect x="82" y="281" width="76" height="3" rx="1.5" fill="#b8c8d4" opacity=".6"/>
+
+            <!-- ── DETERGENT DRAWER ── -->
+            <rect x="10" y="68" width="68" height="16" rx="4" fill="#b8c8d8"/>
+            <rect x="13" y="71" width="62" height="10" rx="3" fill="#a8b8c8"/>
+            <rect x="28" y="68" width="2" height="16" rx="1" fill="#98a8b8" opacity=".5"/>
+            <rect x="44" y="68" width="2" height="16" rx="1" fill="#98a8b8" opacity=".5"/>
+
+            <!-- Base / feet -->
+            <rect x="0" y="292" width="240" height="8" rx="4" fill="#8898a8"/>
+            <rect x="20" y="296" width="30" height="8" rx="3" fill="#7888988"/>
+            <rect x="190" y="296" width="30" height="8" rx="3" fill="#7888988"/>
+
+            <!-- Top surface -->
+            <rect x="0" y="0" width="240" height="6" rx="3" fill="#c8d4de"/>
+          </g>
+
+          <!-- ── DRYER (partially visible, right of washer) ── -->
+          <g transform="translate(360,60)" opacity=".45">
+            <rect x="0" y="0" width="180" height="280" rx="12" fill="#c0ccd8"/>
+            <rect x="4" y="4" width="172" height="44" rx="8" fill="#b8c8d4"/>
+            <circle cx="90" cy="174" r="74" fill="#b0bcc8"/>
+            <circle cx="90" cy="174" r="68" fill="#a0b0bc"/>
+            <circle cx="90" cy="174" r="62" fill="#060e1a"/>
+            <circle cx="90" cy="174" r="55" fill="#04080e"/>
+            <!-- Dryer glow (heat) -->
+            <ellipse cx="76" cy="160" rx="24" ry="16" fill="#c86000" opacity=".07" transform="rotate(-15 76 160)"/>
+            <rect x="10" y="54" width="60" height="14" rx="4" fill="#a8b8c8"/>
+            <rect x="4" y="270" width="172" height="10" rx="4" fill="#8898a8"/>
+          </g>
+
+          <!-- Left fade -->
+          <rect width="580" height="420" fill="url(#s3-fade)"/>
+        </svg>
+      </div>
+
+      <div class="hc">
+        <div class="h-eye">Laundry &amp; Care 2025</div>
+        <h1 class="h-title">Πλύσιμο με<br><em>έξυπνη τεχνολογία.</em></h1>
+        <p class="h-desc">Πλυντήρια i-DOS, Heat Pump Στεγνωτήρια &amp; συνδυαστικά πακέτα. Εξοικονόμηση ενέργειας κάθε κύκλο.</p>
+        <div class="h-kpis">
+          <div class="h-kpi"><span class="h-kpi-v">A+++</span><span class="h-kpi-k">Ενεργειακή κλάση</span></div>
+          <div class="h-div"></div>
+          <div class="h-kpi"><span class="h-kpi-v">24</span><span class="h-kpi-k">Άτοκες δόσεις</span></div>
+          <div class="h-div"></div>
+          <div class="h-kpi"><span class="h-kpi-v">2yr</span><span class="h-kpi-k">Εγγύηση Konidas</span></div>
+        </div>
+        <div class="h-ctas">
+          <a href="#" class="btn-p">Πλυντήρια &amp; Στεγνωτήρια →</a>
+          <a href="#" class="btn-g">Δείτε Προσφορές</a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /hero-track -->
+
+  <button class="h-arr h-prev" onclick="hm(-1)" aria-label="Προηγούμενο">&#8249;</button>
+  <button class="h-arr h-next" onclick="hm(1)" aria-label="Επόμενο">&#8250;</button>
+  <div class="h-ctrl">
+    <button class="h-dot on" id="hd0" onclick="hg(0)" aria-label="Slide 1"></button>
+    <button class="h-dot" id="hd1" onclick="hg(1)" aria-label="Slide 2"></button>
+    <button class="h-dot" id="hd2" onclick="hg(2)" aria-label="Slide 3"></button>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="tstrip">
+  <div class="ct">
+    <div class="ts-in">
+      <div class="ts-i"><div class="ts-ico"><svg viewBox="0 0 24 24"><path d="M1 3h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/></svg></div><div><div class="ts-t">Δωρεάν Μεταφορά</div><div class="ts-s">Σε όλη την Ελλάδα</div></div></div>
+      <div class="ts-i"><div class="ts-ico"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><div><div class="ts-t">Επαγγελματική Εγκατάσταση</div><div class="ts-s">Από πιστοποιημένους τεχνικούς</div></div></div>
+      <div class="ts-i"><div class="ts-ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div><div class="ts-t">After Sales Support</div><div class="ts-s">Service &amp; ανταλλακτικά 10+ χρόνια</div></div></div>
+      <div class="ts-i"><div class="ts-ico"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg></div><div><div class="ts-t">0% Άτοκες Δόσεις</div><div class="ts-s">Έως 24 μήνες χωρίς επιβάρυνση</div></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- CATEGORY SCROLL -->
+<div class="catrow">
+  <div class="ct" style="padding:0 14px">
+    <div class="cat-sc">
+      <div class="cat-i on" onclick="selCat(this)"><span class="cat-ic">🧊</span><span class="cat-nm">Ψυγεία</span></div>
+      <div class="cat-i" onclick="selCat(this)"><span class="cat-ic">👕</span><span class="cat-nm">Πλυντήρια</span></div>
+      <div class="cat-i" onclick="selCat(this)"><span class="cat-ic">💨</span><span class="cat-nm">Στεγνωτήρια</span></div>
+      <div class="cat-i" onclick="selCat(this)"><span class="cat-ic">🍽️</span><span class="cat-nm">Πιατοπλύστες</span></div>
+      <div class="cat-i" onclick="selCat(this)"><span class="cat-ic">🍳</span><span class="cat-nm">Κουζίνες</span></div>
+      <div class="cat-i" onclick="selCat(this)"><span class="cat-ic">🔥</span><span class="cat-nm">Εστίες</span></div>
+      <div class="cat-i" onclick="selCat(this)"><span class="cat-ic">⬛</span><span class="cat-nm">Φούρνοι</span></div>
+      <div class="cat-i" onclick="selCat(this)"><span class="cat-ic">🌬️</span><span class="cat-nm">Απορροφητήρες</span></div>
+      <div class="cat-i" onclick="selCat(this)"><span class="cat-ic">❄️</span><span class="cat-nm">Κλιματιστικά</span></div>
+      <div class="cat-i" onclick="selCat(this)"><span class="cat-ic">☕</span><span class="cat-nm">Μικροσυσκευές</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ WHY — PREMIUM TRUST BLOCK ══════════ -->
+<section class="why">
+  <div class="ct">
+    <!-- Header -->
+    <div class="why-head">
+      <div class="why-eye">Γιατί Konidas Store Euronics</div>
+      <h2 class="why-ttl">Γιατί να μας επιλέξετε;</h2>
+      <p class="why-sub">Από το 1984, εξυπηρετούμε ελληνικές οικογένειες με εξειδίκευση, ειλικρίνεια και πραγματική φροντίδα — πριν και μετά την αγορά.</p>
+    </div>
+
+    <!-- Key metrics -->
+    <div class="why-stats">
+      <div class="ws">
+        <div class="ws-val">40<span>+</span></div>
+        <div class="ws-key">Χρόνια εμπειρίας<br>από το 1984</div>
+      </div>
+      <div class="ws">
+        <div class="ws-val">50<span>K+</span></div>
+        <div class="ws-key">Ικανοποιημένοι<br>πελάτες</div>
+      </div>
+      <div class="ws">
+        <div class="ws-val">15<span>K</span></div>
+        <div class="ws-key">Εγκαταστάσεις<br>ετησίως</div>
+      </div>
+      <div class="ws">
+        <div class="ws-val">10<span>yr</span></div>
+        <div class="ws-key">After Sales<br>υποστήριξη</div>
+      </div>
+    </div>
+
+    <!-- Promise rows -->
+    <div class="why-rows">
+      <div class="wr">
+        <div class="wr-ico"><svg viewBox="0 0 24 24"><path d="M1 3h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/></svg></div>
+        <div class="wr-body">
+          <div class="wr-ttl">Δωρεάν μεταφορά &amp; απόσυρση σε όλη την Ελλάδα</div>
+          <div class="wr-desc">Παραδίδουμε γρήγορα, ασφαλά και πάντα στην ώρα μας. Αποσύρουμε και την παλιά σας συσκευή δωρεάν — νόμιμα &amp; φιλικά προς το περιβάλλον.</div>
+        </div>
+      </div>
+      <div class="wr">
+        <div class="wr-ico"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+        <div class="wr-body">
+          <div class="wr-ttl">Επαγγελματική εγκατάσταση από πιστοποιημένους τεχνικούς</div>
+          <div class="wr-desc">Οι τεχνικοί μας εγκαθιστούν κάθε συσκευή με ακρίβεια — από ψυγεία και πλυντήρια έως ολόκληρες κουζίνες εντοιχισμού.</div>
+        </div>
+      </div>
+      <div class="wr">
+        <div class="wr-ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div class="wr-body">
+          <div class="wr-ttl">After Sales Support χωρίς συμβόλαιο — για 10+ χρόνια</div>
+          <div class="wr-desc">Είμαστε δίπλα σας και μετά την αγορά. Διαθέτουμε ανταλλακτικά &amp; τεχνική υποστήριξη για κάθε μάρκα που πουλάμε.</div>
+        </div>
+      </div>
+      <div class="wr">
+        <div class="wr-ico"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <div class="wr-body">
+          <div class="wr-ttl">Εξειδικευμένη συμβουλή — χωρίς πίεση αγοράς</div>
+          <div class="wr-desc">Οι σύμβουλοί μας σάς βοηθούν να επιλέξετε αυτό που ταιριάζει στις ανάγκες και τον προϋπολογισμό σας — όχι αυτό που κοστίζει πιο πολύ.</div>
+        </div>
+      </div>
+      <div class="wr">
+        <div class="wr-ico"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <div class="wr-body">
+          <div class="wr-ttl">Εγγύηση καλύτερης τιμής — 0% άτοκες δόσεις</div>
+          <div class="wr-desc">Αν βρείτε χαμηλότερη τιμή, τη χαμηλώνουμε άμεσα. Άτοκες δόσεις έως 24 μήνες, χωρίς κρυφές χρεώσεις.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="sec" id="products">
+  <div class="ct">
+    <div class="sec-hd">
+      <div><div class="sec-tag">Επιλεγμένα Προϊόντα</div><h2 class="sec-ttl">Προσφορές που Ξεχωρίζουν</h2></div>
+      <a href="#" class="lkall">Προβολή Όλων →</a>
+    </div>
+    <div class="ptabs" role="tablist">
+      <div class="ptab on" role="tab" onclick="switchTab(this,'deals')">🔥 Προσφορές Εβδομάδας</div>
+      <div class="ptab" role="tab" onclick="switchTab(this,'new')">✦ Νέες Αφίξεις</div>
+      <div class="ptab" role="tab" onclick="switchTab(this,'top')">⭐ Top Πωλήσεις</div>
+      <div class="ptab" role="tab" onclick="switchTab(this,'energy')">🌿 A+++ Ενεργειακά</div>
+    </div>
+    <div id="tab-deals" class="pgrid">
+
+      <article class="pc">
+        <div class="pc-img">
+          <span class="pc-tag">-15%</span>
+          <button class="pc-wsh" onclick="twish(this)" aria-label="Αγαπημένα"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          <div class="pc-img-in">
+            <svg viewBox="0 0 90 130" width="80" height="116" style="opacity:.68">
+              <rect x="10" y="4" width="70" height="122" rx="8" fill="#d8e2f0"/>
+              <rect x="14" y="8" width="62" height="70" rx="5" fill="#c0ccde"/>
+              <line x1="10" y1="78" x2="80" y2="78" stroke="#aabbd0" stroke-width="2"/>
+              <rect x="14" y="82" width="62" height="40" rx="5" fill="#ccd6e8"/>
+              <rect x="70" y="22" width="5" height="28" rx="2.5" fill="#98a8c0"/>
+              <rect x="70" y="92" width="5" height="18" rx="2.5" fill="#98a8c0"/>
+              <rect x="20" y="18" width="30" height="2" rx="1" fill="#98a8c0" opacity=".5"/>
+              <rect x="20" y="26" width="24" height="2" rx="1" fill="#98a8c0" opacity=".5"/>
+              <rect x="20" y="34" width="28" height="2" rx="1" fill="#98a8c0" opacity=".5"/>
+            </svg>
+          </div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-brand">Bosch</div>
+          <div class="pc-name">KGN49XWEA Ψυγειοκαταψύκτης NoFrost 440L A++</div>
+          <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(48)</span></div>
+          <div class="pc-pr"><span class="pc-p">649€</span><span class="pc-po">769€</span></div>
+          <div class="pc-inst">ή από <strong>27,04€/μήνα</strong> · 24 άτοκες δόσεις</div>
+          <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+        </div>
+      </article>
+
+      <article class="pc">
+        <div class="pc-img">
+          <span class="pc-tag">-20%</span>
+          <button class="pc-wsh" onclick="twish(this)" aria-label="Αγαπημένα"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          <div class="pc-img-in">
+            <svg viewBox="0 0 90 110" width="80" height="98" style="opacity:.68">
+              <rect x="8" y="6" width="74" height="98" rx="8" fill="#dde4f0"/>
+              <circle cx="45" cy="66" r="34" fill="#c8d2e8"/>
+              <circle cx="45" cy="66" r="28" fill="#a8b8d0"/>
+              <circle cx="45" cy="66" r="22" fill="#181c28" opacity=".9"/>
+              <circle cx="45" cy="66" r="16" fill="#0d1018"/>
+              <ellipse cx="40" cy="74" rx="9" ry="5" fill="#4488ff" opacity=".12"/>
+              <rect x="12" y="10" width="66" height="20" rx="5" fill="#c0cce0"/>
+              <circle cx="30" cy="20" r="6" fill="#a0b0c8" stroke="#8090a8"/>
+              <rect x="45" y="14" width="30" height="12" rx="2" fill="#8898b0"/>
+              <rect x="47" y="16" width="18" height="8" rx="1.5" fill="#181c28"/>
+            </svg>
+          </div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-brand">LG</div>
+          <div class="pc-name">F4WV708P1E TurboWash™ 8kg 1400rpm Κλάση A</div>
+          <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(92)</span></div>
+          <div class="pc-pr"><span class="pc-p">399€</span><span class="pc-po">499€</span></div>
+          <div class="pc-inst">ή από <strong>16,62€/μήνα</strong> · 24 άτοκες δόσεις</div>
+          <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+        </div>
+      </article>
+
+      <article class="pc">
+        <div class="pc-img">
+          <span class="pc-tag">-18%</span>
+          <button class="pc-wsh" onclick="twish(this)" aria-label="Αγαπημένα"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          <div class="pc-img-in">
+            <svg viewBox="0 0 90 90" width="80" height="80" style="opacity:.68">
+              <rect x="6" y="6" width="78" height="78" rx="7" fill="#d8e0f0"/>
+              <rect x="12" y="28" width="66" height="50" rx="4" fill="#c0cce0"/>
+              <rect x="16" y="32" width="58" height="42" rx="3" fill="#9ab0cc"/>
+              <rect x="12" y="12" width="66" height="12" rx="4" fill="#b8c8dc"/>
+              <rect x="62" y="15" width="10" height="6" rx="2" fill="#8898b0"/>
+              <circle cx="20" cy="18" r="3" fill="#7888a0"/>
+              <circle cx="30" cy="18" r="3" fill="#7888a0"/>
+              <rect x="16" y="36" width="58" height="3" rx="1.5" fill="#8898b0" opacity=".3"/>
+              <rect x="16" y="50" width="58" height="3" rx="1.5" fill="#8898b0" opacity=".3"/>
+            </svg>
+          </div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-brand">Siemens</div>
+          <div class="pc-name">SN23HW60ME Πλυντήριο Πιάτων 60cm 13 Σερβίτσια A++</div>
+          <div class="pc-st"><span class="stars">★★★★☆</span><span class="stars-n">(37)</span></div>
+          <div class="pc-pr"><span class="pc-p">549€</span><span class="pc-po">669€</span></div>
+          <div class="pc-inst">ή από <strong>22,87€/μήνα</strong> · 24 άτοκες δόσεις</div>
+          <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+        </div>
+      </article>
+
+      <article class="pc">
+        <div class="pc-img">
+          <span class="pc-tag">-10%</span>
+          <button class="pc-wsh" onclick="twish(this)" aria-label="Αγαπημένα"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          <div class="pc-img-in">
+            <svg viewBox="0 0 90 100" width="80" height="89" style="opacity:.68">
+              <rect x="8" y="8" width="74" height="84" rx="7" fill="#2a1a00"/>
+              <rect x="14" y="34" width="62" height="52" rx="4" fill="#1a0e00"/>
+              <rect x="18" y="38" width="54" height="44" rx="3" fill="#0d0700" opacity=".9"/>
+              <rect x="14" y="14" width="62" height="16" rx="4" fill="#221500"/>
+              <circle cx="28" cy="22" r="6" fill="#332000" stroke="#443000"/>
+              <circle cx="28" cy="22" r="2.5" fill="#665000"/>
+              <circle cx="62" cy="22" r="6" fill="#332000" stroke="#443000"/>
+              <circle cx="62" cy="22" r="2.5" fill="#665000"/>
+              <rect x="18" y="74" width="54" height="3" rx="1.5" fill="#cc4400" opacity=".35"/>
+            </svg>
+          </div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-brand">Pitsos</div>
+          <div class="pc-name">PHC006050 Κουζίνα Κεραμική 60cm Inox 4 Εστίες A</div>
+          <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(61)</span></div>
+          <div class="pc-pr"><span class="pc-p">449€</span><span class="pc-po">499€</span></div>
+          <div class="pc-inst">ή από <strong>18,70€/μήνα</strong> · 24 άτοκες δόσεις</div>
+          <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+        </div>
+      </article>
+
+      <article class="pc">
+        <div class="pc-img">
+          <span class="pc-tag">-15%</span>
+          <button class="pc-wsh" onclick="twish(this)" aria-label="Αγαπημένα"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          <div class="pc-img-in">
+            <svg viewBox="0 0 90 80" width="80" height="71" style="opacity:.68">
+              <rect x="10" y="4" width="70" height="12" rx="4" fill="#c8d0e0"/>
+              <path d="M20 16 L10 72 L80 72 L70 16 Z" fill="#d0d8e8"/>
+              <rect x="14" y="18" width="62" height="8" rx="3" fill="#b8c4d8"/>
+              <rect x="18" y="28" width="54" height="38" rx="3" fill="#a8b8cc"/>
+              <rect x="20" y="30" width="50" height="4" rx="2" fill="#98a8bc" opacity=".5"/>
+              <circle cx="45" cy="70" r="3" fill="#8898b0"/>
+              <rect x="36" y="50" width="18" height="14" rx="2" fill="#8898b0" opacity=".3"/>
+            </svg>
+          </div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-brand">Elica</div>
+          <div class="pc-name">Spot NG H6 IX/A/60 Απορροφητήρας Καμινάδα 60cm Inox</div>
+          <div class="pc-st"><span class="stars">★★★★☆</span><span class="stars-n">(24)</span></div>
+          <div class="pc-pr"><span class="pc-p">169€</span><span class="pc-po">199€</span></div>
+          <div class="pc-inst">ή από <strong>7,04€/μήνα</strong> · 24 άτοκες δόσεις</div>
+          <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+        </div>
+      </article>
+
+    </div><!-- /tab-deals -->
+
+    <!-- NEW ARRIVALS TAB -->
+    <div id="tab-new" class="pgrid" style="display:none">
+
+      <article class="pc">
+        <div class="pc-img">
+          <span class="pc-tag new">ΝΕΟ</span>
+          <button class="pc-wsh" onclick="twish(this)" aria-label="Αγαπημένα"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          <div class="pc-img-in">
+            <svg viewBox="0 0 90 130" width="80" height="116" style="opacity:.68">
+              <rect x="8" y="4" width="74" height="122" rx="9" fill="#1a1a1a"/>
+              <rect x="13" y="9" width="64" height="74" rx="6" fill="#111"/>
+              <line x1="8" y1="83" x2="82" y2="83" stroke="#2a2a2a" stroke-width="2"/>
+              <rect x="13" y="87" width="64" height="33" rx="6" fill="#1e1e1e"/>
+              <rect x="72" y="22" width="5" height="30" rx="2.5" fill="#333"/>
+              <rect x="72" y="95" width="5" height="16" rx="2.5" fill="#333"/>
+              <rect x="18" y="20" width="28" height="2" rx="1" fill="#333" opacity=".7"/>
+              <rect x="18" y="28" width="22" height="2" rx="1" fill="#333" opacity=".7"/>
+            </svg>
+          </div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-brand">Samsung</div>
+          <div class="pc-name">RS68CG883EB1EF Side by Side Inox 634L A++</div>
+          <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(12)</span></div>
+          <div class="pc-pr"><span class="pc-p">1.249€</span></div>
+          <div class="pc-inst">ή από <strong>52,04€/μήνα</strong> · 24 άτοκες δόσεις</div>
+          <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+        </div>
+      </article>
+
+      <article class="pc">
+        <div class="pc-img">
+          <span class="pc-tag new">ΝΕΟ</span>
+          <button class="pc-wsh" onclick="twish(this)" aria-label="Αγαπημένα"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          <div class="pc-img-in">
+            <svg viewBox="0 0 90 100" width="80" height="89" style="opacity:.65">
+              <rect x="8" y="8" width="74" height="84" rx="8" fill="#e8eaf0"/>
+              <rect x="14" y="34" width="62" height="52" rx="5" fill="#d8dce8"/>
+              <rect x="18" y="38" width="54" height="44" rx="4" fill="#c0c8dc"/>
+              <rect x="14" y="14" width="62" height="16" rx="5" fill="#d0d4e4"/>
+              <rect x="18" y="17" width="38" height="10" rx="3" fill="#181c2a"/>
+              <rect x="60" y="16" width="12" height="12" rx="3" fill="#b0b8cc"/>
+              <circle cx="26" cy="22" r="3.5" fill="#8898b0"/>
+              <rect x="22" y="46" width="46" height="2" rx="1" fill="#a8b0c4" opacity=".5"/>
+              <rect x="22" y="56" width="46" height="2" rx="1" fill="#a8b0c4" opacity=".5"/>
+            </svg>
+          </div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-brand">Bosch</div>
+          <div class="pc-name">SMV6ZCX00E Εντοιχισμένο Πλυντήριο Πιάτων 60cm</div>
+          <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(8)</span></div>
+          <div class="pc-pr"><span class="pc-p">749€</span></div>
+          <div class="pc-inst">ή από <strong>31,21€/μήνα</strong> · 24 άτοκες δόσεις</div>
+          <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+        </div>
+      </article>
+
+      <article class="pc">
+        <div class="pc-img">
+          <span class="pc-tag new">ΝΕΟ</span>
+          <button class="pc-wsh" onclick="twish(this)" aria-label="Αγαπημένα"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          <div class="pc-img-in">
+            <svg viewBox="0 0 90 100" width="80" height="89" style="opacity:.65">
+              <rect x="8" y="8" width="74" height="84" rx="8" fill="#2a2c30"/>
+              <rect x="14" y="14" width="62" height="20" rx="4" fill="#1e2028"/>
+              <rect x="60" y="18" width="12" height="12" rx="3" fill="#383a40"/>
+              <circle cx="22" cy="24" r="5" fill="#282a30" stroke="#383a40"/>
+              <circle cx="22" cy="24" r="2" fill="#4a4c54"/>
+              <rect x="14" y="42" width="62" height="44" rx="4" fill="#1a1c22"/>
+              <rect x="18" y="46" width="54" height="36" rx="3" fill="#0e0f14"/>
+              <rect x="22" y="66" width="46" height="3" rx="1.5" fill="#cc3300" opacity=".3"/>
+              <rect x="14" y="34" width="62" height="6" rx="2" fill="#222428"/>
+            </svg>
+          </div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-brand">AEG</div>
+          <div class="pc-name">BSK978330M Εντοιχ. Φούρνος Ατμού 71L PlusSteam</div>
+          <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(19)</span></div>
+          <div class="pc-pr"><span class="pc-p">899€</span></div>
+          <div class="pc-inst">ή από <strong>37,46€/μήνα</strong> · 24 άτοκες δόσεις</div>
+          <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+        </div>
+      </article>
+
+      <article class="pc">
+        <div class="pc-img">
+          <span class="pc-tag new">ΝΕΟ</span>
+          <button class="pc-wsh" onclick="twish(this)" aria-label="Αγαπημένα"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          <div class="pc-img-in">
+            <svg viewBox="0 0 90 110" width="80" height="98" style="opacity:.65">
+              <rect x="8" y="6" width="74" height="98" rx="8" fill="#f0f2f8"/>
+              <circle cx="45" cy="66" r="34" fill="#dde4f2"/>
+              <circle cx="45" cy="66" r="28" fill="#c8d4ec"/>
+              <circle cx="45" cy="66" r="22" fill="#1a2030" opacity=".92"/>
+              <circle cx="45" cy="66" r="15" fill="#0d1420"/>
+              <ellipse cx="40" cy="74" rx="8" ry="4" fill="#60aaff" opacity=".1"/>
+              <rect x="12" y="10" width="66" height="22" rx="5" fill="#d8e0f0"/>
+              <circle cx="30" cy="21" r="6.5" fill="#b8c8e0" stroke="#a0b4d0"/>
+              <circle cx="30" cy="21" r="2.5" fill="#8898b8"/>
+              <rect x="46" y="15" width="30" height="12" rx="3" fill="#b0c0d8"/>
+              <rect x="50" y="17" width="20" height="8" rx="2" fill="#0d1420"/>
+              <rect x="12" y="36" width="66" height="10" rx="3" fill="#c8d4ec"/>
+            </svg>
+          </div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-brand">Miele</div>
+          <div class="pc-name">WCR870 WPS TwinDos 9kg 1600rpm Κλάση A</div>
+          <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(6)</span></div>
+          <div class="pc-pr"><span class="pc-p">1.549€</span></div>
+          <div class="pc-inst">ή από <strong>64,54€/μήνα</strong> · 24 άτοκες δόσεις</div>
+          <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+        </div>
+      </article>
+
+      <article class="pc">
+        <div class="pc-img">
+          <span class="pc-tag new">ΝΕΟ</span>
+          <button class="pc-wsh" onclick="twish(this)" aria-label="Αγαπημένα"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          <div class="pc-img-in">
+            <svg viewBox="0 0 90 80" width="80" height="71" style="opacity:.65">
+              <rect x="10" y="4" width="70" height="11" rx="4" fill="#e0e6f0"/>
+              <path d="M20 15 L10 70 L80 70 L70 15 Z" fill="#d0d8ec"/>
+              <rect x="14" y="17" width="62" height="7" rx="3" fill="#b8c4dc"/>
+              <rect x="18" y="26" width="54" height="38" rx="3" fill="#a8b4cc"/>
+              <rect x="22" y="29" width="46" height="3" rx="1.5" fill="#90a0bc" opacity=".6"/>
+              <rect x="22" y="40" width="32" height="12" rx="2" fill="#8898b0" opacity=".4"/>
+              <circle cx="45" cy="68" r="3.5" fill="#8898b0"/>
+              <rect x="70" y="26" width="4" height="12" rx="2" fill="#a8b4c8" opacity=".6"/>
+            </svg>
+          </div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-brand">Siemens</div>
+          <div class="pc-name">LC97BIP50 iQ700 Επιτοίχιος Απορροφητήρας 90cm</div>
+          <div class="pc-st"><span class="stars">★★★★☆</span><span class="stars-n">(14)</span></div>
+          <div class="pc-pr"><span class="pc-p">449€</span></div>
+          <div class="pc-inst">ή από <strong>18,71€/μήνα</strong> · 24 άτοκες δόσεις</div>
+          <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+        </div>
+      </article>
+
+    </div><!-- /tab-new -->
+
+    <!-- TOP SELLERS TAB (placeholder, same cards slightly shuffled) -->
+    <div id="tab-top" class="pgrid" style="display:none">
+      <article class="pc">
+        <div class="pc-img">
+          <button class="pc-wsh" onclick="twish(this)" aria-label="Αγαπημένα"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          <div class="pc-img-in"><svg viewBox="0 0 90 110" width="80" height="98" style="opacity:.68"><rect x="8" y="6" width="74" height="98" rx="8" fill="#dde4f0"/><circle cx="45" cy="66" r="34" fill="#c8d2e8"/><circle cx="45" cy="66" r="28" fill="#a8b8d0"/><circle cx="45" cy="66" r="22" fill="#181c28" opacity=".9"/><circle cx="45" cy="66" r="16" fill="#0d1018"/><rect x="12" y="10" width="66" height="20" rx="5" fill="#c0cce0"/><circle cx="30" cy="20" r="6" fill="#a0b0c8" stroke="#8090a8"/></svg></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-brand">LG</div>
+          <div class="pc-name">F4WV708P1E TurboWash™ 8kg 1400rpm Κλάση A</div>
+          <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(92)</span></div>
+          <div class="pc-pr"><span class="pc-p">399€</span><span class="pc-po">499€</span></div>
+          <div class="pc-inst">ή από <strong>16,62€/μήνα</strong> · 24 άτοκες δόσεις</div>
+          <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+        </div>
+      </article>
+      <article class="pc">
+        <div class="pc-img">
+          <span class="pc-tag">-15%</span>
+          <button class="pc-wsh" onclick="twish(this)" aria-label="Αγαπημένα"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          <div class="pc-img-in"><svg viewBox="0 0 90 130" width="80" height="116" style="opacity:.68"><rect x="10" y="4" width="70" height="122" rx="8" fill="#d8e2f0"/><rect x="14" y="8" width="62" height="70" rx="5" fill="#c0ccde"/><line x1="10" y1="78" x2="80" y2="78" stroke="#aabbd0" stroke-width="2"/><rect x="14" y="82" width="62" height="40" rx="5" fill="#ccd6e8"/><rect x="70" y="22" width="5" height="28" rx="2.5" fill="#98a8c0"/></svg></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-brand">Bosch</div>
+          <div class="pc-name">KGN49XWEA Ψυγειοκαταψύκτης NoFrost 440L A++</div>
+          <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(48)</span></div>
+          <div class="pc-pr"><span class="pc-p">649€</span><span class="pc-po">769€</span></div>
+          <div class="pc-inst">ή από <strong>27,04€/μήνα</strong> · 24 άτοκες δόσεις</div>
+          <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+        </div>
+      </article>
+      <article class="pc">
+        <div class="pc-img">
+          <span class="pc-tag">-10%</span>
+          <button class="pc-wsh" onclick="twish(this)" aria-label="Αγαπημένα"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          <div class="pc-img-in"><svg viewBox="0 0 90 100" width="80" height="89" style="opacity:.68"><rect x="8" y="8" width="74" height="84" rx="7" fill="#2a1a00"/><rect x="14" y="34" width="62" height="52" rx="4" fill="#1a0e00"/><rect x="18" y="38" width="54" height="44" rx="3" fill="#0d0700" opacity=".9"/><rect x="14" y="14" width="62" height="16" rx="4" fill="#221500"/><circle cx="28" cy="22" r="6" fill="#332000" stroke="#443000"/><circle cx="62" cy="22" r="6" fill="#332000" stroke="#443000"/></svg></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-brand">Pitsos</div>
+          <div class="pc-name">PHC006050 Κουζίνα Κεραμική 60cm Inox 4 Εστίες A</div>
+          <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(61)</span></div>
+          <div class="pc-pr"><span class="pc-p">449€</span><span class="pc-po">499€</span></div>
+          <div class="pc-inst">ή από <strong>18,70€/μήνα</strong> · 24 άτοκες δόσεις</div>
+          <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+        </div>
+      </article>
+      <article class="pc">
+        <div class="pc-img">
+          <span class="pc-tag">-18%</span>
+          <button class="pc-wsh" onclick="twish(this)" aria-label="Αγαπημένα"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          <div class="pc-img-in"><svg viewBox="0 0 90 90" width="80" height="80" style="opacity:.68"><rect x="6" y="6" width="78" height="78" rx="7" fill="#d8e0f0"/><rect x="12" y="28" width="66" height="50" rx="4" fill="#c0cce0"/><rect x="16" y="32" width="58" height="42" rx="3" fill="#9ab0cc"/><rect x="12" y="12" width="66" height="12" rx="4" fill="#b8c8dc"/></svg></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-brand">Siemens</div>
+          <div class="pc-name">SN23HW60ME Πλυντήριο Πιάτων 60cm 13 Σερβίτσια A++</div>
+          <div class="pc-st"><span class="stars">★★★★☆</span><span class="stars-n">(37)</span></div>
+          <div class="pc-pr"><span class="pc-p">549€</span><span class="pc-po">669€</span></div>
+          <div class="pc-inst">ή από <strong>22,87€/μήνα</strong> · 24 άτοκες δόσεις</div>
+          <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+        </div>
+      </article>
+      <article class="pc">
+        <div class="pc-img">
+          <span class="pc-tag">-15%</span>
+          <button class="pc-wsh" onclick="twish(this)" aria-label="Αγαπημένα"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          <div class="pc-img-in"><svg viewBox="0 0 90 80" width="80" height="71" style="opacity:.68"><rect x="10" y="4" width="70" height="12" rx="4" fill="#c8d0e0"/><path d="M20 16 L10 72 L80 72 L70 16 Z" fill="#d0d8e8"/><rect x="14" y="18" width="62" height="8" rx="3" fill="#b8c4d8"/><rect x="18" y="28" width="54" height="38" rx="3" fill="#a8b8cc"/></svg></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-brand">Elica</div>
+          <div class="pc-name">Spot NG H6 IX/A/60 Απορροφητήρας Καμινάδα 60cm Inox</div>
+          <div class="pc-st"><span class="stars">★★★★☆</span><span class="stars-n">(24)</span></div>
+          <div class="pc-pr"><span class="pc-p">169€</span><span class="pc-po">199€</span></div>
+          <div class="pc-inst">ή από <strong>7,04€/μήνα</strong> · 24 άτοκες δόσεις</div>
+          <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+        </div>
+      </article>
+    </div><!-- /tab-top -->
+
+    <!-- ENERGY TAB -->
+    <div id="tab-energy" class="pgrid" style="display:none">
+      <article class="pc">
+        <div class="pc-img">
+          <span class="pc-tag new" style="background:#1a7a30">A+++</span>
+          <button class="pc-wsh" onclick="twish(this)" aria-label="Αγαπημένα"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          <div class="pc-img-in"><svg viewBox="0 0 90 130" width="80" height="116" style="opacity:.68"><rect x="10" y="4" width="70" height="122" rx="8" fill="#d8e2f0"/><rect x="14" y="8" width="62" height="70" rx="5" fill="#c0ccde"/><line x1="10" y1="78" x2="80" y2="78" stroke="#aabbd0" stroke-width="2"/><rect x="14" y="82" width="62" height="40" rx="5" fill="#ccd6e8"/><rect x="70" y="22" width="5" height="28" rx="2.5" fill="#98a8c0"/></svg></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-brand">Siemens</div>
+          <div class="pc-name">KG86NVIDA NoFrost 631L A+++ Ψυγειοκαταψύκτης</div>
+          <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(31)</span></div>
+          <div class="pc-pr"><span class="pc-p">1.149€</span><span class="pc-po">1.349€</span></div>
+          <div class="pc-inst">ή από <strong>47,88€/μήνα</strong> · 24 άτοκες δόσεις</div>
+          <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+        </div>
+      </article>
+      <article class="pc">
+        <div class="pc-img">
+          <span class="pc-tag new" style="background:#1a7a30">A+++</span>
+          <button class="pc-wsh" onclick="twish(this)" aria-label="Αγαπημένα"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          <div class="pc-img-in"><svg viewBox="0 0 90 110" width="80" height="98" style="opacity:.68"><rect x="8" y="6" width="74" height="98" rx="8" fill="#dde4f0"/><circle cx="45" cy="66" r="34" fill="#c8d2e8"/><circle cx="45" cy="66" r="28" fill="#a8b8d0"/><circle cx="45" cy="66" r="22" fill="#181c28" opacity=".9"/><circle cx="45" cy="66" r="16" fill="#0d1018"/><rect x="12" y="10" width="66" height="20" rx="5" fill="#c0cce0"/></svg></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-brand">Bosch</div>
+          <div class="pc-name">WGB254A10 i-DOS 10kg 1400rpm A+++ Πλυντήριο</div>
+          <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(27)</span></div>
+          <div class="pc-pr"><span class="pc-p">899€</span><span class="pc-po">1.099€</span></div>
+          <div class="pc-inst">ή από <strong>37,46€/μήνα</strong> · 24 άτοκες δόσεις</div>
+          <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+        </div>
+      </article>
+      <article class="pc">
+        <div class="pc-img">
+          <span class="pc-tag new" style="background:#1a7a30">A+++</span>
+          <button class="pc-wsh" onclick="twish(this)" aria-label="Αγαπημένα"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          <div class="pc-img-in"><svg viewBox="0 0 90 90" width="80" height="80" style="opacity:.68"><rect x="6" y="6" width="78" height="78" rx="7" fill="#d8e0f0"/><rect x="12" y="28" width="66" height="50" rx="4" fill="#c0cce0"/><rect x="16" y="32" width="58" height="42" rx="3" fill="#9ab0cc"/><rect x="12" y="12" width="66" height="12" rx="4" fill="#b8c8dc"/></svg></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-brand">AEG</div>
+          <div class="pc-name">FFE83806PM Πλυντήριο Πιάτων 60cm 15 Σερβίτσια A+++</div>
+          <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(18)</span></div>
+          <div class="pc-pr"><span class="pc-p">749€</span><span class="pc-po">849€</span></div>
+          <div class="pc-inst">ή από <strong>31,21€/μήνα</strong> · 24 άτοκες δόσεις</div>
+          <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+        </div>
+      </article>
+      <article class="pc">
+        <div class="pc-img">
+          <span class="pc-tag new" style="background:#1a7a30">A+++</span>
+          <button class="pc-wsh" onclick="twish(this)" aria-label="Αγαπημένα"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          <div class="pc-img-in"><svg viewBox="0 0 90 100" width="80" height="89" style="opacity:.68"><rect x="8" y="8" width="74" height="84" rx="7" fill="#2a1a00"/><rect x="14" y="34" width="62" height="52" rx="4" fill="#1a0e00"/><rect x="18" y="38" width="54" height="44" rx="3" fill="#0d0700" opacity=".9"/><rect x="14" y="14" width="62" height="16" rx="4" fill="#221500"/></svg></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-brand">Neff</div>
+          <div class="pc-name">B64CS71G0 Slide&amp;Hide Εντοιχ. Φούρνος 71L A+++</div>
+          <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(9)</span></div>
+          <div class="pc-pr"><span class="pc-p">1.199€</span></div>
+          <div class="pc-inst">ή από <strong>49,96€/μήνα</strong> · 24 άτοκες δόσεις</div>
+          <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+        </div>
+      </article>
+      <article class="pc">
+        <div class="pc-img">
+          <span class="pc-tag new" style="background:#1a7a30">A+++</span>
+          <button class="pc-wsh" onclick="twish(this)" aria-label="Αγαπημένα"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          <div class="pc-img-in"><svg viewBox="0 0 90 110" width="80" height="98" style="opacity:.65"><rect x="8" y="6" width="74" height="98" rx="8" fill="#f0f2f8"/><circle cx="45" cy="66" r="34" fill="#dde4f2"/><circle cx="45" cy="66" r="28" fill="#c8d4ec"/><circle cx="45" cy="66" r="22" fill="#1a2030" opacity=".92"/><circle cx="45" cy="66" r="15" fill="#0d1420"/><rect x="12" y="10" width="66" height="22" rx="5" fill="#d8e0f0"/></svg></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-brand">Miele</div>
+          <div class="pc-name">WEA025 8kg 1400rpm W1 A+++ Πλυντήριο Ρούχων</div>
+          <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(22)</span></div>
+          <div class="pc-pr"><span class="pc-p">1.099€</span><span class="pc-po">1.299€</span></div>
+          <div class="pc-inst">ή από <strong>45,79€/μήνα</strong> · 24 άτοκες δόσεις</div>
+          <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+        </div>
+      </article>
+    </div><!-- /tab-energy -->
+
+  </div>
+</section>
+
+<!-- BRANDS -->
+<div class="brands">
+  <div class="ct">
+    <div class="brands-in">
+      <div class="br">⊕ BOSCH</div>
+      <div class="br">SIEMENS</div>
+      <div class="br">AEG</div>
+      <div class="br">⊙ LG</div>
+      <div class="br">SAMSUNG</div>
+      <div class="br">Whirlpool</div>
+      <div class="br" style="font-style:italic;letter-spacing:1.5px">Miele</div>
+      <div class="br">⊕ PITSOS</div>
+      <div class="br">CANDY</div>
+    </div>
+  </div>
+</div>
+
+<!-- SHOP BY ROOM -->
+<section class="sec sec-alt">
+  <div class="ct">
+    <div class="sec-hd">
+      <div>
+        <div class="sec-tag">Shop By Room</div>
+        <h2 class="sec-ttl">Εξοπλίστε κάθε χώρο</h2>
+      </div>
+      <a href="#" class="lkall">Δείτε Όλα →</a>
+    </div>
+    <div class="room-grid">
+      <div class="room-card">
+        <div class="rc-bg rc-bg-1"></div>
+        <div class="rc-grad"></div>
+        <span class="rc-emoji">🍳</span>
+        <div class="rc-content">
+          <div class="rc-eye">Kitchen</div>
+          <div class="rc-ttl">Σύγχρονη Κουζίνα</div>
+          <div class="rc-cta">Εξερευνήστε <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="rc-bg rc-bg-2"></div>
+        <div class="rc-grad"></div>
+        <span class="rc-emoji">👕</span>
+        <div class="rc-content">
+          <div class="rc-eye">Laundry</div>
+          <div class="rc-ttl">Πλυσταριό &amp; Στέγνωμα</div>
+          <div class="rc-cta">Εξερευνήστε <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="rc-bg rc-bg-3"></div>
+        <div class="rc-grad"></div>
+        <span class="rc-emoji">🏠</span>
+        <div class="rc-content">
+          <div class="rc-eye">Smart Home</div>
+          <div class="rc-ttl">Έξυπνο Σπίτι</div>
+          <div class="rc-cta">Εξερευνήστε <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="rc-bg rc-bg-4"></div>
+        <div class="rc-grad"></div>
+        <span class="rc-emoji">❄️</span>
+        <div class="rc-content">
+          <div class="rc-eye">Comfort</div>
+          <div class="rc-ttl">Κλιματισμός &amp; Θέρμανση</div>
+          <div class="rc-cta">Εξερευνήστε <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRAND GRID -->
+<section class="sec">
+  <div class="ct">
+    <div class="sec-hd">
+      <div>
+        <div class="sec-tag">Κορυφαίες Μάρκες</div>
+        <h2 class="sec-ttl">Αγοράστε ανά Brand</h2>
+      </div>
+      <a href="#" class="lkall">Όλες οι Μάρκες →</a>
+    </div>
+    <div class="brand-grid">
+      <div class="bg-card"><div class="bg-name">BOSCH</div><div class="bg-count">120+ μοντέλα</div></div>
+      <div class="bg-card"><div class="bg-name">SIEMENS</div><div class="bg-count">95+ μοντέλα</div></div>
+      <div class="bg-card"><div class="bg-name" style="font-style:italic;letter-spacing:1px">Miele</div><div class="bg-count">80+ μοντέλα</div></div>
+      <div class="bg-card"><div class="bg-name">AEG</div><div class="bg-count">110+ μοντέλα</div></div>
+      <div class="bg-card"><div class="bg-name">LG</div><div class="bg-count">130+ μοντέλα</div></div>
+      <div class="bg-card"><div class="bg-name">SAMSUNG</div><div class="bg-count">145+ μοντέλα</div></div>
+      <div class="bg-card"><div class="bg-name">NEFF</div><div class="bg-count">60+ μοντέλα</div></div>
+      <div class="bg-card"><div class="bg-name">PITSOS</div><div class="bg-count">75+ μοντέλα</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMO BANNER -->
+<section class="sec" style="padding-top:0;padding-bottom:44px">
+  <div class="ct">
+    <div class="promo-wrap" style="padding:0">
+      <div class="promo">
+        <div>
+          <div class="promo-tag">Ειδική Προσφορά Μαΐου 2025</div>
+          <div class="promo-ttl">Εξοπλίστε ολόκληρη<br>την κουζίνα σας.</div>
+          <div class="promo-desc">Αγοράστε 3 συσκευές κουζίνας και κερδίστε επιπλέον 15% έκπτωση. Δωρεάν επαγγελματική εγκατάσταση πακέτου περιλαμβάνεται.</div>
+          <div class="promo-ctas">
+            <a href="#" class="btn-p">Δείτε Πακέτα Κουζίνας →</a>
+            <a href="#" class="btn-po">Ζητήστε Συμβουλή</a>
+          </div>
+        </div>
+        <div class="promo-vis">
+          <svg viewBox="0 0 220 180" width="220" height="180" style="opacity:.22">
+            <!-- Stylised kitchen scene -->
+            <rect x="0" y="100" width="220" height="80" fill="#0a1e36"/>
+            <rect x="0" y="98" width="220" height="4" fill="#1a3456"/>
+            <!-- Cabinet doors upper -->
+            <rect x="10" y="10" width="60" height="72" rx="3" fill="#0d1e30"/>
+            <rect x="80" y="10" width="60" height="72" rx="3" fill="#0d1e30"/>
+            <rect x="150" y="10" width="60" height="72" rx="3" fill="#0d1e30"/>
+            <!-- Handles -->
+            <rect x="34" y="44" width="12" height="2" rx="1" fill="#1e3454"/>
+            <rect x="104" y="44" width="12" height="2" rx="1" fill="#1e3454"/>
+            <rect x="174" y="44" width="12" height="2" rx="1" fill="#1e3454"/>
+            <!-- Under-cabinet counter -->
+            <rect x="10" y="104" width="60" height="52" rx="3" fill="#0a1828"/>
+            <rect x="80" y="104" width="60" height="52" rx="3" fill="#0a1828"/>
+            <rect x="150" y="104" width="60" height="52" rx="3" fill="#0a1828"/>
+            <!-- Hob -->
+            <rect x="82" y="100" width="56" height="8" rx="2" fill="#162840"/>
+            <circle cx="100" cy="104" r="5" fill="#0d2040"/>
+            <circle cx="120" cy="104" r="5" fill="#0d2040"/>
+            <!-- Oven window suggestion -->
+            <rect x="14" y="110" width="52" height="40" rx="2" fill="#060e18"/>
+            <rect x="16" y="112" width="48" height="36" rx="1" fill="#040a10"/>
+            <!-- Sink -->
+            <rect x="152" y="108" width="56" height="28" rx="3" fill="#0d1e30"/>
+            <rect x="156" y="112" width="48" height="20" rx="2" fill="#06100e"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIFESTYLE BANNER -->
+<section class="sec">
+  <div class="ct">
+    <div class="lfc">
+      <div class="lf-l">
+        <div class="lf-eye">Design &amp; Λειτουργία</div>
+        <h2 class="lf-ttl">Συσκευές που<br>ταιριάζουν στη ζωή σας.</h2>
+        <p class="lf-desc">Δεν πουλάμε απλώς συσκευές. Σας βοηθάμε να επιλέξετε αυτές που ταιριάζουν στο γούστο, τις ανάγκες και τον τρόπο ζωής σας.</p>
+        <div class="lf-feats">
+          <div class="lf-ft"><div class="lf-ft-ic">🎨</div><span class="lf-ft-l">Minimal Design</span></div>
+          <div class="lf-ft"><div class="lf-ft-ic">⚡</div><span class="lf-ft-l">Υψηλή Απόδοση</span></div>
+          <div class="lf-ft"><div class="lf-ft-ic">🌿</div><span class="lf-ft-l">Εξοικονόμηση Ενέργειας</span></div>
+          <div class="lf-ft"><div class="lf-ft-ic">📱</div><span class="lf-ft-l">Έξυπνες Λειτουργίες</span></div>
+        </div>
+        <button class="btn-w">Δείτε Περισσότερα →</button>
+      </div>
+      <div class="lf-r" aria-hidden="true">
+        <!-- Premium kitchen illustration -->
+        <svg viewBox="0 0 320 220" width="320" height="220" class="lf-r-visual" style="opacity:.18">
+          <rect x="0" y="0" width="320" height="220" fill="#0a1e38"/>
+          <!-- Countertop -->
+          <rect x="0" y="140" width="320" height="80" fill="#0d1e30"/>
+          <rect x="0" y="138" width="320" height="4" fill="#1a3050"/>
+          <!-- Cabinets upper -->
+          <rect x="20" y="20" width="80" height="90" rx="3" fill="#0d1a2a"/>
+          <rect x="120" y="20" width="80" height="90" rx="3" fill="#0d1a2a"/>
+          <rect x="220" y="20" width="80" height="90" rx="3" fill="#0d1a2a"/>
+          <!-- Cabinet handles -->
+          <rect x="52" y="58" width="16" height="3" rx="1.5" fill="#1e3050"/>
+          <rect x="152" y="58" width="16" height="3" rx="1.5" fill="#1e3050"/>
+          <rect x="252" y="58" width="16" height="3" rx="1.5" fill="#1e3050"/>
+          <!-- Oven built-in -->
+          <rect x="40" y="142" width="80" height="70" rx="3" fill="#0a1420"/>
+          <rect x="46" y="148" width="68" height="52" rx="2" fill="#060e18"/>
+          <rect x="40" y="198" width="80" height="8" rx="2" fill="#0d1a28"/>
+          <!-- Hob/range -->
+          <rect x="140" y="142" width="100" height="8" rx="2" fill="#1a2e48"/>
+          <circle cx="162" cy="146" r="8" fill="#0d1a2a"/>
+          <circle cx="162" cy="146" r="5" fill="#1e3050"/>
+          <circle cx="198" cy="146" r="8" fill="#0d1a2a"/>
+          <circle cx="198" cy="146" r="5" fill="#1e3050"/>
+          <circle cx="222" cy="146" r="8" fill="#0d1a2a"/>
+          <circle cx="222" cy="146" r="5" fill="#1e3050"/>
+          <!-- Sink -->
+          <rect x="250" y="148" width="50" height="30" rx="3" fill="#0d1a2a"/>
+          <rect x="255" y="153" width="40" height="20" rx="2" fill="#081018"/>
+          <circle cx="275" cy="152" r="3" fill="#1e3050"/>
+          <!-- Pendant lights -->
+          <circle cx="80" cy="112" r="8" fill="#1e3050"/>
+          <line x1="80" y1="104" x2="80" y2="20" stroke="#1e3050" stroke-width="1.5"/>
+          <circle cx="200" cy="112" r="8" fill="#1e3050"/>
+          <line x1="200" y1="104" x2="200" y2="20" stroke="#1e3050" stroke-width="1.5"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<div class="nl">
+  <div class="ct">
+    <div class="nl-grid">
+      <div class="nl-info">
+        <div class="nl-ico"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+        <div><div class="nl-t">Μείνετε Ενημερωμένοι</div><div class="nl-s">Προσφορές, νέα προϊόντα &amp; expert tips.</div></div>
+      </div>
+      <div class="nl-form">
+        <input class="nl-inp" type="email" placeholder="Εισάγετε το email σας..." autocomplete="email">
+        <button class="nl-btn">ΕΓΓΡΑΦΗ</button>
+      </div>
+      <div class="nl-ft"><div class="nl-fi"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div><div class="nl-f-t">100% Ασφαλείς Πληρωμές</div><div class="nl-f-s">Visa, MC, ApplePay, Klarna</div></div></div>
+      <div class="nl-ft"><div class="nl-fi"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg></div><div><div class="nl-f-t">Δόσεις έως 24 Μήνες</div><div class="nl-f-s">Άτοκα, χωρίς επιβάρυνση</div></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="ct">
+    <div class="ft-top">
+      <div>
+        <span class="ft-ln">KONIDAS STORE</span>
+        <div class="ft-le"><span class="ft-ls">✦</span><span class="ft-le-e">euronics</span></div>
+        <p class="ft-desc">40 χρόνια εμπειρίας στις οικιακές συσκευές. Αξιοπιστία, τεχνογνωσία και εξυπηρέτηση που δεν ξεχνιούνται. Επίσημος συνεργάτης Euronics.</p>
+        <div class="ft-soc"><div class="soc">f</div><div class="soc">in</div><div class="soc">yt</div><div class="soc">tt</div></div>
+      </div>
+      <div>
+        <div class="ft-ct">Κατηγορίες</div>
+        <ul class="ft-ul"><li><a href="#">Λευκές Συσκευές</a></li><li><a href="#">Κουζίνα</a></li><li><a href="#">Πλύση &amp; Στέγνωση</a></li><li><a href="#">Ψύξη</a></li><li><a href="#">Κλιματισμός</a></li><li><a href="#">Μικροσυσκευές</a></li><li><a href="#">TV &amp; Ήχος</a></li></ul>
+      </div>
+      <div>
+        <div class="ft-ct">Εξυπηρέτηση</div>
+        <ul class="ft-ul"><li><a href="#">Τρόποι Αποστολής</a></li><li><a href="#">Τρόποι Πληρωμής</a></li><li><a href="#">Επιστροφές &amp; Αλλαγές</a></li><li><a href="#">Εγγύηση Συσκευών</a></li><li><a href="#">After Sales Service</a></li><li><a href="#">Συχνές Ερωτήσεις</a></li></ul>
+      </div>
+      <div>
+        <div class="ft-ct">Η Εταιρεία</div>
+        <ul class="ft-ul"><li><a href="#">Η Ιστορία μας</a></li><li><a href="#">Καταστήματα</a></li><li><a href="#">Εργασία</a></li><li><a href="#">Blog</a></li><li><a href="#">Επικοινωνία</a></li></ul>
+      </div>
+      <div>
+        <div class="ft-ct">Επικοινωνία</div>
+        <div class="ft-cl"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Λ. Αθηνών 123, Αθήνα 104 42</span></div>
+        <div class="ft-cl"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.95a16 16 0 0 0 6.29 6.29l.98-.98a2 2 0 0 1 2.1-.45c.91.339 1.853.573 2.81.7a2 2 0 0 1 1.72 2.01z"/></svg><a href="tel:2101234567">210 1234567</a></div>
+        <div class="ft-cl"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:info@konidasstore.gr">info@konidasstore.gr</a></div>
+        <div class="ft-cl"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Δευ–Παρ: 09:00–21:00<br>Σάβ: 09:00–16:00</span></div>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <div class="ft-bi">
+        <div class="pays">
+          <span class="pay" style="background:#1a1f71;color:#fff">VISA</span>
+          <span class="pay" style="background:#eb001b;color:#fff">MC</span>
+          <span class="pay" style="background:#2e77bc;color:#fff">AMEX</span>
+          <span class="pay" style="background:#000;color:#fff">⌘ Pay</span>
+          <span class="pay" style="background:#4285f4;color:#fff">G Pay</span>
+          <span class="pay" style="background:#ffb3c7;color:#1a1a2e;font-style:italic">Klarna</span>
+        </div>
+        <div class="ft-cp">© 2025 Konidas Store Euronics. Όλα τα δικαιώματα διατηρούνται.</div>
+        <div class="ft-leg"><a href="#">Όροι Χρήσης</a><a href="#">Πολιτική Απορρήτου</a><a href="#">Cookies</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- MOBILE BOTTOM NAV -->
+<nav class="mnav" aria-label="Πλοήγηση κινητού">
+  <div class="mnav-in">
+    <div class="mni on" onclick="smn(this)"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 0-2 2H5a2 2 0 0 0-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg><span>Αρχική</span></div>
+    <div class="mni" onclick="smn(this)"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="9" height="9" rx="1"/><rect x="13" y="2" width="9" height="9" rx="1"/><rect x="2" y="13" width="9" height="9" rx="1"/><rect x="13" y="13" width="9" height="9" rx="1"/></svg><span>Κατηγορίες</span></div>
+    <div class="mni" onclick="openSrch()"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><span>Αναζήτηση</span></div>
+    <div class="mni" onclick="smn(this)"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg><span>Αγαπημένα</span></div>
+    <div class="mni" id="mCart" onclick="smn(this)"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span class="mni-bdg" id="mCartN">2</span><span>Καλάθι</span></div>
+  </div>
+</nav>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ── HERO ── */
+var hi=0,hn=3,hTimer;
+function hu(){document.getElementById('ht').style.transform='translateX(-'+(hi*100)+'%)';for(var i=0;i<hn;i++){var d=document.getElementById('hd'+i);if(d)d.className='h-dot'+(i===hi?' on':'');}}
+function hm(d){hi=(hi+d+hn)%hn;hu();hr();}
+function hg(i){hi=i;hu();hr();}
+function hr(){clearInterval(hTimer);hTimer=setInterval(function(){hm(1);},5800);}
+hr();
+/* touch swipe on hero */
+(function(){var el=document.querySelector('.hero'),sx=0,sy=0;
+  el.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;sy=e.touches[0].clientY;},{passive:true});
+  el.addEventListener('touchend',function(e){
+    var dx=e.changedTouches[0].clientX-sx,dy=e.changedTouches[0].clientY-sy;
+    if(Math.abs(dx)>Math.abs(dy)&&Math.abs(dx)>44)hm(dx<0?1:-1);
+  },{passive:true});
+})();
+
+/* ── SCROLL ── */
+var hdr=document.getElementById('hdr'),prg=document.getElementById('prg');
+window.addEventListener('scroll',function(){
+  var s=window.scrollY,h=document.body.scrollHeight-window.innerHeight;
+  hdr.classList.toggle('sc',s>20);
+  prg.style.width=(h>0?(s/h*100):0)+'%';
+},{passive:true});
+
+/* ── CATEGORY ── */
+function selCat(el){
+  document.querySelectorAll('.cat-i').forEach(function(c){c.classList.remove('on');});
+  el.classList.add('on');
+  el.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+}
+
+/* ── PRODUCT TABS ── */
+var tabIds=['deals','new','top','energy'];
+function switchTab(btn,id){
+  document.querySelectorAll('.ptab').forEach(function(t){t.classList.remove('on');});
+  btn.classList.add('on');
+  tabIds.forEach(function(tid){
+    var el=document.getElementById('tab-'+tid);
+    if(el)el.style.display=(tid===id?'':'none');
+  });
+}
+
+/* ── CART ── */
+var cart=2;
+function syncCart(){document.getElementById('hCartN').textContent=cart;document.getElementById('mCartN').textContent=cart;}
+
+/* ── ADD TO CART ── */
+function atc(btn){
+  if(btn.disabled)return;
+  var o=btn.innerHTML;
+  btn.innerHTML='✓ Προστέθηκε!';btn.classList.add('done');btn.disabled=true;
+  cart++;syncCart();
+  showToast('✓ Το προϊόν προστέθηκε στο καλάθι');
+  setTimeout(function(){btn.innerHTML=o;btn.classList.remove('done');btn.disabled=false;},2200);
+}
+
+/* ── WISHLIST ── */
+function twish(btn){
+  btn.classList.toggle('on');
+  showToast(btn.classList.contains('on')?'♥ Αποθηκεύτηκε στα Αγαπημένα':'Αφαιρέθηκε από τα Αγαπημένα');
+}
+
+/* ── TOAST ── */
+function showToast(msg){var t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(function(){t.classList.remove('show');},2500);}
+
+/* ── MOBILE SEARCH ── */
+function openSrch(){document.getElementById('msrch').classList.add('open');setTimeout(function(){document.querySelector('#msrch input').focus();},80);}
+function closeSrch(){document.getElementById('msrch').classList.remove('open');}
+document.getElementById('msrch').addEventListener('click',function(e){if(e.target===this)closeSrch();});
+
+/* ── PRODUCT TABS ── */
+function switchTab(btn,id){
+  /* tabs */
+  document.querySelectorAll('.ptab').forEach(function(t){t.classList.remove('on');});
+  btn.classList.add('on');
+  /* panels */
+  ['deals','new','top','energy'].forEach(function(k){
+    var el=document.getElementById('tab-'+k);
+    if(el)el.style.display=(k===id)?'grid':'none';
+  });
+}
+
+/* ── MOBILE NAV ── */
+function smn(el){document.querySelectorAll('.mni').forEach(function(i){i.classList.remove('on');});el.classList.add('on');}
+</script>
+</body>
+</html>
