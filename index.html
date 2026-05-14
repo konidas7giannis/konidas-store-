@@ -456,6 +456,27 @@ svg{display:block}
 .toast{position:fixed;bottom:72px;left:50%;transform:translateX(-50%) translateY(64px);background:var(--g700);color:#fff;font-size:13px;font-weight:600;padding:10px 20px;border-radius:8px;z-index:999;opacity:0;transition:opacity .2s,transform .2s;white-space:nowrap;pointer-events:none;font-family:var(--fb);box-shadow:var(--s3)}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 @media(max-width:768px){.toast{bottom:78px;font-size:12.5px}}
+/* ── MEGA MENU ── */
+.nb{position:relative}
+.mega{position:absolute;top:42px;left:0;right:0;background:#fff;border-top:2.5px solid var(--gold);box-shadow:0 12px 40px rgba(4,30,66,.15);z-index:700;display:none}
+.mega.open{display:block}
+.mega-in{max-width:1380px;margin:0 auto;padding:28px 20px 32px;display:grid;grid-template-columns:repeat(8,1fr);gap:0}
+.mega-col{padding:0 14px;border-right:1px solid var(--g100)}
+.mega-col:first-child{padding-left:0}
+.mega-col:last-child{border-right:none;padding-right:0}
+.mega-col-title{font-family:var(--fh);font-size:10.5px;font-weight:800;color:var(--navy);text-transform:uppercase;letter-spacing:.8px;margin-bottom:10px;padding-bottom:8px;border-bottom:2px solid var(--gold);display:flex;align-items:center;gap:5px;white-space:nowrap}
+.mega-col-title span{font-size:14px}
+.mega-col ul{list-style:none;display:flex;flex-direction:column;gap:2px}
+.mega-col ul li a{font-size:12px;color:var(--g700);transition:var(--t);display:block;padding:4px 0 4px 10px;font-weight:500;line-height:1.4;position:relative;border-radius:4px}
+.mega-col ul li a::before{content:'›';position:absolute;left:2px;color:var(--g300);transition:var(--t)}
+.mega-col ul li a:hover{color:var(--navy);background:var(--g50);padding-left:14px}
+.mega-col ul li a:hover::before{color:var(--gold)}
+.mega-close{position:absolute;top:10px;right:16px;font-size:18px;color:var(--g500);cursor:pointer;width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:var(--t);line-height:1}
+.mega-close:hover{background:var(--g100);color:var(--navy)}
+.mega-overlay{position:fixed;inset:0;background:rgba(4,18,42,.4);z-index:699;display:none}
+.mega-overlay.open{display:block}
+@media(max-width:900px){.mega-in{grid-template-columns:repeat(4,1fr);gap:16px}}
+@media(max-width:768px){.mega,.mega-overlay{display:none!important}}
 </style>
 </head>
 <body>
@@ -520,20 +541,118 @@ svg{display:block}
 <nav class="nb" aria-label="Κύριο μενού">
   <div class="ct">
     <div class="nb-in">
-      <button class="nb-cat"><svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>ΟΛΕΣ ΟΙ ΚΑΤΗΓΟΡΙΕΣ</button>
+      <button class="nb-cat" id="megaBtn" onclick="toggleMega()"><svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>ΟΛΕΣ ΟΙ ΚΑΤΗΓΟΡΙΕΣ</button>
       <div class="nb-links">
-        <a class="nb-a" href="#">Λευκές Συσκευές</a>
-        <a class="nb-a" href="#">Κουζίνα</a>
-        <a class="nb-a" href="#">Πλύση &amp; Στέγνωση</a>
-        <a class="nb-a" href="#">Ψύξη</a>
-        <a class="nb-a" href="#">Κλιματισμός</a>
-        <a class="nb-a" href="#">Μικροσυσκευές</a>
-        <a class="nb-a" href="#">TV &amp; Ήχος</a>
-        <a class="nb-a sale" href="#">🔥 Προσφορές</a>
+        <a class="nb-a" href="#cat-psyxi">Ψύξη</a>
+        <a class="nb-a" href="#cat-plisi">Πλύση &amp; Στέγνωση</a>
+        <a class="nb-a" href="#cat-kouzina">Κουζίνα</a>
+        <a class="nb-a" href="#cat-entoichismeno">Εντοιχισμένες</a>
+        <a class="nb-a" href="#cat-klimatismos">Κλιματισμός</a>
+        <a class="nb-a" href="#cat-tv">Εικόνα &amp; Ήχος</a>
+        <a class="nb-a" href="#cat-mikro">Μικροσυσκευές</a>
+        <a class="nb-a sale" href="#prosfores">🔥 Προσφορές</a>
       </div>
     </div>
   </div>
 </nav>
+
+<!-- MEGA MENU OVERLAY -->
+<div class="mega-overlay" id="megaOverlay" onclick="closeMega()"></div>
+
+<!-- MEGA MENU -->
+<div class="mega" id="megaMenu">
+  <div class="mega-in">
+    <div class="mega-col">
+      <div class="mega-col-title"><span>🧊</span>Ψύξη</div>
+      <ul>
+        <li><a href="#cat-psyxi">Ψυγειοκαταψύκτες No Frost</a></li>
+        <li><a href="#cat-psyxi">Total No Frost</a></li>
+        <li><a href="#cat-psyxi">Side by Side</a></li>
+        <li><a href="#cat-psyxi">Μονόπορτα Ψυγεία</a></li>
+        <li><a href="#cat-psyxi">Καταψύκτες Vertical</a></li>
+        <li><a href="#cat-psyxi">Καταψύκτες Chest</a></li>
+        <li><a href="#cat-psyxi">Οινοθήκες</a></li>
+        <li><a href="#cat-psyxi">Εντοιχισμένα Ψυγεία</a></li>
+      </ul>
+    </div>
+    <div class="mega-col">
+      <div class="mega-col-title"><span>👕</span>Πλύση</div>
+      <ul>
+        <li><a href="#cat-plisi">Πλυντήρια Ρούχων</a></li>
+        <li><a href="#cat-plisi">Στεγνωτήρια</a></li>
+        <li><a href="#cat-plisi">Πλυντήρια-Στεγνωτήρια</a></li>
+        <li><a href="#cat-plisi">Πλυντήρια Πιάτων</a></li>
+        <li><a href="#cat-plisi">Εντοιχ. Πλυντήρια Πιάτων</a></li>
+      </ul>
+    </div>
+    <div class="mega-col">
+      <div class="mega-col-title"><span>🍳</span>Κουζίνα</div>
+      <ul>
+        <li><a href="#cat-kouzina">Κουζίνες Ελεύθερες</a></li>
+        <li><a href="#cat-kouzina">Φούρνοι Εντοιχισμένοι</a></li>
+        <li><a href="#cat-kouzina">Εστίες Αερίου</a></li>
+        <li><a href="#cat-kouzina">Εστίες Κεραμικές</a></li>
+        <li><a href="#cat-kouzina">Εστίες Επαγωγής</a></li>
+        <li><a href="#cat-kouzina">Απορροφητήρες</a></li>
+        <li><a href="#cat-kouzina">Φούρνοι Μικροκυμάτων</a></li>
+        <li><a href="#cat-kouzina">Φουρνάκια</a></li>
+      </ul>
+    </div>
+    <div class="mega-col">
+      <div class="mega-col-title"><span>🏗️</span>Εντοιχισμένες</div>
+      <ul>
+        <li><a href="#cat-entoichismeno">Εντοιχ. Ψυγεία</a></li>
+        <li><a href="#cat-entoichismeno">Εντοιχ. Φούρνοι</a></li>
+        <li><a href="#cat-entoichismeno">Εντοιχ. Πλυντήρια Πιάτων</a></li>
+        <li><a href="#cat-entoichismeno">Εντοιχ. Φ. Μικροκυμάτων</a></li>
+      </ul>
+    </div>
+    <div class="mega-col">
+      <div class="mega-col-title"><span>❄️</span>Κλιματισμός</div>
+      <ul>
+        <li><a href="#cat-klimatismos">Κλιματιστικά Inverter</a></li>
+        <li><a href="#cat-klimatismos">Κλιματιστικά Multi</a></li>
+        <li><a href="#cat-klimatismos">Επαγγελματικά</a></li>
+        <li><a href="#cat-klimatismos">Αερόθερμα</a></li>
+        <li><a href="#cat-klimatismos">Ανεμιστήρες</a></li>
+      </ul>
+    </div>
+    <div class="mega-col">
+      <div class="mega-col-title"><span>📺</span>Εικόνα &amp; Ήχος</div>
+      <ul>
+        <li><a href="#cat-tv">Τηλεοράσεις LED</a></li>
+        <li><a href="#cat-tv">Τηλεοράσεις OLED</a></li>
+        <li><a href="#cat-tv">Τηλεοράσεις QLED</a></li>
+        <li><a href="#cat-tv">Soundbars</a></li>
+        <li><a href="#cat-tv">Home Cinema</a></li>
+        <li><a href="#cat-tv">Ηχεία Bluetooth</a></li>
+      </ul>
+    </div>
+    <div class="mega-col">
+      <div class="mega-col-title"><span>☕</span>Μικροσυσκευές</div>
+      <ul>
+        <li><a href="#cat-mikro">Καφετιέρες &amp; Espresso</a></li>
+        <li><a href="#cat-mikro">Ηλεκτρικές Σκούπες</a></li>
+        <li><a href="#cat-mikro">Ρομπότ Καθαρισμού</a></li>
+        <li><a href="#cat-mikro">Σίδερα &amp; Ατμοκαθαριστές</a></li>
+        <li><a href="#cat-mikro">Blenders &amp; Μίξερ</a></li>
+        <li><a href="#cat-mikro">Τοστιέρες &amp; Γκριλ</a></li>
+        <li><a href="#cat-mikro">Ρομπότ Μαγειρικής</a></li>
+        <li><a href="#cat-mikro">Αποχυμωτές</a></li>
+      </ul>
+    </div>
+    <div class="mega-col">
+      <div class="mega-col-title"><span>💆</span>Περιποίηση</div>
+      <ul>
+        <li><a href="#cat-peripoiisi">Σεσουάρ &amp; Stylers</a></li>
+        <li><a href="#cat-peripoiisi">Ξυριστικές Μηχανές</a></li>
+        <li><a href="#cat-peripoiisi">Αποτριχωτικές</a></li>
+        <li><a href="#cat-peripoiisi">Οδοντόβουρτσες</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mega-close" onclick="closeMega()">✕</div>
+</div>
 
 <!-- ═══════════════════════════════════ HERO ═══════════════════════════════════ -->
 <section class="hero" aria-label="Κύριο banner">
@@ -1913,7 +2032,7 @@ svg{display:block}
       </div>
       <div>
         <div class="ft-ct">Κατηγορίες</div>
-        <ul class="ft-ul"><li><a href="#">Λευκές Συσκευές</a></li><li><a href="#">Κουζίνα</a></li><li><a href="#">Πλύση &amp; Στέγνωση</a></li><li><a href="#">Ψύξη</a></li><li><a href="#">Κλιματισμός</a></li><li><a href="#">Μικροσυσκευές</a></li><li><a href="#">TV &amp; Ήχος</a></li></ul>
+        <ul class="ft-ul"><li><a href="#cat-psyxi">Ψύξη</a></li><li><a href="#cat-plisi">Πλύση &amp; Στέγνωση</a></li><li><a href="#cat-kouzina">Κουζίνα</a></li><li><a href="#cat-entoichismeno">Εντοιχισμένες</a></li><li><a href="#cat-klimatismos">Κλιματισμός</a></li><li><a href="#cat-tv">Εικόνα &amp; Ήχος</a></li><li><a href="#cat-mikro">Μικροσυσκευές</a></li><li><a href="#cat-peripoiisi">Περιποίηση</a></li></ul>
       </div>
       <div>
         <div class="ft-ct">Εξυπηρέτηση</div>
@@ -1925,9 +2044,9 @@ svg{display:block}
       </div>
       <div>
         <div class="ft-ct">Επικοινωνία</div>
-        <div class="ft-cl"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Λ. Αθηνών 123, Αθήνα 104 42</span></div>
-        <div class="ft-cl"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.95a16 16 0 0 0 6.29 6.29l.98-.98a2 2 0 0 1 2.1-.45c.91.339 1.853.573 2.81.7a2 2 0 0 1 1.72 2.01z"/></svg><a href="tel:2101234567">210 1234567</a></div>
-        <div class="ft-cl"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:info@konidasstore.gr">info@konidasstore.gr</a></div>
+        <div class="ft-cl"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Τζαβέλλα 73<br>Ναύπακτος 303 00</span></div>
+        <div class="ft-cl"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.95a16 16 0 0 0 6.29 6.29l.98-.98a2 2 0 0 1 2.1-.45c.91.339 1.853.573 2.81.7a2 2 0 0 1 1.72 2.01z"/></svg><span><a href="tel:2634027227">2634 027227</a><br><a href="tel:6976783900">6976 783900</a></span></div>
+        <div class="ft-cl"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:giorgos_kon@yahoo.com">giorgos_kon@yahoo.com</a></div>
         <div class="ft-cl"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Δευ–Παρ: 09:00–21:00<br>Σάβ: 09:00–16:00</span></div>
       </div>
     </div>
@@ -1962,6 +2081,20 @@ svg{display:block}
 <div class="toast" id="toast"></div>
 
 <script>
+/* ── MEGA MENU ── */
+function toggleMega(){
+  var m=document.getElementById('megaMenu');
+  var o=document.getElementById('megaOverlay');
+  var open=m.classList.toggle('open');
+  o.classList.toggle('open',open);
+  document.body.style.overflow=open?'hidden':'';
+}
+function closeMega(){
+  document.getElementById('megaMenu').classList.remove('open');
+  document.getElementById('megaOverlay').classList.remove('open');
+  document.body.style.overflow='';
+}
+
 /* ── HERO ── */
 var hi=0,hn=3,hTimer;
 function hu(){document.getElementById('ht').style.transform='translateX(-'+(hi*100)+'%)';for(var i=0;i<hn;i++){var d=document.getElementById('hd'+i);if(d)d.className='h-dot'+(i===hi?' on':'');}}
@@ -1984,6 +2117,7 @@ window.addEventListener('scroll',function(){
   var s=window.scrollY,h=document.body.scrollHeight-window.innerHeight;
   hdr.classList.toggle('sc',s>20);
   prg.style.width=(h>0?(s/h*100):0)+'%';
+  closeMega();
 },{passive:true});
 
 /* ── CATEGORY ── */
