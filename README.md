@@ -1,1 +1,1 @@
-# konidas-store-
+# konidas-store
