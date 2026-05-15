@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#041E42">
+<title>Ψυγεία & Καταψύκτες — Konidas Store Euronics</title>
+<meta name="description" content="248 μοντέλα ψυγείων από Bosch, Siemens, Miele, LG, Samsung. Δωρεάν μεταφορά & εγκατάσταση. Άτοκες δόσεις.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#041E42;--navy2:#06285a;--navy3:#0a2d5e;
+  --gold:#f5a623;--gold2:#d48c10;
+  --red:#cc2222;--green:#1a7a30;
+  --white:#fff;
+  --g50:#f7f8fb;--g100:#eef0f5;--g200:#e0e4ec;--g300:#c8ced9;--g500:#7b8599;--g700:#3d4459;--g900:#0f1423;
+  --fh:'Montserrat',sans-serif;--fb:'Inter',sans-serif;
+  --r:6px;--rl:10px;--rx:16px;
+  --s1:0 1px 3px rgba(4,30,66,.07),0 1px 6px rgba(4,30,66,.05);
+  --s2:0 3px 14px rgba(4,30,66,.1),0 1px 4px rgba(4,30,66,.06);
+  --s3:0 8px 32px rgba(4,30,66,.14);
+  --t:.17s ease;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--fb);color:var(--g900);background:var(--g50);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;font-family:var(--fb);border:none;background:none}
+svg{display:block}
+
+.ct{max-width:1380px;margin:0 auto;padding:0 20px}
+@media(max-width:580px){.ct{padding:0 14px}}
+
+/* ── ANNOUNCEMENT ── */
+.ann{background:var(--navy);color:#fff;font-size:11.5px;font-weight:500}
+.ann-in{height:34px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.ann-wrap{flex:1;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.ann-tick{display:flex;white-space:nowrap;animation:tick 28s linear infinite}
+@keyframes tick{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.a-it{display:inline-flex;align-items:center;gap:6px;padding:0 22px;border-right:1px solid rgba(255,255,255,.1)}
+.a-it svg{width:12px;height:12px;fill:var(--gold);flex-shrink:0}
+.ann-r{display:flex;align-items:center;gap:14px;flex-shrink:0}
+.ann-ph{display:flex;align-items:center;gap:5px;font-weight:700;color:var(--gold);font-size:12px;white-space:nowrap}
+
+/* ── HEADER ── */
+.hdr{background:#fff;border-bottom:1px solid var(--g200);position:sticky;top:0;z-index:800;transition:box-shadow .2s}
+.hdr.sc{box-shadow:var(--s2)}
+.hdr-in{height:62px;display:flex;align-items:center;gap:14px}
+.logo{display:flex;flex-direction:column;gap:2px;flex-shrink:0;line-height:1;text-decoration:none}
+.logo-top{font-family:var(--fh);font-size:16px;font-weight:900;color:var(--navy);letter-spacing:-.2px}
+.logo-bot{display:flex;align-items:center;gap:3px}
+.logo-star{color:var(--gold);font-size:10px}
+.logo-eur{font-size:10.5px;font-weight:700;color:#0057b8;letter-spacing:.9px}
+.srch{flex:1;max-width:500px;position:relative}
+.srch input{width:100%;height:40px;border:1.5px solid var(--g200);border-radius:20px;padding:0 46px 0 17px;font-size:13.5px;font-family:var(--fb);color:var(--g900);background:var(--g50);outline:none;transition:var(--t)}
+.srch input:focus{border-color:var(--navy);background:#fff}
+.srch-btn{position:absolute;right:0;top:0;height:40px;width:42px;background:var(--navy);border-radius:0 20px 20px 0;display:flex;align-items:center;justify-content:center}
+.srch-btn svg{width:16px;height:16px;fill:none;stroke:#fff;stroke-width:2.2;stroke-linecap:round}
+.hacts{display:flex;align-items:center;gap:1px;margin-left:auto;flex-shrink:0}
+.hb{display:flex;flex-direction:column;align-items:center;gap:2px;padding:5px 9px;border-radius:var(--r);color:var(--g500);font-size:9.5px;font-weight:600;min-width:42px;min-height:42px;justify-content:center;transition:var(--t);position:relative}
+.hb:hover{background:var(--g100);color:var(--navy)}
+.hb svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.hb-bdg{position:absolute;top:4px;right:4px;background:var(--gold);color:var(--navy);font-size:9px;font-weight:800;min-width:15px;height:15px;border-radius:8px;display:flex;align-items:center;justify-content:center;padding:0 3px;font-family:var(--fh)}
+@media(max-width:660px){.srch{display:none}}
+
+/* ── NAVBAR ── */
+.nb{background:var(--navy);position:relative}
+.nb-in{display:flex;align-items:stretch;height:42px}
+.nb-cat{display:flex;align-items:center;gap:8px;padding:0 16px;background:rgba(255,255,255,.08);border-right:1px solid rgba(255,255,255,.1);font-size:12.5px;font-weight:700;color:#fff;cursor:pointer;white-space:nowrap;flex-shrink:0;font-family:var(--fh);transition:var(--t)}
+.nb-cat:hover{background:rgba(255,255,255,.14)}
+.nb-cat svg{width:14px;height:14px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round}
+.nb-links{display:flex;align-items:stretch;overflow-x:auto;scrollbar-width:none;flex:1}
+.nb-links::-webkit-scrollbar{display:none}
+.nb-a{display:flex;align-items:center;padding:0 13px;font-size:12.5px;font-weight:600;color:rgba(255,255,255,.8);white-space:nowrap;border-right:1px solid rgba(255,255,255,.06);transition:var(--t)}
+.nb-a:hover,.nb-a.active{background:rgba(255,255,255,.1);color:#fff}
+.nb-a.sale{color:var(--gold);font-weight:700}
+@media(max-width:768px){.nb{display:none}}
+
+/* ── BREADCRUMB ── */
+.breadcrumb{background:#fff;border-bottom:1px solid var(--g200);padding:10px 0}
+.bc-in{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--g500)}
+.bc-in a{color:var(--g500);transition:color var(--t)}
+.bc-in a:hover{color:var(--navy)}
+.bc-sep{color:var(--g300);font-size:10px}
+.bc-current{color:var(--navy);font-weight:600}
+
+/* ── CATEGORY HERO ── */
+.cat-hero{background:linear-gradient(105deg,var(--navy) 0%,var(--navy2) 60%,#0c3060 100%);padding:28px 0;border-bottom:2px solid var(--gold)}
+.cat-hero-in{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.cat-hero-left{}
+.cat-hero-eye{font-size:10px;font-weight:700;color:var(--gold);letter-spacing:2px;text-transform:uppercase;font-family:var(--fh);margin-bottom:6px}
+.cat-hero-title{font-family:var(--fh);font-size:28px;font-weight:900;color:#fff;letter-spacing:-.4px;margin-bottom:4px}
+@media(max-width:580px){.cat-hero-title{font-size:22px}}
+.cat-hero-sub{font-size:13px;color:rgba(255,255,255,.55);font-weight:400}
+.cat-hero-right{display:flex;gap:28px;flex-shrink:0}
+@media(max-width:580px){.cat-hero-right{display:none}}
+.cat-stat{text-align:center}
+.cat-stat-v{font-family:var(--fh);font-size:22px;font-weight:900;color:var(--gold);line-height:1}
+.cat-stat-k{font-size:10px;color:rgba(255,255,255,.5);font-weight:600;letter-spacing:.5px;text-transform:uppercase;margin-top:3px}
+
+/* ── SUBCATEGORY PILLS ── */
+.subcat-bar{background:#fff;border-bottom:1px solid var(--g200);padding:0}
+.subcat-scroll{display:flex;overflow-x:auto;scrollbar-width:none;padding:12px 20px;gap:8px;-webkit-overflow-scrolling:touch}
+.subcat-scroll::-webkit-scrollbar{display:none}
+.subcat-pill{display:flex;align-items:center;gap:6px;padding:7px 14px;border-radius:20px;font-size:12.5px;font-weight:600;font-family:var(--fh);white-space:nowrap;cursor:pointer;transition:var(--t);border:1.5px solid var(--g200);background:#fff;color:var(--g700);flex-shrink:0;min-height:36px}
+.subcat-pill:hover{border-color:var(--navy);color:var(--navy)}
+.subcat-pill.on{background:var(--navy);border-color:var(--navy);color:#fff}
+
+/* ── MAIN LAYOUT ── */
+.cat-layout{display:grid;grid-template-columns:260px 1fr;gap:24px;padding:24px 0 48px;align-items:start}
+@media(max-width:900px){.cat-layout{grid-template-columns:1fr}}
+
+/* ── SIDEBAR FILTERS ── */
+.sidebar{background:#fff;border-radius:var(--rl);border:1px solid var(--g200);overflow:hidden;position:sticky;top:74px}
+@media(max-width:900px){.sidebar{display:none}}
+.sf-head{padding:16px 18px;border-bottom:1px solid var(--g200);display:flex;align-items:center;justify-content:space-between}
+.sf-title{font-family:var(--fh);font-size:13px;font-weight:800;color:var(--navy)}
+.sf-clear{font-size:11.5px;color:var(--gold2);font-weight:600;cursor:pointer;transition:var(--t)}
+.sf-clear:hover{color:var(--red)}
+.sf-section{border-bottom:1px solid var(--g100)}
+.sf-section-head{padding:14px 18px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;transition:var(--t)}
+.sf-section-head:hover{background:var(--g50)}
+.sf-section-label{font-family:var(--fh);font-size:12px;font-weight:700;color:var(--g900)}
+.sf-arrow{font-size:10px;color:var(--g500);transition:transform var(--t)}
+.sf-arrow.open{transform:rotate(180deg)}
+.sf-body{padding:0 18px 14px;display:none}
+.sf-body.open{display:block}
+/* Checkboxes */
+.sf-check{display:flex;align-items:center;gap:9px;padding:5px 0;cursor:pointer;transition:var(--t)}
+.sf-check:hover .sf-check-label{color:var(--navy)}
+.sf-check input[type=checkbox]{width:16px;height:16px;accent-color:var(--navy);cursor:pointer;flex-shrink:0;border-radius:3px}
+.sf-check-label{font-size:13px;color:var(--g700);transition:color var(--t);flex:1}
+.sf-check-count{font-size:11px;color:var(--g300);font-weight:500}
+/* Price slider */
+.price-range{padding:8px 0 4px}
+.price-inputs{display:flex;gap:8px;align-items:center;margin-bottom:10px}
+.price-inp{flex:1;height:36px;border:1.5px solid var(--g200);border-radius:var(--r);padding:0 10px;font-size:13px;font-family:var(--fb);color:var(--g900);outline:none;transition:var(--t);text-align:center}
+.price-inp:focus{border-color:var(--navy)}
+.price-sep{font-size:12px;color:var(--g300);flex-shrink:0}
+.price-slider{width:100%;accent-color:var(--navy);cursor:pointer}
+.price-labels{display:flex;justify-content:space-between;font-size:11px;color:var(--g500);margin-top:4px}
+/* Energy classes */
+.energy-row{display:flex;align-items:center;gap:9px;padding:4px 0;cursor:pointer}
+.energy-badge{font-family:var(--fh);font-size:10px;font-weight:800;padding:2px 8px;border-radius:3px;min-width:36px;text-align:center}
+.e-aplus3{background:#006400;color:#fff}
+.e-aplus2{background:#2e8b00;color:#fff}
+.e-aplus1{background:#70ab00;color:#fff}
+.e-a{background:#c8d400;color:#333}
+.e-b{background:#f5a623;color:#333}
+.apply-btn{width:100%;background:var(--navy);color:#fff;border-radius:var(--r);padding:11px 0;font-size:13px;font-weight:700;font-family:var(--fh);margin-top:14px;transition:background var(--t)}
+.apply-btn:hover{background:var(--navy2)}
+
+/* ── PRODUCTS AREA ── */
+.products-area{}
+/* Sort bar */
+.sort-bar{background:#fff;border-radius:var(--rl);border:1px solid var(--g200);padding:12px 18px;display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;gap:12px;flex-wrap:wrap}
+.sort-left{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.sort-count{font-size:13px;color:var(--g500);font-weight:500}
+.sort-count strong{color:var(--navy);font-weight:700}
+.sort-right{display:flex;align-items:center;gap:10px}
+.sort-label{font-size:12.5px;color:var(--g500);font-weight:500}
+.sort-select{height:36px;border:1.5px solid var(--g200);border-radius:var(--r);padding:0 10px;font-size:13px;font-family:var(--fb);color:var(--g900);outline:none;cursor:pointer;transition:var(--t);background:#fff}
+.sort-select:focus{border-color:var(--navy)}
+.view-btns{display:flex;gap:4px}
+.view-btn{width:34px;height:34px;border-radius:var(--r);border:1.5px solid var(--g200);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--t);color:var(--g500)}
+.view-btn:hover,.view-btn.on{border-color:var(--navy);background:var(--navy);color:#fff}
+.view-btn svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.8}
+
+/* Active filters */
+.active-filters{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.af-label{font-size:12px;color:var(--g500);font-weight:600}
+.af-tag{display:inline-flex;align-items:center;gap:5px;background:var(--navy);color:#fff;font-size:11.5px;font-weight:600;padding:4px 10px;border-radius:20px;font-family:var(--fh)}
+.af-tag-x{cursor:pointer;opacity:.7;font-size:14px;line-height:1;transition:opacity var(--t)}
+.af-tag-x:hover{opacity:1}
+
+/* Product grid */
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:1100px){.pgrid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:700px){.pgrid{grid-template-columns:repeat(2,1fr);gap:10px}}
+.pgrid.list-view{grid-template-columns:1fr}
+
+/* Product card */
+.pc{background:#fff;border:1px solid var(--g200);border-radius:var(--rl);overflow:hidden;transition:border-color var(--t),box-shadow var(--t),transform var(--t);position:relative;display:flex;flex-direction:column;cursor:pointer}
+.pc:hover{border-color:var(--g300);box-shadow:var(--s2);transform:translateY(-3px)}
+.pc-img{position:relative;background:var(--g50);padding-top:80%;overflow:hidden;flex-shrink:0}
+.pc-img-in{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:clamp(60px,8vw,85px);transition:transform .3s}
+.pc:hover .pc-img-in{transform:scale(1.04)}
+.pc-tag{position:absolute;top:9px;left:9px;z-index:2;background:var(--red);color:#fff;font-size:10px;font-weight:800;padding:3px 8px;border-radius:4px;font-family:var(--fh)}
+.pc-tag.new{background:var(--green)}
+.pc-tag.promo{background:var(--navy)}
+.pc-energy{position:absolute;bottom:9px;left:9px;z-index:2;font-family:var(--fh);font-size:10px;font-weight:800;padding:2px 8px;border-radius:3px}
+.e-aplus3-bg{background:#006400;color:#fff}
+.e-aplus2-bg{background:#2e8b00;color:#fff}
+.pc-wsh{position:absolute;top:8px;right:8px;z-index:2;width:32px;height:32px;border-radius:50%;background:#fff;border:1px solid var(--g200);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--t)}
+.pc-wsh:hover{border-color:#cc2222;background:#fff0f0}
+.pc-wsh svg{width:14px;height:14px;stroke:var(--g300);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:var(--t)}
+.pc-wsh.on svg{stroke:#cc2222;fill:#cc2222}
+.pc-body{padding:13px 13px 15px;display:flex;flex-direction:column;flex:1}
+.pc-brand{font-size:10px;font-weight:700;color:var(--g500);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:3px;font-family:var(--fh)}
+.pc-name{font-size:13px;font-weight:600;color:var(--g900);line-height:1.38;margin-bottom:7px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;flex:1}
+.pc-st{display:flex;align-items:center;gap:4px;margin-bottom:8px}
+.stars{color:var(--gold);font-size:12px;letter-spacing:.2px}
+.stars-n{font-size:10.5px;color:var(--g500)}
+.pc-pr{display:flex;align-items:baseline;gap:7px;margin-bottom:3px;flex-wrap:wrap}
+.pc-p{font-family:var(--fh);font-size:20px;font-weight:900;color:var(--navy);line-height:1}
+.pc-po{font-size:12.5px;color:var(--g300);text-decoration:line-through}
+.pc-save{font-size:10px;font-weight:700;color:var(--green);background:#f0fdf4;padding:2px 6px;border-radius:3px}
+.pc-inst{font-size:11px;color:var(--g500);margin-bottom:11px;font-weight:500}
+.pc-inst strong{color:var(--navy2);font-weight:700}
+.pc-atc{width:100%;background:var(--navy);color:#fff;border-radius:var(--r);padding:10px 0;font-size:12.5px;font-weight:700;font-family:var(--fh);transition:background var(--t),color var(--t);min-height:42px;display:flex;align-items:center;justify-content:center;gap:6px;margin-top:auto}
+.pc-atc:hover{background:var(--gold);color:var(--navy)}
+.pc-atc:active{transform:scale(.98)}
+.pc-atc.done{background:var(--green)!important;color:#fff!important}
+/* List view card */
+.pgrid.list-view .pc{flex-direction:row;max-height:180px}
+.pgrid.list-view .pc-img{padding-top:0;width:180px;flex-shrink:0}
+@media(max-width:600px){.pgrid.list-view .pc{flex-direction:column;max-height:none}.pgrid.list-view .pc-img{width:100%;padding-top:75%}}
+.pgrid.list-view .pc-body{padding:14px 16px}
+.pgrid.list-view .pc-name{-webkit-line-clamp:1}
+
+/* Pagination */
+.pagination{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:32px;flex-wrap:wrap}
+.pg-btn{width:38px;height:38px;border-radius:var(--r);border:1.5px solid var(--g200);background:#fff;display:flex;align-items:center;justify-content:center;font-size:13.5px;font-weight:600;color:var(--g700);cursor:pointer;transition:var(--t);font-family:var(--fh)}
+.pg-btn:hover{border-color:var(--navy);color:var(--navy)}
+.pg-btn.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.pg-btn.arr{font-size:18px;color:var(--g500)}
+.pg-btn.arr:hover{color:var(--navy)}
+.pg-dots{color:var(--g300);font-size:14px;padding:0 4px}
+
+/* ── MOBILE FILTER BUTTON ── */
+.mob-filter-btn{display:none;position:fixed;bottom:72px;left:50%;transform:translateX(-50%);background:var(--navy);color:#fff;border-radius:24px;padding:12px 28px;font-size:13.5px;font-weight:700;font-family:var(--fh);box-shadow:var(--s3);z-index:700;gap:8px;align-items:center;white-space:nowrap;min-height:46px}
+@media(max-width:900px){.mob-filter-btn{display:flex}}
+.mob-filter-btn svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round}
+
+/* Mobile filter drawer */
+.filter-drawer{position:fixed;inset:0;z-index:900;display:none}
+.filter-drawer.open{display:block}
+.fd-overlay{position:absolute;inset:0;background:rgba(4,18,42,.5)}
+.fd-panel{position:absolute;bottom:0;left:0;right:0;background:#fff;border-radius:20px 20px 0 0;max-height:85vh;overflow-y:auto;padding-bottom:env(safe-area-inset-bottom)}
+.fd-head{padding:16px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--g200);position:sticky;top:0;background:#fff;z-index:2}
+.fd-title{font-family:var(--fh);font-size:15px;font-weight:800;color:var(--navy)}
+.fd-close{width:32px;height:32px;border-radius:50%;background:var(--g100);display:flex;align-items:center;justify-content:center;font-size:18px;cursor:pointer;color:var(--g700)}
+.fd-body{padding:16px 20px}
+.fd-apply{width:calc(100% - 40px);margin:0 20px 20px;background:var(--navy);color:#fff;border-radius:var(--r);padding:14px 0;font-size:14px;font-weight:700;font-family:var(--fh)}
+
+/* ── BOTTOM NAV ── */
+.mnav{display:none;position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--g200);z-index:800;padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -2px 14px rgba(4,30,66,.09)}
+.mnav-in{display:grid;grid-template-columns:repeat(5,1fr);height:58px}
+.mni{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.mni svg{width:21px;height:21px;stroke:var(--g300);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:stroke var(--t)}
+.mni span{font-size:9px;font-weight:600;color:var(--g300);font-family:var(--fh);transition:color var(--t)}
+.mni.on svg{stroke:var(--navy)}
+.mni.on span{color:var(--navy)}
+.mni-bdg{position:absolute;top:6px;right:calc(50% - 18px);background:var(--gold);color:var(--navy);font-size:8.5px;font-weight:800;min-width:15px;height:15px;border-radius:8px;display:flex;align-items:center;justify-content:center;padding:0 3px}
+@media(max-width:768px){.mnav{display:block};body{padding-bottom:calc(60px + env(safe-area-inset-bottom))}}
+
+/* Toast */
+.toast{position:fixed;bottom:72px;left:50%;transform:translateX(-50%) translateY(64px);background:var(--g700);color:#fff;font-size:13px;font-weight:600;padding:10px 20px;border-radius:8px;z-index:999;opacity:0;transition:opacity .2s,transform .2s;white-space:nowrap;pointer-events:none;font-family:var(--fb);box-shadow:var(--s3)}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media(max-width:768px){.toast{bottom:130px}}
+
+/* Progress bar */
+.prg{position:fixed;top:0;left:0;height:2px;background:var(--gold);z-index:1000;pointer-events:none;transition:width .1s linear}
+</style>
+</head>
+<body>
+
+<div class="prg" id="prg"></div>
+
+<!-- ANNOUNCEMENT -->
+<div class="ann">
+  <div class="ct">
+    <div class="ann-in">
+      <div class="ann-wrap">
+        <div class="ann-tick">
+          <span class="a-it"><svg viewBox="0 0 24 24"><path d="M1 3h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/></svg>Δωρεάν μεταφορά σε όλη την Ελλάδα</span>
+          <span class="a-it"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>Άτοκες δόσεις έως 24 μήνες</span>
+          <span class="a-it"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Επαγγελματική εγκατάσταση</span>
+          <span class="a-it"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>After Sales Support χωρίς συμβόλαιο</span>
+          <span class="a-it"><svg viewBox="0 0 24 24"><path d="M1 3h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/></svg>Δωρεάν μεταφορά σε όλη την Ελλάδα</span>
+          <span class="a-it"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>Άτοκες δόσεις έως 24 μήνες</span>
+          <span class="a-it"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Επαγγελματική εγκατάσταση</span>
+          <span class="a-it"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>After Sales Support χωρίς συμβόλαιο</span>
+        </div>
+      </div>
+      <div class="ann-r">
+        <div class="ann-ph"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.95a16 16 0 0 0 6.29 6.29l.98-.98a2 2 0 0 1 2.1-.45c.91.339 1.853.573 2.81.7a2 2 0 0 1 1.72 2.01z"/></svg>2634 027227</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="hdr" id="hdr">
+  <div class="ct">
+    <div class="hdr-in">
+      <a href="index.html" class="logo">
+        <span class="logo-top">KONIDAS STORE</span>
+        <div class="logo-bot"><span class="logo-star">✦</span><span class="logo-eur">euronics</span></div>
+      </a>
+      <div class="srch">
+        <input type="search" placeholder="Αναζήτηση προϊόντων, brands..." autocomplete="off">
+        <button class="srch-btn"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+      </div>
+      <div class="hacts">
+        <button class="hb" style="display:none" id="mob-srch-btn"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+        <button class="hb"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span style="font-size:9.5px;font-weight:600">Λογαριασμός</span></button>
+        <button class="hb"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg><span style="font-size:9.5px;font-weight:600">Αγαπημένα</span></button>
+        <button class="hb" id="cartBtn"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span class="hb-bdg" id="cartN">2</span><span style="font-size:9.5px;font-weight:600">Καλάθι</span></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- NAVBAR -->
+<nav class="nb">
+  <div class="ct">
+    <div class="nb-in">
+      <a href="index.html" class="nb-cat"><svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>ΟΛΕΣ ΟΙ ΚΑΤΗΓΟΡΙΕΣ</a>
+      <div class="nb-links">
+        <a class="nb-a active" href="#">Ψύξη</a>
+        <a class="nb-a" href="#">Πλύση &amp; Στέγνωση</a>
+        <a class="nb-a" href="#">Κουζίνα</a>
+        <a class="nb-a" href="#">Εντοιχισμένες</a>
+        <a class="nb-a" href="#">Κλιματισμός</a>
+        <a class="nb-a" href="#">Εικόνα &amp; Ήχος</a>
+        <a class="nb-a" href="#">Μικροσυσκευές</a>
+        <a class="nb-a sale" href="#">🔥 Προσφορές</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <div class="ct">
+    <div class="bc-in">
+      <a href="index.html">Αρχική</a>
+      <span class="bc-sep">›</span>
+      <span class="bc-current">Ψυγεία &amp; Καταψύκτες</span>
+    </div>
+  </div>
+</div>
+
+<!-- CATEGORY HERO -->
+<div class="cat-hero">
+  <div class="ct">
+    <div class="cat-hero-in">
+      <div class="cat-hero-left">
+        <div class="cat-hero-eye">Κατηγορία</div>
+        <h1 class="cat-hero-title">Ψυγεία &amp; Καταψύκτες</h1>
+        <p class="cat-hero-sub">Bosch · Siemens · Miele · LG · Samsung · AEG · Pitsos</p>
+      </div>
+      <div class="cat-hero-right">
+        <div class="cat-stat"><div class="cat-stat-v">248</div><div class="cat-stat-k">Προϊόντα</div></div>
+        <div class="cat-stat"><div class="cat-stat-v">7</div><div class="cat-stat-k">Brands</div></div>
+        <div class="cat-stat"><div class="cat-stat-v">A+++</div><div class="cat-stat-k">Ενεργειακά</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SUBCATEGORY PILLS -->
+<div class="subcat-bar">
+  <div class="subcat-scroll">
+    <div class="subcat-pill on" onclick="selSub(this)">Όλα</div>
+    <div class="subcat-pill" onclick="selSub(this)">🧊 No Frost</div>
+    <div class="subcat-pill" onclick="selSub(this)">🧊 Total No Frost</div>
+    <div class="subcat-pill" onclick="selSub(this)">↔️ Side by Side</div>
+    <div class="subcat-pill" onclick="selSub(this)">🚪 Μονόπορτα</div>
+    <div class="subcat-pill" onclick="selSub(this)">📦 Καταψύκτες Vertical</div>
+    <div class="subcat-pill" onclick="selSub(this)">📦 Καταψύκτες Chest</div>
+    <div class="subcat-pill" onclick="selSub(this)">🍷 Οινοθήκες</div>
+    <div class="subcat-pill" onclick="selSub(this)">🏗️ Εντοιχισμένα</div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="ct">
+  <div class="cat-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sf-head">
+        <span class="sf-title">Φίλτρα</span>
+        <span class="sf-clear" onclick="clearFilters()">Καθαρισμός</span>
+      </div>
+
+      <!-- Brand -->
+      <div class="sf-section">
+        <div class="sf-section-head" onclick="toggleSection(this)">
+          <span class="sf-section-label">Brand</span>
+          <span class="sf-arrow open">▼</span>
+        </div>
+        <div class="sf-body open">
+          <label class="sf-check"><input type="checkbox" checked onchange="applyFilter()"><span class="sf-check-label">Bosch</span><span class="sf-check-count">(48)</span></label>
+          <label class="sf-check"><input type="checkbox" checked onchange="applyFilter()"><span class="sf-check-label">Siemens</span><span class="sf-check-count">(36)</span></label>
+          <label class="sf-check"><input type="checkbox" onchange="applyFilter()"><span class="sf-check-label">Miele</span><span class="sf-check-count">(24)</span></label>
+          <label class="sf-check"><input type="checkbox" checked onchange="applyFilter()"><span class="sf-check-label">LG</span><span class="sf-check-count">(42)</span></label>
+          <label class="sf-check"><input type="checkbox" onchange="applyFilter()"><span class="sf-check-label">Samsung</span><span class="sf-check-count">(38)</span></label>
+          <label class="sf-check"><input type="checkbox" onchange="applyFilter()"><span class="sf-check-label">AEG</span><span class="sf-check-count">(28)</span></label>
+          <label class="sf-check"><input type="checkbox" onchange="applyFilter()"><span class="sf-check-label">Pitsos</span><span class="sf-check-count">(32)</span></label>
+        </div>
+      </div>
+
+      <!-- Price -->
+      <div class="sf-section">
+        <div class="sf-section-head" onclick="toggleSection(this)">
+          <span class="sf-section-label">Τιμή</span>
+          <span class="sf-arrow open">▼</span>
+        </div>
+        <div class="sf-body open">
+          <div class="price-range">
+            <div class="price-inputs">
+              <input class="price-inp" type="number" value="0" min="0" max="5000" id="priceMin"> 
+              <span class="price-sep">—</span>
+              <input class="price-inp" type="number" value="2000" min="0" max="5000" id="priceMax">
+            </div>
+            <input class="price-slider" type="range" min="0" max="5000" value="2000">
+            <div class="price-labels"><span>0€</span><span>5.000€</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Energy -->
+      <div class="sf-section">
+        <div class="sf-section-head" onclick="toggleSection(this)">
+          <span class="sf-section-label">Ενεργειακή Κλάση</span>
+          <span class="sf-arrow open">▼</span>
+        </div>
+        <div class="sf-body open">
+          <label class="energy-row sf-check"><input type="checkbox" checked onchange="applyFilter()"><span class="energy-badge e-aplus3">A+++</span><span class="sf-check-count">(68)</span></label>
+          <label class="energy-row sf-check"><input type="checkbox" checked onchange="applyFilter()"><span class="energy-badge e-aplus2">A++</span><span class="sf-check-count">(94)</span></label>
+          <label class="energy-row sf-check"><input type="checkbox" onchange="applyFilter()"><span class="energy-badge e-aplus1">A+</span><span class="sf-check-count">(52)</span></label>
+          <label class="energy-row sf-check"><input type="checkbox" onchange="applyFilter()"><span class="energy-badge e-a">A</span><span class="sf-check-count">(34)</span></label>
+        </div>
+      </div>
+
+      <!-- Capacity -->
+      <div class="sf-section">
+        <div class="sf-section-head" onclick="toggleSection(this)">
+          <span class="sf-section-label">Χωρητικότητα (L)</span>
+          <span class="sf-arrow">▼</span>
+        </div>
+        <div class="sf-body">
+          <label class="sf-check"><input type="checkbox" onchange="applyFilter()"><span class="sf-check-label">Έως 250L</span><span class="sf-check-count">(28)</span></label>
+          <label class="sf-check"><input type="checkbox" onchange="applyFilter()"><span class="sf-check-label">250L — 350L</span><span class="sf-check-count">(64)</span></label>
+          <label class="sf-check"><input type="checkbox" onchange="applyFilter()"><span class="sf-check-label">350L — 500L</span><span class="sf-check-count">(88)</span></label>
+          <label class="sf-check"><input type="checkbox" onchange="applyFilter()"><span class="sf-check-label">500L+</span><span class="sf-check-count">(42)</span></label>
+        </div>
+      </div>
+
+      <!-- Color -->
+      <div class="sf-section">
+        <div class="sf-section-head" onclick="toggleSection(this)">
+          <span class="sf-section-label">Χρώμα</span>
+          <span class="sf-arrow">▼</span>
+        </div>
+        <div class="sf-body">
+          <label class="sf-check"><input type="checkbox" onchange="applyFilter()"><span class="sf-check-label">Inox</span><span class="sf-check-count">(86)</span></label>
+          <label class="sf-check"><input type="checkbox" onchange="applyFilter()"><span class="sf-check-label">Λευκό</span><span class="sf-check-count">(112)</span></label>
+          <label class="sf-check"><input type="checkbox" onchange="applyFilter()"><span class="sf-check-label">Μαύρο</span><span class="sf-check-count">(32)</span></label>
+          <label class="sf-check"><input type="checkbox" onchange="applyFilter()"><span class="sf-check-label">Γκρι</span><span class="sf-check-count">(18)</span></label>
+        </div>
+      </div>
+
+      <div style="padding:14px 18px">
+        <button class="apply-btn" onclick="applyFilter()">Εφαρμογή Φίλτρων</button>
+      </div>
+    </aside>
+
+    <!-- PRODUCTS -->
+    <div class="products-area">
+
+      <!-- Sort bar -->
+      <div class="sort-bar">
+        <div class="sort-left">
+          <span class="sort-count">Εμφάνιση <strong id="prodCount">12</strong> από <strong>248</strong> προϊόντα</span>
+        </div>
+        <div class="sort-right">
+          <span class="sort-label">Ταξινόμηση:</span>
+          <select class="sort-select" onchange="sortProducts(this.value)">
+            <option value="popular">Δημοφιλέστερα</option>
+            <option value="price_asc">Τιμή: Χαμηλή → Υψηλή</option>
+            <option value="price_desc">Τιμή: Υψηλή → Χαμηλή</option>
+            <option value="discount">Μεγαλύτερη Έκπτωση</option>
+            <option value="new">Νεότερα</option>
+            <option value="rating">Βαθμολογία</option>
+          </select>
+          <div class="view-btns">
+            <div class="view-btn on" id="gridBtn" onclick="setView('grid')" title="Grid"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
+            <div class="view-btn" id="listBtn" onclick="setView('list')" title="List"><svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Active filters -->
+      <div class="active-filters">
+        <span class="af-label">Ενεργά φίλτρα:</span>
+        <span class="af-tag">Bosch <span class="af-tag-x" onclick="removeFilter(this)">✕</span></span>
+        <span class="af-tag">Siemens <span class="af-tag-x" onclick="removeFilter(this)">✕</span></span>
+        <span class="af-tag">LG <span class="af-tag-x" onclick="removeFilter(this)">✕</span></span>
+        <span class="af-tag">A+++ <span class="af-tag-x" onclick="removeFilter(this)">✕</span></span>
+        <span class="af-tag">A++ <span class="af-tag-x" onclick="removeFilter(this)">✕</span></span>
+      </div>
+
+      <!-- Product grid -->
+      <div class="pgrid" id="pgrid">
+
+        <div class="pc">
+          <div class="pc-img">
+            <span class="pc-tag">-15%</span>
+            <span class="pc-energy e-aplus3-bg">A+++</span>
+            <button class="pc-wsh" onclick="twish(this)"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <div class="pc-img-in">🧊</div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-brand">Bosch</div>
+            <div class="pc-name">KGN49XWEA Ψυγειοκαταψύκτης NoFrost 440L A+++</div>
+            <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(48)</span></div>
+            <div class="pc-pr"><span class="pc-p">649€</span><span class="pc-po">769€</span><span class="pc-save">-120€</span></div>
+            <div class="pc-inst">ή από <strong>27,04€/μήνα</strong> · 24 άτοκες δόσεις</div>
+            <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+          </div>
+        </div>
+
+        <div class="pc">
+          <div class="pc-img">
+            <span class="pc-tag new">ΝΕΟ</span>
+            <span class="pc-energy e-aplus3-bg">A+++</span>
+            <button class="pc-wsh" onclick="twish(this)"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <div class="pc-img-in">🧊</div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-brand">Samsung</div>
+            <div class="pc-name">RS68CG883EB1EF Side by Side 634L Inox A+++</div>
+            <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(22)</span></div>
+            <div class="pc-pr"><span class="pc-p">1.249€</span></div>
+            <div class="pc-inst">ή από <strong>52,04€/μήνα</strong> · 24 άτοκες δόσεις</div>
+            <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+          </div>
+        </div>
+
+        <div class="pc">
+          <div class="pc-img">
+            <span class="pc-tag">-20%</span>
+            <span class="pc-energy e-aplus2-bg">A++</span>
+            <button class="pc-wsh" onclick="twish(this)"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <div class="pc-img-in">🧊</div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-brand">Siemens</div>
+            <div class="pc-name">KG86NVIDA NoFrost 631L A++ Inox</div>
+            <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(31)</span></div>
+            <div class="pc-pr"><span class="pc-p">1.149€</span><span class="pc-po">1.349€</span><span class="pc-save">-200€</span></div>
+            <div class="pc-inst">ή από <strong>47,88€/μήνα</strong> · 24 άτοκες δόσεις</div>
+            <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+          </div>
+        </div>
+
+        <div class="pc">
+          <div class="pc-img">
+            <span class="pc-tag">-18%</span>
+            <span class="pc-energy e-aplus3-bg">A+++</span>
+            <button class="pc-wsh" onclick="twish(this)"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <div class="pc-img-in">🧊</div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-brand">LG</div>
+            <div class="pc-name">GBB92STACP Ψυγειοκαταψύκτης 384L A+++ Inox</div>
+            <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(57)</span></div>
+            <div class="pc-pr"><span class="pc-p">749€</span><span class="pc-po">899€</span><span class="pc-save">-150€</span></div>
+            <div class="pc-inst">ή από <strong>31,21€/μήνα</strong> · 24 άτοκες δόσεις</div>
+            <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+          </div>
+        </div>
+
+        <div class="pc">
+          <div class="pc-img">
+            <span class="pc-tag promo">Exclusive</span>
+            <span class="pc-energy e-aplus3-bg">A+++</span>
+            <button class="pc-wsh" onclick="twish(this)"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <div class="pc-img-in">🧊</div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-brand">Miele</div>
+            <div class="pc-name">KFN 7734 E Ψυγειοκαταψύκτης 506L A+++ Inox</div>
+            <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(14)</span></div>
+            <div class="pc-pr"><span class="pc-p">2.499€</span></div>
+            <div class="pc-inst">ή από <strong>104,13€/μήνα</strong> · 24 άτοκες δόσεις</div>
+            <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+          </div>
+        </div>
+
+        <div class="pc">
+          <div class="pc-img">
+            <span class="pc-tag">-10%</span>
+            <span class="pc-energy e-aplus2-bg">A++</span>
+            <button class="pc-wsh" onclick="twish(this)"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <div class="pc-img-in">🧊</div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-brand">Bosch</div>
+            <div class="pc-name">KGN36VWED Ψυγειοκαταψύκτης 324L Λευκό A++</div>
+            <div class="pc-st"><span class="stars">★★★★☆</span><span class="stars-n">(38)</span></div>
+            <div class="pc-pr"><span class="pc-p">449€</span><span class="pc-po">499€</span><span class="pc-save">-50€</span></div>
+            <div class="pc-inst">ή από <strong>18,71€/μήνα</strong> · 24 άτοκες δόσεις</div>
+            <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+          </div>
+        </div>
+
+        <div class="pc">
+          <div class="pc-img">
+            <span class="pc-tag">-25%</span>
+            <span class="pc-energy e-aplus2-bg">A++</span>
+            <button class="pc-wsh" onclick="twish(this)"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <div class="pc-img-in">🧊</div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-brand">AEG</div>
+            <div class="pc-name">RCB736E5MB Ψυγειοκαταψύκτης 367L A++ Inox</div>
+            <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(29)</span></div>
+            <div class="pc-pr"><span class="pc-p">599€</span><span class="pc-po">799€</span><span class="pc-save">-200€</span></div>
+            <div class="pc-inst">ή από <strong>24,96€/μήνα</strong> · 24 άτοκες δόσεις</div>
+            <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+          </div>
+        </div>
+
+        <div class="pc">
+          <div class="pc-img">
+            <span class="pc-tag new">ΝΕΟ</span>
+            <span class="pc-energy e-aplus3-bg">A+++</span>
+            <button class="pc-wsh" onclick="twish(this)"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <div class="pc-img-in">🧊</div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-brand">Siemens</div>
+            <div class="pc-name">KI87SADD0 Εντοιχισμένο Ψυγείο 270L A+++</div>
+            <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(11)</span></div>
+            <div class="pc-pr"><span class="pc-p">899€</span></div>
+            <div class="pc-inst">ή από <strong>37,46€/μήνα</strong> · 24 άτοκες δόσεις</div>
+            <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+          </div>
+        </div>
+
+        <div class="pc">
+          <div class="pc-img">
+            <span class="pc-tag">-12%</span>
+            <span class="pc-energy e-aplus2-bg">A++</span>
+            <button class="pc-wsh" onclick="twish(this)"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <div class="pc-img-in">🧊</div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-brand">Pitsos</div>
+            <div class="pc-name">PKNT55NWFA Ψυγειοκαταψύκτης 374L Λευκό A++</div>
+            <div class="pc-st"><span class="stars">★★★★☆</span><span class="stars-n">(44)</span></div>
+            <div class="pc-pr"><span class="pc-p">349€</span><span class="pc-po">399€</span><span class="pc-save">-50€</span></div>
+            <div class="pc-inst">ή από <strong>14,54€/μήνα</strong> · 24 άτοκες δόσεις</div>
+            <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+          </div>
+        </div>
+
+        <div class="pc">
+          <div class="pc-img">
+            <span class="pc-tag">-30%</span>
+            <span class="pc-energy e-aplus3-bg">A+++</span>
+            <button class="pc-wsh" onclick="twish(this)"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <div class="pc-img-in">🧊</div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-brand">LG</div>
+            <div class="pc-name">GSXV91BSAF Side by Side 635L Inox A+++</div>
+            <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(19)</span></div>
+            <div class="pc-pr"><span class="pc-p">1.399€</span><span class="pc-po">1.999€</span><span class="pc-save">-600€</span></div>
+            <div class="pc-inst">ή από <strong>58,29€/μήνα</strong> · 24 άτοκες δόσεις</div>
+            <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+          </div>
+        </div>
+
+        <div class="pc">
+          <div class="pc-img">
+            <span class="pc-tag">-8%</span>
+            <span class="pc-energy e-aplus2-bg">A++</span>
+            <button class="pc-wsh" onclick="twish(this)"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <div class="pc-img-in">🧊</div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-brand">Bosch</div>
+            <div class="pc-name">KGN55VWEA Ψυγειοκαταψύκτης 487L Λευκό A++</div>
+            <div class="pc-st"><span class="stars">★★★★☆</span><span class="stars-n">(26)</span></div>
+            <div class="pc-pr"><span class="pc-p">699€</span><span class="pc-po">759€</span><span class="pc-save">-60€</span></div>
+            <div class="pc-inst">ή από <strong>29,13€/μήνα</strong> · 24 άτοκες δόσεις</div>
+            <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+          </div>
+        </div>
+
+        <div class="pc">
+          <div class="pc-img">
+            <span class="pc-tag new">ΝΕΟ</span>
+            <span class="pc-energy e-aplus3-bg">A+++</span>
+            <button class="pc-wsh" onclick="twish(this)"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <div class="pc-img-in">🧊</div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-brand">Samsung</div>
+            <div class="pc-name">RF65A977FSR French Door 637L Inox A+++</div>
+            <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(8)</span></div>
+            <div class="pc-pr"><span class="pc-p">1.899€</span></div>
+            <div class="pc-inst">ή από <strong>79,13€/μήνα</strong> · 24 άτοκες δόσεις</div>
+            <button class="pc-atc" onclick="atc(this)">+ Προσθήκη στο Καλάθι</button>
+          </div>
+        </div>
+
+      </div><!-- /pgrid -->
+
+      <!-- Pagination -->
+      <div class="pagination">
+        <div class="pg-btn arr" onclick="changePage(currentPage-1)">‹</div>
+        <div class="pg-btn on" onclick="changePage(1)">1</div>
+        <div class="pg-btn" onclick="changePage(2)">2</div>
+        <div class="pg-btn" onclick="changePage(3)">3</div>
+        <div class="pg-dots">…</div>
+        <div class="pg-btn" onclick="changePage(21)">21</div>
+        <div class="pg-btn arr" onclick="changePage(currentPage+1)">›</div>
+      </div>
+
+    </div><!-- /products-area -->
+  </div><!-- /cat-layout -->
+</div><!-- /ct -->
+
+<!-- MOBILE FILTER BUTTON -->
+<button class="mob-filter-btn" onclick="openFilterDrawer()">
+  <svg viewBox="0 0 24 24"><line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="11" y1="18" x2="13" y2="18"/></svg>
+  Φίλτρα &amp; Ταξινόμηση
+</button>
+
+<!-- MOBILE FILTER DRAWER -->
+<div class="filter-drawer" id="filterDrawer">
+  <div class="fd-overlay" onclick="closeFilterDrawer()"></div>
+  <div class="fd-panel">
+    <div class="fd-head">
+      <span class="fd-title">Φίλτρα</span>
+      <div class="fd-close" onclick="closeFilterDrawer()">✕</div>
+    </div>
+    <div class="fd-body">
+      <p style="font-family:var(--fh);font-size:12px;font-weight:700;color:var(--navy);margin-bottom:12px">Brand</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px">
+        <label style="display:flex;align-items:center;gap:6px;font-size:13px;cursor:pointer"><input type="checkbox" checked style="accent-color:var(--navy)"> Bosch</label>
+        <label style="display:flex;align-items:center;gap:6px;font-size:13px;cursor:pointer"><input type="checkbox" checked style="accent-color:var(--navy)"> Siemens</label>
+        <label style="display:flex;align-items:center;gap:6px;font-size:13px;cursor:pointer"><input type="checkbox" style="accent-color:var(--navy)"> Miele</label>
+        <label style="display:flex;align-items:center;gap:6px;font-size:13px;cursor:pointer"><input type="checkbox" checked style="accent-color:var(--navy)"> LG</label>
+        <label style="display:flex;align-items:center;gap:6px;font-size:13px;cursor:pointer"><input type="checkbox" style="accent-color:var(--navy)"> Samsung</label>
+        <label style="display:flex;align-items:center;gap:6px;font-size:13px;cursor:pointer"><input type="checkbox" style="accent-color:var(--navy)"> AEG</label>
+        <label style="display:flex;align-items:center;gap:6px;font-size:13px;cursor:pointer"><input type="checkbox" style="accent-color:var(--navy)"> Pitsos</label>
+      </div>
+      <p style="font-family:var(--fh);font-size:12px;font-weight:700;color:var(--navy);margin-bottom:12px">Ταξινόμηση</p>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <label style="display:flex;align-items:center;gap:8px;font-size:13px;cursor:pointer"><input type="radio" name="mob-sort" checked style="accent-color:var(--navy)"> Δημοφιλέστερα</label>
+        <label style="display:flex;align-items:center;gap:8px;font-size:13px;cursor:pointer"><input type="radio" name="mob-sort" style="accent-color:var(--navy)"> Τιμή: Χαμηλή → Υψηλή</label>
+        <label style="display:flex;align-items:center;gap:8px;font-size:13px;cursor:pointer"><input type="radio" name="mob-sort" style="accent-color:var(--navy)"> Τιμή: Υψηλή → Χαμηλή</label>
+        <label style="display:flex;align-items:center;gap:8px;font-size:13px;cursor:pointer"><input type="radio" name="mob-sort" style="accent-color:var(--navy)"> Μεγαλύτερη Έκπτωση</label>
+        <label style="display:flex;align-items:center;gap:8px;font-size:13px;cursor:pointer"><input type="radio" name="mob-sort" style="accent-color:var(--navy)"> Νεότερα</label>
+      </div>
+    </div>
+    <button class="fd-apply" onclick="closeFilterDrawer()">Εφαρμογή Φίλτρων</button>
+  </div>
+</div>
+
+<!-- MOBILE BOTTOM NAV -->
+<nav class="mnav">
+  <div class="mnav-in">
+    <div class="mni" onclick="location.href='index.html'"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 0-2 2H5a2 2 0 0 0-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg><span>Αρχική</span></div>
+    <div class="mni on"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="9" height="9" rx="1"/><rect x="13" y="2" width="9" height="9" rx="1"/><rect x="2" y="13" width="9" height="9" rx="1"/><rect x="13" y="13" width="9" height="9" rx="1"/></svg><span>Κατηγορίες</span></div>
+    <div class="mni" onclick="location.href='index.html'"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><span>Αναζήτηση</span></div>
+    <div class="mni"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg><span>Αγαπημένα</span></div>
+    <div class="mni" style="position:relative"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span class="mni-bdg" id="mobCartN">2</span><span>Καλάθι</span></div>
+  </div>
+</nav>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* scroll shadow */
+var hdr=document.getElementById('hdr'),prg=document.getElementById('prg');
+window.addEventListener('scroll',function(){
+  var s=window.scrollY,h=document.body.scrollHeight-window.innerHeight;
+  hdr.classList.toggle('sc',s>10);
+  prg.style.width=(h>0?(s/h*100):0)+'%';
+},{passive:true});
+
+/* subcategory pills */
+function selSub(el){document.querySelectorAll('.subcat-pill').forEach(function(p){p.classList.remove('on');});el.classList.add('on');}
+
+/* filter sections toggle */
+function toggleSection(head){
+  var body=head.nextElementSibling;
+  var arrow=head.querySelector('.sf-arrow');
+  body.classList.toggle('open');
+  arrow.classList.toggle('open');
+}
+
+/* view grid/list */
+var currentView='grid';
+function setView(v){
+  currentView=v;
+  var g=document.getElementById('pgrid');
+  g.classList.toggle('list-view',v==='list');
+  document.getElementById('gridBtn').classList.toggle('on',v==='grid');
+  document.getElementById('listBtn').classList.toggle('on',v==='list');
+}
+
+/* pagination */
+var currentPage=1;
+function changePage(p){
+  if(p<1||p>21)return;
+  currentPage=p;
+  document.querySelectorAll('.pg-btn:not(.arr)').forEach(function(b){b.classList.remove('on');if(b.textContent==p)b.classList.add('on');});
+  window.scrollTo({top:0,behavior:'smooth'});
+  showToast('Σελίδα '+p+' από 21');
+}
+
+/* filter */
+function applyFilter(){showToast('Τα φίλτρα εφαρμόστηκαν');}
+function clearFilters(){
+  document.querySelectorAll('.sf-check input[type=checkbox]').forEach(function(c){c.checked=false;});
+  document.querySelectorAll('.af-tag').forEach(function(t){t.remove();});
+  showToast('Τα φίλτρα καθαρίστηκαν');
+}
+function removeFilter(x){x.parentElement.remove();}
+
+/* sort */
+function sortProducts(v){showToast('Ταξινόμηση: '+document.querySelector('.sort-select option:checked').text);}
+
+/* wishlist */
+function twish(btn){
+  btn.classList.toggle('on');
+  showToast(btn.classList.contains('on')?'♥ Αποθηκεύτηκε στα Αγαπημένα':'Αφαιρέθηκε από τα Αγαπημένα');
+}
+
+/* add to cart */
+var cart=2;
+function atc(btn){
+  if(btn.disabled)return;
+  var o=btn.innerHTML;
+  btn.innerHTML='✓ Προστέθηκε!';btn.classList.add('done');btn.disabled=true;
+  cart++;
+  document.getElementById('cartN').textContent=cart;
+  document.getElementById('mobCartN').textContent=cart;
+  showToast('✓ Το προϊόν προστέθηκε στο καλάθι');
+  setTimeout(function(){btn.innerHTML=o;btn.classList.remove('done');btn.disabled=false;},2200);
+}
+
+/* toast */
+function showToast(msg){var t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(function(){t.classList.remove('show');},2400);}
+
+/* mobile filter drawer */
+function openFilterDrawer(){document.getElementById('filterDrawer').classList.add('open');document.body.style.overflow='hidden';}
+function closeFilterDrawer(){document.getElementById('filterDrawer').classList.remove('open');document.body.style.overflow='';}
+</script>
+</body>
+</html>
