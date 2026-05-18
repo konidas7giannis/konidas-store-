@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#041E42">
+<title>Bosch KGN49XWEA Ψυγειοκαταψύκτης — Konidas Store Euronics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#041E42;--navy2:#06285a;
+  --gold:#f5a623;--gold2:#d48c10;
+  --red:#cc2222;--green:#1a7a30;
+  --white:#fff;
+  --g50:#f7f8fb;--g100:#eef0f5;--g200:#e0e4ec;--g300:#c8ced9;--g500:#7b8599;--g700:#3d4459;--g900:#0f1423;
+  --fh:'Montserrat',sans-serif;--fb:'Inter',sans-serif;
+  --r:6px;--rl:10px;--rx:16px;
+  --s1:0 1px 3px rgba(4,30,66,.07);--s2:0 3px 14px rgba(4,30,66,.1);--s3:0 8px 32px rgba(4,30,66,.14);
+  --t:.17s ease;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--fb);color:var(--g900);background:var(--g50);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;font-family:var(--fb);border:none;background:none}
+svg{display:block}
+.ct{max-width:1380px;margin:0 auto;padding:0 20px}
+@media(max-width:580px){.ct{padding:0 14px}}
+
+/* ── ANNOUNCEMENT ── */
+.ann{background:var(--navy);color:#fff;font-size:11.5px;padding:0}
+.ann-in{height:34px;display:flex;align-items:center;justify-content:space-between}
+.ann-txt{color:rgba(255,255,255,.8);display:flex;align-items:center;gap:20px;overflow:hidden}
+.ann-txt span{white-space:nowrap;display:flex;align-items:center;gap:6px}
+.ann-ph{font-weight:700;color:var(--gold);white-space:nowrap;font-size:12px}
+
+/* ── HEADER ── */
+.hdr{background:#fff;border-bottom:1px solid var(--g200);position:sticky;top:0;z-index:800;box-shadow:none;transition:box-shadow .2s}
+.hdr.sc{box-shadow:var(--s2)}
+.hdr-in{height:62px;display:flex;align-items:center;gap:14px}
+.logo{display:flex;flex-direction:column;gap:2px;flex-shrink:0;line-height:1}
+.logo-top{font-family:var(--fh);font-size:16px;font-weight:900;color:var(--navy);letter-spacing:-.2px}
+.logo-bot{display:flex;align-items:center;gap:3px}
+.logo-star{color:var(--gold);font-size:10px}
+.logo-eur{font-size:10.5px;font-weight:700;color:#0057b8;letter-spacing:.9px}
+.srch{flex:1;max-width:500px;position:relative}
+.srch input{width:100%;height:40px;border:1.5px solid var(--g200);border-radius:20px;padding:0 46px 0 17px;font-size:13.5px;font-family:var(--fb);color:var(--g900);background:var(--g50);outline:none;transition:var(--t)}
+.srch input:focus{border-color:var(--navy);background:#fff}
+.srch-btn{position:absolute;right:0;top:0;height:40px;width:42px;background:var(--navy);border-radius:0 20px 20px 0;display:flex;align-items:center;justify-content:center}
+.srch-btn svg{width:16px;height:16px;fill:none;stroke:#fff;stroke-width:2.2;stroke-linecap:round}
+.hacts{display:flex;align-items:center;gap:1px;margin-left:auto}
+.hb{display:flex;flex-direction:column;align-items:center;gap:2px;padding:5px 9px;border-radius:var(--r);color:var(--g500);font-size:9.5px;font-weight:600;min-width:42px;min-height:42px;justify-content:center;transition:var(--t);position:relative}
+.hb:hover{background:var(--g100);color:var(--navy)}
+.hb svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.hb-bdg{position:absolute;top:4px;right:4px;background:var(--gold);color:var(--navy);font-size:9px;font-weight:800;min-width:15px;height:15px;border-radius:8px;display:flex;align-items:center;justify-content:center;padding:0 3px;font-family:var(--fh)}
+@media(max-width:660px){.srch{display:none}}
+
+/* ── NAVBAR ── */
+.nb{background:var(--navy);display:block}
+.nb-in{display:flex;align-items:stretch;height:42px}
+.nb-cat{display:flex;align-items:center;gap:8px;padding:0 16px;background:rgba(255,255,255,.08);border-right:1px solid rgba(255,255,255,.1);font-size:12.5px;font-weight:700;color:#fff;cursor:pointer;white-space:nowrap;flex-shrink:0;font-family:var(--fh);transition:var(--t)}
+.nb-cat svg{width:14px;height:14px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round}
+.nb-links{display:flex;align-items:stretch;overflow-x:auto;scrollbar-width:none;flex:1}
+.nb-links::-webkit-scrollbar{display:none}
+.nb-a{display:flex;align-items:center;padding:0 13px;font-size:12.5px;font-weight:600;color:rgba(255,255,255,.8);white-space:nowrap;border-right:1px solid rgba(255,255,255,.06);transition:var(--t)}
+.nb-a:hover,.nb-a.active{background:rgba(255,255,255,.1);color:#fff}
+.nb-a.sale{color:var(--gold);font-weight:700}
+@media(max-width:768px){.nb{display:none}}
+
+/* ── BREADCRUMB ── */
+.breadcrumb{background:#fff;border-bottom:1px solid var(--g200);padding:10px 0}
+.bc-in{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--g500);flex-wrap:wrap}
+.bc-in a{color:var(--g500);transition:color var(--t)}
+.bc-in a:hover{color:var(--navy)}
+.bc-sep{color:var(--g300);font-size:10px}
+.bc-current{color:var(--navy);font-weight:600}
+
+/* ── PRODUCT LAYOUT ── */
+.prod-layout{display:grid;grid-template-columns:1fr 1fr;gap:32px;padding:28px 0 48px;align-items:start}
+@media(max-width:860px){.prod-layout{grid-template-columns:1fr;gap:20px}}
+
+/* ── IMAGE GALLERY ── */
+.gallery{position:sticky;top:74px}
+@media(max-width:860px){.gallery{position:static}}
+.gallery-main{background:#fff;border-radius:var(--rx);border:1px solid var(--g200);aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;font-size:160px;margin-bottom:12px;position:relative;overflow:hidden}
+.gallery-main-img{transition:transform .4s ease;font-size:160px}
+.gallery-main:hover .gallery-main-img{transform:scale(1.06)}
+.gallery-badge{position:absolute;top:14px;left:14px;background:var(--red);color:#fff;font-size:11px;font-weight:800;padding:4px 10px;border-radius:5px;font-family:var(--fh)}
+.gallery-energy{position:absolute;top:14px;right:14px;background:#006400;color:#fff;font-size:11px;font-weight:800;padding:4px 10px;border-radius:5px;font-family:var(--fh)}
+.gallery-thumbs{display:flex;gap:10px}
+.gallery-thumb{width:72px;height:72px;border-radius:var(--rl);border:2px solid var(--g200);background:#fff;display:flex;align-items:center;justify-content:center;font-size:32px;cursor:pointer;transition:var(--t);flex-shrink:0}
+.gallery-thumb:hover,.gallery-thumb.on{border-color:var(--navy);background:var(--g50)}
+@media(max-width:480px){.gallery-thumb{width:58px;height:58px;font-size:26px}}
+
+/* ── PRODUCT INFO ── */
+.prod-info{}
+.prod-brand-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
+.prod-brand{font-family:var(--fh);font-size:11px;font-weight:700;color:var(--gold);letter-spacing:1.5px;text-transform:uppercase}
+.prod-wsh{width:38px;height:38px;border-radius:50%;border:1.5px solid var(--g200);background:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--t)}
+.prod-wsh:hover{border-color:#cc2222;background:#fff0f0}
+.prod-wsh svg{width:18px;height:18px;stroke:var(--g300);fill:none;stroke-width:2;stroke-linecap:round;transition:var(--t)}
+.prod-wsh.on svg{stroke:#cc2222;fill:#cc2222}
+.prod-name{font-family:var(--fh);font-size:22px;font-weight:800;color:var(--navy);line-height:1.25;margin-bottom:10px;letter-spacing:-.3px}
+@media(max-width:580px){.prod-name{font-size:18px}}
+.prod-code{font-size:12px;color:var(--g500);margin-bottom:12px}
+.prod-code span{color:var(--g700);font-weight:600}
+.prod-stars{display:flex;align-items:center;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.stars{color:var(--gold);font-size:14px;letter-spacing:.5px}
+.stars-n{font-size:12px;color:var(--g500)}
+.stars-link{font-size:12px;color:var(--navy);font-weight:600;text-decoration:underline;cursor:pointer}
+
+/* Price block */
+.price-block{background:var(--g50);border-radius:var(--rl);border:1px solid var(--g200);padding:20px;margin-bottom:16px}
+.price-row{display:flex;align-items:baseline;gap:10px;margin-bottom:6px;flex-wrap:wrap}
+.price-now{font-family:var(--fh);font-size:32px;font-weight:900;color:var(--navy);line-height:1}
+.price-old{font-size:16px;color:var(--g300);text-decoration:line-through}
+.price-save{background:var(--red);color:#fff;font-size:11px;font-weight:800;padding:3px 9px;border-radius:5px;font-family:var(--fh)}
+.price-install{font-size:13.5px;color:var(--g700);margin-bottom:10px}
+.price-install strong{color:var(--navy);font-weight:700}
+.price-vat{font-size:11.5px;color:var(--g500)}
+.price-stock{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:700;color:var(--green);margin-top:8px}
+.price-stock::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--green);flex-shrink:0}
+
+/* Quantity + ATC */
+.atc-row{display:flex;gap:10px;margin-bottom:14px;align-items:center}
+.qty-wrap{display:flex;align-items:center;border:1.5px solid var(--g200);border-radius:var(--r);overflow:hidden;flex-shrink:0;background:#fff}
+.qty-btn{width:38px;height:46px;display:flex;align-items:center;justify-content:center;font-size:20px;color:var(--g700);cursor:pointer;transition:var(--t);user-select:none}
+.qty-btn:hover{background:var(--g100);color:var(--navy)}
+.qty-val{width:42px;text-align:center;font-family:var(--fh);font-size:15px;font-weight:700;color:var(--navy);border:none;outline:none;background:transparent}
+.atc-btn{flex:1;background:var(--navy);color:#fff;border-radius:var(--r);height:46px;font-size:14px;font-weight:800;font-family:var(--fh);transition:var(--t);display:flex;align-items:center;justify-content:center;gap:8px}
+.atc-btn:hover{background:var(--gold);color:var(--navy)}
+.atc-btn:active{transform:scale(.98)}
+.atc-btn.done{background:var(--green)!important;color:#fff!important}
+.atc-btn svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.buy-now-btn{width:100%;background:transparent;border:2px solid var(--navy);color:var(--navy);border-radius:var(--r);height:46px;font-size:14px;font-weight:700;font-family:var(--fh);transition:var(--t);margin-bottom:16px}
+.buy-now-btn:hover{background:var(--navy);color:#fff}
+
+/* Services row */
+.services-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px}
+.srv{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--g200);border-radius:var(--r);padding:10px 12px}
+.srv-ico{width:30px;height:30px;background:var(--navy);border-radius:5px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.srv-ico svg{width:15px;height:15px;stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.srv-t{font-size:11.5px;font-weight:700;color:var(--navy);font-family:var(--fh);line-height:1.3}
+.srv-s{font-size:10.5px;color:var(--g500)}
+
+/* Installments */
+.install-box{background:linear-gradient(105deg,var(--navy),var(--navy2));border-radius:var(--rl);padding:16px 18px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.install-left{}
+.install-label{font-size:10px;font-weight:700;color:rgba(255,255,255,.55);letter-spacing:1.5px;text-transform:uppercase;font-family:var(--fh);margin-bottom:4px}
+.install-val{font-family:var(--fh);font-size:22px;font-weight:900;color:#fff}
+.install-sub{font-size:11.5px;color:rgba(255,255,255,.55)}
+.install-right{text-align:right}
+.install-months{font-family:var(--fh);font-size:28px;font-weight:900;color:var(--gold);line-height:1}
+.install-months-label{font-size:10px;color:rgba(255,255,255,.5);letter-spacing:.5px;text-transform:uppercase}
+
+/* ── TABS ── */
+.tabs-wrap{background:#fff;border-radius:var(--rx);border:1px solid var(--g200);overflow:hidden;margin-bottom:24px}
+.tabs-bar{display:flex;border-bottom:1px solid var(--g200);overflow-x:auto;scrollbar-width:none}
+.tabs-bar::-webkit-scrollbar{display:none}
+.tab{padding:14px 20px;font-size:13px;font-weight:600;color:var(--g500);cursor:pointer;white-space:nowrap;border-bottom:2.5px solid transparent;transition:var(--t);font-family:var(--fh);margin-bottom:-1px}
+.tab:hover{color:var(--navy)}
+.tab.on{color:var(--navy);border-bottom-color:var(--navy);font-weight:700}
+.tab-content{display:none;padding:24px}
+.tab-content.on{display:block}
+
+/* Specs table */
+.specs-table{width:100%;border-collapse:collapse}
+.specs-table tr{border-bottom:1px solid var(--g100)}
+.specs-table tr:last-child{border-bottom:none}
+.specs-table td{padding:10px 14px;font-size:13.5px;vertical-align:top}
+.specs-table td:first-child{color:var(--g500);font-weight:600;width:45%;background:var(--g50)}
+.specs-table td:last-child{color:var(--g900);font-weight:500}
+@media(max-width:480px){.specs-table td{padding:8px 10px;font-size:12.5px}}
+
+/* ── RELATED ── */
+.related-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media(max-width:860px){.related-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.related-grid{grid-template-columns:repeat(2,1fr);gap:10px}}
+.rpc{background:#fff;border:1px solid var(--g200);border-radius:var(--rl);overflow:hidden;cursor:pointer;transition:var(--t)}
+.rpc:hover{box-shadow:var(--s2);transform:translateY(-2px)}
+.rpc-img{background:var(--g50);padding-top:80%;position:relative;display:flex;align-items:center;justify-content:center}
+.rpc-img-in{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:60px}
+.rpc-body{padding:12px}
+.rpc-brand{font-size:10px;font-weight:700;color:var(--g500);text-transform:uppercase;letter-spacing:1px;margin-bottom:3px;font-family:var(--fh)}
+.rpc-name{font-size:12.5px;font-weight:600;color:var(--g900);line-height:1.35;margin-bottom:8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.rpc-price{font-family:var(--fh);font-size:17px;font-weight:900;color:var(--navy)}
+
+/* ── MOBILE STICKY ATC ── */
+.mob-atc{display:none;position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--g200);padding:10px 16px calc(10px + env(safe-area-inset-bottom));z-index:750;box-shadow:0 -4px 20px rgba(4,30,66,.1)}
+.mob-atc-inner{display:flex;align-items:center;gap:10px}
+.mob-atc-price{font-family:var(--fh);font-size:20px;font-weight:900;color:var(--navy);line-height:1}
+.mob-atc-inst{font-size:11px;color:var(--g500)}
+.mob-atc-btn{flex:1;background:var(--navy);color:#fff;border-radius:var(--r);height:46px;font-size:13.5px;font-weight:800;font-family:var(--fh);transition:var(--t);display:flex;align-items:center;justify-content:center;gap:6px}
+.mob-atc-btn:hover{background:var(--gold);color:var(--navy)}
+.mob-atc-btn.done{background:var(--green)!important;color:#fff!important}
+@media(max-width:768px){.mob-atc{display:block};body{padding-bottom:calc(80px + env(safe-area-inset-bottom))}}
+
+/* ── MOBILE BOTTOM NAV ── */
+.mnav{display:none;position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--g200);z-index:800;padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -2px 14px rgba(4,30,66,.09)}
+.mnav-in{display:grid;grid-template-columns:repeat(5,1fr);height:58px}
+.mni{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.mni svg{width:21px;height:21px;stroke:var(--g300);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:stroke var(--t)}
+.mni span{font-size:9px;font-weight:600;color:var(--g300);font-family:var(--fh);transition:color var(--t)}
+.mni.on svg{stroke:var(--navy)}
+.mni.on span{color:var(--navy)}
+.mni-bdg{position:absolute;top:6px;right:calc(50% - 18px);background:var(--gold);color:var(--navy);font-size:8.5px;font-weight:800;min-width:15px;height:15px;border-radius:8px;display:flex;align-items:center;justify-content:center;padding:0 3px}
+@media(max-width:768px){.mnav{display:block}}
+
+/* Toast */
+.toast{position:fixed;top:80px;left:50%;transform:translateX(-50%) translateY(-20px);background:var(--green);color:#fff;font-size:13px;font-weight:700;padding:12px 24px;border-radius:8px;z-index:999;opacity:0;transition:opacity .2s,transform .2s;white-space:nowrap;pointer-events:none;font-family:var(--fh);box-shadow:var(--s3)}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.prg{position:fixed;top:0;left:0;height:2px;background:var(--gold);z-index:1000;pointer-events:none;transition:width .1s}
+</style>
+</head>
+<body>
+
+<div class="prg" id="prg"></div>
+
+<!-- ANNOUNCEMENT -->
+<div class="ann">
+  <div class="ct">
+    <div class="ann-in">
+      <div class="ann-txt">
+        <span>🚚 Δωρεάν μεταφορά σε όλη την Ελλάδα</span>
+        <span>💳 Άτοκες δόσεις έως 24 μήνες</span>
+        <span>🔧 Επαγγελματική εγκατάσταση</span>
+      </div>
+      <div class="ann-ph">2634 027227</div>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="hdr" id="hdr">
+  <div class="ct">
+    <div class="hdr-in">
+      <a href="index.html" class="logo">
+        <span class="logo-top">KONIDAS STORE</span>
+        <div class="logo-bot"><span class="logo-star">✦</span><span class="logo-eur">euronics</span></div>
+      </a>
+      <div class="srch">
+        <input type="search" placeholder="Αναζήτηση προϊόντων..." autocomplete="off">
+        <button class="srch-btn"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+      </div>
+      <div class="hacts">
+        <button class="hb"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span style="font-size:9.5px;font-weight:600">Λογαριασμός</span></button>
+        <button class="hb"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg><span style="font-size:9.5px;font-weight:600">Αγαπημένα</span></button>
+        <button class="hb" id="cartBtn"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span class="hb-bdg" id="cartN">2</span><span style="font-size:9.5px;font-weight:600">Καλάθι</span></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- NAVBAR -->
+<nav class="nb">
+  <div class="ct">
+    <div class="nb-in">
+      <a href="index.html" class="nb-cat"><svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>ΟΛΕΣ ΟΙ ΚΑΤΗΓΟΡΙΕΣ</a>
+      <div class="nb-links">
+        <a class="nb-a active" href="category.html?cat=psyxi">Ψύξη</a>
+        <a class="nb-a" href="category.html?cat=plisi">Πλύση &amp; Στέγνωση</a>
+        <a class="nb-a" href="category.html?cat=kouzina">Κουζίνα</a>
+        <a class="nb-a" href="category.html?cat=entoichismeno">Εντοιχισμένες</a>
+        <a class="nb-a" href="category.html?cat=klimatismos">Κλιματισμός</a>
+        <a class="nb-a" href="category.html?cat=tv">Εικόνα &amp; Ήχος</a>
+        <a class="nb-a" href="category.html?cat=mikro">Μικροσυσκευές</a>
+        <a class="nb-a sale" href="category.html?cat=prosfores">🔥 Προσφορές</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <div class="ct">
+    <div class="bc-in">
+      <a href="index.html">Αρχική</a>
+      <span class="bc-sep">›</span>
+      <a href="category.html?cat=psyxi">Ψυγεία &amp; Καταψύκτες</a>
+      <span class="bc-sep">›</span>
+      <span class="bc-current">Bosch KGN49XWEA</span>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCT -->
+<div class="ct">
+  <div class="prod-layout">
+
+    <!-- GALLERY -->
+    <div class="gallery">
+      <div class="gallery-main">
+        <span class="gallery-badge">-15%</span>
+        <span class="gallery-energy">A+++</span>
+        <div class="gallery-main-img" id="mainImg">🧊</div>
+      </div>
+      <div class="gallery-thumbs">
+        <div class="gallery-thumb on" onclick="setImg(this,'🧊')">🧊</div>
+        <div class="gallery-thumb" onclick="setImg(this,'🔲')">🔲</div>
+        <div class="gallery-thumb" onclick="setImg(this,'📋')">📋</div>
+        <div class="gallery-thumb" onclick="setImg(this,'⚙️')">⚙️</div>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="prod-info">
+      <div class="prod-brand-row">
+        <span class="prod-brand">Bosch</span>
+        <button class="prod-wsh" id="wishBtn" onclick="toggleWish()"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+      </div>
+
+      <h1 class="prod-name">Bosch KGN49XWEA Ψυγειοκαταψύκτης NoFrost 440L A+++</h1>
+      <div class="prod-code">Κωδικός: <span>KGN49XWEA</span> &nbsp;|&nbsp; EAN: <span>4242005239603</span></div>
+
+      <div class="prod-stars">
+        <span class="stars">★★★★★</span>
+        <span class="stars-n">4.9/5</span>
+        <span class="stars-link" onclick="document.querySelector('.tab[data-tab=reviews]').click()">48 κριτικές</span>
+      </div>
+
+      <!-- Price -->
+      <div class="price-block">
+        <div class="price-row">
+          <span class="price-now">649,00€</span>
+          <span class="price-old">769,00€</span>
+          <span class="price-save">ΕΚΠΤΩΣΗ -15%</span>
+        </div>
+        <div class="price-install">ή από <strong>27,04€/μήνα</strong> με 24 άτοκες δόσεις</div>
+        <div class="price-vat">Η τιμή περιλαμβάνει ΦΠΑ 24%</div>
+        <div class="price-stock">Διαθέσιμο — Παράδοση σε 24-48 ώρες</div>
+      </div>
+
+      <!-- Quantity + ATC -->
+      <div class="atc-row">
+        <div class="qty-wrap">
+          <div class="qty-btn" onclick="changeQty(-1)">−</div>
+          <input class="qty-val" type="number" value="1" min="1" max="99" id="qtyVal" readonly>
+          <div class="qty-btn" onclick="changeQty(1)">+</div>
+        </div>
+        <button class="atc-btn" id="atcBtn" onclick="addToCart()">
+          <svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          Προσθήκη στο Καλάθι
+        </button>
+      </div>
+      <button class="buy-now-btn">⚡ Αγορά Τώρα</button>
+
+      <!-- Services -->
+      <div class="services-row">
+        <div class="srv">
+          <div class="srv-ico"><svg viewBox="0 0 24 24"><path d="M1 3h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/></svg></div>
+          <div><div class="srv-t">Δωρεάν Μεταφορά</div><div class="srv-s">Σε όλη την Ελλάδα</div></div>
+        </div>
+        <div class="srv">
+          <div class="srv-ico"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+          <div><div class="srv-t">Εγκατάσταση</div><div class="srv-s">Από τεχνικούς μας</div></div>
+        </div>
+        <div class="srv">
+          <div class="srv-ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <div><div class="srv-t">2 Χρόνια Εγγύηση</div><div class="srv-s">Konidas guarantee</div></div>
+        </div>
+        <div class="srv">
+          <div class="srv-ico"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></div>
+          <div><div class="srv-t">Δωρεάν Απόσυρση</div><div class="srv-s">Παλιάς συσκευής</div></div>
+        </div>
+      </div>
+
+      <!-- Installments -->
+      <div class="install-box">
+        <div class="install-left">
+          <div class="install-label">Άτοκη Χρηματοδότηση</div>
+          <div class="install-val">27,04€</div>
+          <div class="install-sub">ανά μήνα · 0% επιτόκιο</div>
+        </div>
+        <div class="install-right">
+          <div class="install-months">24</div>
+          <div class="install-months-label">Μήνες</div>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+      <div class="tabs-wrap">
+        <div class="tabs-bar">
+          <div class="tab on" data-tab="specs" onclick="switchTab(this)">Χαρακτηριστικά</div>
+          <div class="tab" data-tab="desc" onclick="switchTab(this)">Περιγραφή</div>
+          <div class="tab" data-tab="reviews" onclick="switchTab(this)">Κριτικές (48)</div>
+          <div class="tab" data-tab="install" onclick="switchTab(this)">Εγκατάσταση</div>
+        </div>
+
+        <!-- Specs -->
+        <div class="tab-content on" id="tab-specs">
+          <table class="specs-table">
+            <tr><td>Τύπος</td><td>Ψυγειοκαταψύκτης NoFrost</td></tr>
+            <tr><td>Ενεργειακή Κλάση</td><td>A+++</td></tr>
+            <tr><td>Συνολική Χωρητικότητα</td><td>440 L</td></tr>
+            <tr><td>Χωρητικότητα Ψυγείου</td><td>317 L</td></tr>
+            <tr><td>Χωρητικότητα Καταψύκτη</td><td>123 L</td></tr>
+            <tr><td>Διαστάσεις (ΥxΠxΒ)</td><td>201 x 70 x 67 cm</td></tr>
+            <tr><td>Χρώμα</td><td>Inox</td></tr>
+            <tr><td>Σύστημα Ψύξης</td><td>NoFrost — και τα δύο διαμερίσματα</td></tr>
+            <tr><td>Κλάση Κλίματος</td><td>SN-T (10°C έως 43°C)</td></tr>
+            <tr><td>Στάθμη Θορύβου</td><td>39 dB(A)</td></tr>
+            <tr><td>Κατανάλωση Ρεύματος</td><td>172 kWh/χρόνο</td></tr>
+            <tr><td>VitaFresh XXL</td><td>Ναι — έως 2x πιο φρέσκα τρόφιμα</td></tr>
+            <tr><td>SuperCooling</td><td>Ναι — γρήγορη ψύξη νέων τροφίμων</td></tr>
+            <tr><td>Alarm Πόρτας</td><td>Ναι</td></tr>
+            <tr><td>Εγγύηση</td><td>2 χρόνια + 2 χρόνια Konidas</td></tr>
+          </table>
+        </div>
+
+        <!-- Description -->
+        <div class="tab-content" id="tab-desc">
+          <p style="font-size:14px;color:var(--g700);line-height:1.75;margin-bottom:14px">
+            Το <strong>Bosch KGN49XWEA</strong> είναι ένα premium ψυγειοκαταψύκτης NoFrost 440L με ενεργειακή κλάση A+++. Η τεχνολογία <strong>VitaFresh XXL</strong> διατηρεί τα τρόφιμά σας φρέσκα έως και 2 φορές περισσότερο χάρη στον αυτόματο έλεγχο υγρασίας.
+          </p>
+          <p style="font-size:14px;color:var(--g700);line-height:1.75;margin-bottom:14px">
+            Το σύστημα <strong>NoFrost</strong> αποτρέπει σχηματισμό πάγου και στα δύο διαμερίσματα, εξαλείφοντας την ανάγκη για ξεπάγωμα. Η λειτουργία <strong>SuperCooling</strong> ψύχει γρήγορα νέα τρόφιμα χωρίς να επηρεάζει τη θερμοκρασία των υπόλοιπων.
+          </p>
+          <p style="font-size:14px;color:var(--g700);line-height:1.75">
+            Ιδανικό για μεγάλες οικογένειες που θέλουν κορυφαία τεχνολογία, εξοικονόμηση ενέργειας και εξαιρετική διατήρηση τροφίμων σε ένα premium design Inox.
+          </p>
+        </div>
+
+        <!-- Reviews -->
+        <div class="tab-content" id="tab-reviews">
+          <div style="display:flex;align-items:center;gap:20px;margin-bottom:24px;padding-bottom:20px;border-bottom:1px solid var(--g200);flex-wrap:wrap">
+            <div style="text-align:center">
+              <div style="font-family:var(--fh);font-size:52px;font-weight:900;color:var(--navy);line-height:1">4.9</div>
+              <div style="color:var(--gold);font-size:20px;margin:4px 0">★★★★★</div>
+              <div style="font-size:12px;color:var(--g500)">48 κριτικές</div>
+            </div>
+            <div style="flex:1;min-width:180px">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:5px"><span style="font-size:12px;color:var(--g500);width:20px">5★</span><div style="flex:1;height:8px;background:var(--g100);border-radius:4px;overflow:hidden"><div style="width:90%;height:100%;background:var(--gold);border-radius:4px"></div></div><span style="font-size:11px;color:var(--g500);width:28px">43</span></div>
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:5px"><span style="font-size:12px;color:var(--g500);width:20px">4★</span><div style="flex:1;height:8px;background:var(--g100);border-radius:4px;overflow:hidden"><div style="width:8%;height:100%;background:var(--gold);border-radius:4px"></div></div><span style="font-size:11px;color:var(--g500);width:28px">4</span></div>
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:5px"><span style="font-size:12px;color:var(--g500);width:20px">3★</span><div style="flex:1;height:8px;background:var(--g100);border-radius:4px;overflow:hidden"><div style="width:2%;height:100%;background:var(--gold);border-radius:4px"></div></div><span style="font-size:11px;color:var(--g500);width:28px">1</span></div>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:16px">
+            <div style="padding-bottom:16px;border-bottom:1px solid var(--g100)">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">
+                <div style="width:36px;height:36px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:13px;font-weight:700;color:#fff;flex-shrink:0">ΓΠ</div>
+                <div><div style="font-size:13.5px;font-weight:700;font-family:var(--fh);color:var(--g900)">Γιώργης Π.</div><div style="font-size:11px;color:var(--g500)">Μάρτιος 2025 · Επαληθευμένη Αγορά ✓</div></div>
+              </div>
+              <div style="color:var(--gold);font-size:13px;margin-bottom:6px">★★★★★</div>
+              <div style="font-size:13.5px;color:var(--g700);line-height:1.65">Άψογο προϊόν. Η τεχνολογία NoFrost δουλεύει τέλεια, δεν κάνει σχεδόν θόρυβο και το inox είναι premium. Η εγκατάσταση από το Konidas ήταν γρήγορη και επαγγελματική.</div>
+            </div>
+            <div>
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">
+                <div style="width:36px;height:36px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:13px;font-weight:700;color:var(--navy);flex-shrink:0">ΜΚ</div>
+                <div><div style="font-size:13.5px;font-weight:700;font-family:var(--fh);color:var(--g900)">Μαρία Κ.</div><div style="font-size:11px;color:var(--g500)">Ιανουάριος 2025 · Επαληθευμένη Αγορά ✓</div></div>
+              </div>
+              <div style="color:var(--gold);font-size:13px;margin-bottom:6px">★★★★★</div>
+              <div style="font-size:13.5px;color:var(--g700);line-height:1.65">Εξαιρετικό ψυγείο! Η χωρητικότητα είναι τεράστια για την οικογένειά μας. Τα τρόφιμα μένουν φρέσκα πολύ περισσότερο από το παλιό μας ψυγείο.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Installation -->
+        <div class="tab-content" id="tab-install">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+            <div style="background:var(--g50);border-radius:var(--rl);padding:16px;border:1px solid var(--g200)">
+              <div style="font-family:var(--fh);font-size:13px;font-weight:800;color:var(--navy);margin-bottom:6px">🚚 Παράδοση</div>
+              <div style="font-size:12.5px;color:var(--g700);line-height:1.6">Δωρεάν παράδοση σε όλη την Ελλάδα. Χρόνος: 24-48 ώρες για Ναύπακτο και περιοχή.</div>
+            </div>
+            <div style="background:var(--g50);border-radius:var(--rl);padding:16px;border:1px solid var(--g200)">
+              <div style="font-family:var(--fh);font-size:13px;font-weight:800;color:var(--navy);margin-bottom:6px">🔧 Εγκατάσταση</div>
+              <div style="font-size:12.5px;color:var(--g700);line-height:1.6">Από πιστοποιημένους τεχνικούς. Τοποθέτηση, σύνδεση και επίδειξη λειτουργίας.</div>
+            </div>
+            <div style="background:var(--g50);border-radius:var(--rl);padding:16px;border:1px solid var(--g200)">
+              <div style="font-family:var(--fh);font-size:13px;font-weight:800;color:var(--navy);margin-bottom:6px">♻️ Απόσυρση</div>
+              <div style="font-size:12.5px;color:var(--g700);line-height:1.6">Δωρεάν παραλαβή παλιάς συσκευής. Ανακύκλωση σύμφωνα με τη νομοθεσία.</div>
+            </div>
+            <div style="background:var(--g50);border-radius:var(--rl);padding:16px;border:1px solid var(--g200)">
+              <div style="font-family:var(--fh);font-size:13px;font-weight:800;color:var(--navy);margin-bottom:6px">🛡️ Εγγύηση</div>
+              <div style="font-size:12.5px;color:var(--g700);line-height:1.6">2 χρόνια κατασκευαστή + 2 επιπλέον χρόνια Konidas guarantee. Συνολικά 4 χρόνια.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /prod-info -->
+
+  </div><!-- /prod-layout -->
+
+  <!-- RELATED PRODUCTS -->
+  <div style="padding-bottom:48px">
+    <h2 style="font-family:var(--fh);font-size:20px;font-weight:800;color:var(--navy);margin-bottom:20px;letter-spacing:-.3px">Παρόμοια Προϊόντα</h2>
+    <div class="related-grid">
+      <div class="rpc" onclick="location.reload()">
+        <div class="rpc-img"><div class="rpc-img-in">🧊</div></div>
+        <div class="rpc-body"><div class="rpc-brand">Siemens</div><div class="rpc-name">KG86NVIDA NoFrost 631L A++</div><div class="rpc-price">1.149€</div></div>
+      </div>
+      <div class="rpc" onclick="location.reload()">
+        <div class="rpc-img"><div class="rpc-img-in">🧊</div></div>
+        <div class="rpc-body"><div class="rpc-brand">LG</div><div class="rpc-name">GBB92STACP 384L A+++ Inox</div><div class="rpc-price">749€</div></div>
+      </div>
+      <div class="rpc" onclick="location.reload()">
+        <div class="rpc-img"><div class="rpc-img-in">🧊</div></div>
+        <div class="rpc-body"><div class="rpc-brand">Bosch</div><div class="rpc-name">KGN36VWED 324L Λευκό A++</div><div class="rpc-price">449€</div></div>
+      </div>
+      <div class="rpc" onclick="location.reload()">
+        <div class="rpc-img"><div class="rpc-img-in">🧊</div></div>
+        <div class="rpc-body"><div class="rpc-brand">Samsung</div><div class="rpc-name">RS68CG883EB1EF Side by Side 634L</div><div class="rpc-price">1.249€</div></div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /ct -->
+
+<!-- MOBILE STICKY ATC -->
+<div class="mob-atc">
+  <div class="mob-atc-inner">
+    <div>
+      <div class="mob-atc-price">649€</div>
+      <div class="mob-atc-inst">27,04€/μήνα · 24 δόσεις</div>
+    </div>
+    <button class="mob-atc-btn" id="mobAtcBtn" onclick="addToCart()">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      Προσθήκη στο Καλάθι
+    </button>
+  </div>
+</div>
+
+<!-- MOBILE BOTTOM NAV -->
+<nav class="mnav">
+  <div class="mnav-in">
+    <div class="mni" onclick="location.href='index.html'"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 0-2 2H5a2 2 0 0 0-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg><span>Αρχική</span></div>
+    <div class="mni" onclick="location.href='category.html'"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="9" height="9" rx="1"/><rect x="13" y="2" width="9" height="9" rx="1"/><rect x="2" y="13" width="9" height="9" rx="1"/><rect x="13" y="13" width="9" height="9" rx="1"/></svg><span>Κατηγορίες</span></div>
+    <div class="mni" onclick="location.href='index.html'"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><span>Αναζήτηση</span></div>
+    <div class="mni"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg><span>Αγαπημένα</span></div>
+    <div class="mni on" style="position:relative"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span class="mni-bdg" id="mobCartN">2</span><span>Καλάθι</span></div>
+  </div>
+</nav>
+
+<div class="toast" id="toast"></div>
+
+<script>
+var hdr=document.getElementById('hdr'),prg=document.getElementById('prg');
+window.addEventListener('scroll',function(){
+  var s=window.scrollY,h=document.body.scrollHeight-window.innerHeight;
+  hdr.classList.toggle('sc',s>10);
+  prg.style.width=(h>0?(s/h*100):0)+'%';
+},{passive:true});
+
+function setImg(thumb,img){
+  document.querySelectorAll('.gallery-thumb').forEach(function(t){t.classList.remove('on');});
+  thumb.classList.add('on');
+  document.getElementById('mainImg').textContent=img;
+}
+
+function switchTab(tab){
+  document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('on');});
+  document.querySelectorAll('.tab-content').forEach(function(c){c.classList.remove('on');});
+  tab.classList.add('on');
+  document.getElementById('tab-'+tab.dataset.tab).classList.add('on');
+}
+
+var qty=1;
+function changeQty(d){qty=Math.max(1,Math.min(99,qty+d));document.getElementById('qtyVal').value=qty;}
+
+var cart=2;
+function addToCart(){
+  var btn=document.getElementById('atcBtn');
+  var mobBtn=document.getElementById('mobAtcBtn');
+  btn.innerHTML='✓ Προστέθηκε στο Καλάθι!';btn.classList.add('done');btn.disabled=true;
+  mobBtn.innerHTML='✓ Προστέθηκε!';mobBtn.classList.add('done');mobBtn.disabled=true;
+  cart+=qty;
+  document.getElementById('cartN').textContent=cart;
+  document.getElementById('mobCartN').textContent=cart;
+  showToast('✓ Προστέθηκε '+qty+' τεμ. στο καλάθι σας!');
+  setTimeout(function(){
+    btn.innerHTML='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> Προσθήκη στο Καλάθι';
+    btn.classList.remove('done');btn.disabled=false;
+    mobBtn.innerHTML='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> Προσθήκη στο Καλάθι';
+    mobBtn.classList.remove('done');mobBtn.disabled=false;
+  },2500);
+}
+
+function toggleWish(){
+  var btn=document.getElementById('wishBtn');
+  btn.classList.toggle('on');
+  btn.querySelector('svg').style.stroke=btn.classList.contains('on')?'#cc2222':'';
+  btn.querySelector('svg').style.fill=btn.classList.contains('on')?'#cc2222':'none';
+  showToast(btn.classList.contains('on')?'♥ Αποθηκεύτηκε στα Αγαπημένα':'Αφαιρέθηκε από τα Αγαπημένα');
+}
+
+function showToast(msg){
+  var t=document.getElementById('toast');
+  t.textContent=msg;t.classList.add('show');
+  clearTimeout(t._t);t._t=setTimeout(function(){t.classList.remove('show');},2500);
+}
+</script>
+</body>
+</html>
