@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#041E42">
+<title>Προσφορές — Konidas Store Euronics</title>
+<meta name="description" content="Προσφορές από Εκπτώσεις έως -50% — Περιορισμένα τεμάχια. Δωρεάν μεταφορά & εγκατάσταση. Άτοκες δόσεις.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+:root{
+  --navy:#041E42;--navy2:#06285a;
+  --gold:#f5a623;--gold2:#d48c10;
+  --red:#e63946;--green:#2d6a4f;
+  --white:#fff;
+  --g50:#f8f9fb;--g100:#f0f2f6;--g200:#e2e6ee;--g300:#c8cdd8;--g500:#6b7280;--g700:#374151;--g900:#111827;
+  --fh:'Montserrat',sans-serif;--fb:'Inter',sans-serif;
+  --r:8px;--rl:12px;--rx:16px;
+  --s1:0 1px 4px rgba(0,0,0,.08);--s2:0 4px 16px rgba(0,0,0,.1);--s3:0 8px 32px rgba(0,0,0,.14);
+  --t:.18s ease;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--fb);color:var(--g900);background:var(--g50);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;font-family:var(--fb);border:none;background:none}
+svg{display:block;flex-shrink:0}
+.ct{max-width:1380px;margin:0 auto;padding:0 16px}
+
+/* ANN */
+.ann{background:var(--navy);color:#fff;font-size:11px;font-weight:500}
+.ann-in{height:32px;display:flex;align-items:center;justify-content:center;gap:24px;overflow:hidden;padding:0 16px}
+.ann-item{display:flex;align-items:center;gap:5px;white-space:nowrap;opacity:.85}
+.ann-item b{color:var(--gold)}
+@media(max-width:600px){.ann-item:nth-child(n+3){display:none}}
+
+/* HEADER */
+.hdr{background:#fff;border-bottom:1px solid var(--g200);position:sticky;top:0;z-index:800;transition:box-shadow .2s}
+.hdr.sc{box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.hdr-in{height:58px;display:flex;align-items:center;gap:12px;padding:0 16px}
+.logo{display:flex;flex-direction:column;gap:1px;flex-shrink:0;line-height:1;text-decoration:none}
+.logo-top{font-family:var(--fh);font-size:15px;font-weight:900;color:var(--navy);letter-spacing:-.3px}
+.logo-bot{display:flex;align-items:center;gap:3px}
+.logo-star{color:var(--gold);font-size:10px}
+.logo-eur{font-size:10px;font-weight:700;color:#0057b8;letter-spacing:.8px}
+.srch{flex:1;position:relative;max-width:560px;margin:0 auto}
+.srch input{width:100%;height:38px;border:1.5px solid var(--g200);border-radius:20px;padding:0 42px 0 16px;font-size:13.5px;font-family:var(--fb);color:var(--g900);background:var(--g50);outline:none;transition:var(--t)}
+.srch input:focus{border-color:var(--navy);background:#fff}
+.srch input::placeholder{color:var(--g300)}
+.srch-btn{position:absolute;right:0;top:0;height:38px;width:40px;background:var(--navy);border-radius:0 20px 20px 0;display:flex;align-items:center;justify-content:center}
+.srch-btn svg{width:15px;height:15px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round}
+.hdr-acts{display:flex;align-items:center;gap:2px;flex-shrink:0}
+.hact{display:flex;flex-direction:column;align-items:center;gap:2px;padding:4px 8px;border-radius:var(--r);color:var(--g500);font-size:9px;font-weight:600;position:relative;min-height:44px;justify-content:center;transition:var(--t)}
+.hact:hover{background:var(--g100);color:var(--navy)}
+.hact svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.hact-bdg{position:absolute;top:3px;right:3px;background:var(--gold);color:var(--navy);font-size:9px;font-weight:800;min-width:15px;height:15px;border-radius:8px;display:flex;align-items:center;justify-content:center;padding:0 3px;font-family:var(--fh)}
+@media(max-width:600px){.hact span{display:none}}
+
+/* NAVBAR */
+.nb{background:var(--navy);display:none}
+@media(min-width:769px){.nb{display:block}}
+.nb-in{display:flex;align-items:stretch;height:40px;overflow-x:auto;scrollbar-width:none}
+.nb-in::-webkit-scrollbar{display:none}
+.nb-a{display:flex;align-items:center;padding:0 14px;font-size:12.5px;font-weight:600;color:rgba(255,255,255,.78);white-space:nowrap;border-right:1px solid rgba(255,255,255,.06);transition:var(--t);text-decoration:none}
+.nb-a:hover,.nb-a.on{background:rgba(255,255,255,.1);color:#fff}
+.nb-a.sale{color:var(--gold);font-weight:700}
+.nb-home{display:flex;align-items:center;gap:7px;padding:0 16px;background:rgba(255,255,255,.09);border-right:1px solid rgba(255,255,255,.12);font-size:12.5px;font-weight:700;color:#fff;text-decoration:none;flex-shrink:0;font-family:var(--fh);transition:var(--t)}
+.nb-home:hover{background:rgba(255,255,255,.16)}
+
+/* BREADCRUMB */
+.bc{background:#fff;border-bottom:1px solid var(--g200);padding:10px 16px}
+.bc-in{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--g500);flex-wrap:wrap}
+.bc-in a{color:var(--g500);transition:color var(--t)}
+.bc-in a:hover{color:var(--navy)}
+.bc-sep{color:var(--g300)}
+.bc-cur{color:var(--navy);font-weight:600}
+
+/* CAT HERO */
+.cat-hero{background:linear-gradient(105deg,var(--navy),var(--navy2));padding:20px 16px;border-bottom:2px solid var(--gold)}
+@media(min-width:600px){.cat-hero{padding:24px 0}}
+.ch-in{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.ch-eye{font-size:10px;font-weight:700;color:var(--gold);letter-spacing:2px;text-transform:uppercase;font-family:var(--fh);margin-bottom:5px}
+.ch-title{font-family:var(--fh);font-size:clamp(20px,4vw,28px);font-weight:900;color:#fff;letter-spacing:-.3px;margin-bottom:3px}
+.ch-sub{font-size:12.5px;color:rgba(255,255,255,.5)}
+.ch-stats{display:flex;gap:20px;flex-shrink:0}
+@media(max-width:500px){.ch-stats{display:none}}
+.ch-stat-v{font-family:var(--fh);font-size:20px;font-weight:900;color:var(--gold);line-height:1;text-align:center}
+.ch-stat-k{font-size:9.5px;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.5px;text-align:center;margin-top:2px}
+
+/* SUBCAT PILLS */
+.subcat-bar{background:#fff;border-bottom:1px solid var(--g200)}
+.subcat-sc{display:flex;overflow-x:auto;scrollbar-width:none;padding:10px 16px;gap:8px;-webkit-overflow-scrolling:touch}
+.subcat-sc::-webkit-scrollbar{display:none}
+.subcat-pill{display:flex;align-items:center;padding:7px 14px;border-radius:20px;font-size:12.5px;font-weight:600;font-family:var(--fh);white-space:nowrap;cursor:pointer;transition:var(--t);border:1.5px solid var(--g200);background:#fff;color:var(--g700);flex-shrink:0;min-height:36px}
+.subcat-pill:hover{border-color:var(--navy);color:var(--navy)}
+.subcat-pill.on{background:var(--navy);border-color:var(--navy);color:#fff}
+
+/* LAYOUT */
+.cat-layout{display:grid;grid-template-columns:240px 1fr;gap:20px;padding:20px 16px 48px;align-items:start}
+@media(max-width:860px){.cat-layout{grid-template-columns:1fr;padding:16px 16px 120px}}
+@media(min-width:769px){.cat-layout{padding:20px 0 48px}}
+
+/* SIDEBAR */
+.sidebar{background:#fff;border-radius:var(--rl);border:1px solid var(--g200);overflow:hidden;position:sticky;top:72px}
+@media(max-width:860px){.sidebar{display:none}}
+.sf-head{padding:14px 16px;border-bottom:1px solid var(--g200);display:flex;align-items:center;justify-content:space-between}
+.sf-title{font-family:var(--fh);font-size:13px;font-weight:800;color:var(--navy)}
+.sf-clear{font-size:12px;color:var(--gold2);font-weight:600;cursor:pointer}
+.sf-clear:hover{color:var(--red)}
+.sf-sec{border-bottom:1px solid var(--g100)}
+.sf-sec-hd{padding:12px 16px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;transition:background var(--t)}
+.sf-sec-hd:hover{background:var(--g50)}
+.sf-sec-lbl{font-family:var(--fh);font-size:12px;font-weight:700;color:var(--g900)}
+.sf-arr{font-size:10px;color:var(--g500);transition:transform var(--t)}
+.sf-arr.open{transform:rotate(180deg)}
+.sf-body{padding:0 16px 12px;display:none}
+.sf-body.open{display:block}
+.sf-chk{display:flex;align-items:center;gap:8px;padding:5px 0;cursor:pointer}
+.sf-chk input{width:15px;height:15px;accent-color:var(--navy);cursor:pointer;flex-shrink:0}
+.sf-chk-lbl{font-size:13px;color:var(--g700);flex:1}
+.sf-chk-ct{font-size:11px;color:var(--g300)}
+.price-inps{display:flex;gap:8px;align-items:center;margin-bottom:8px;margin-top:6px}
+.price-inp{flex:1;height:34px;border:1.5px solid var(--g200);border-radius:var(--r);padding:0 8px;font-size:12.5px;font-family:var(--fb);outline:none;text-align:center}
+.price-inp:focus{border-color:var(--navy)}
+.price-sep{font-size:12px;color:var(--g300)}
+.price-sldr{width:100%;accent-color:var(--navy)}
+.apply-btn{width:100%;background:var(--navy);color:#fff;border-radius:var(--r);padding:10px 0;font-size:12.5px;font-weight:700;font-family:var(--fh);margin-top:12px;transition:background var(--t)}
+.apply-btn:hover{background:var(--navy2)}
+
+/* SORT BAR */
+.sort-bar{background:#fff;border-radius:var(--rl);border:1px solid var(--g200);padding:10px 14px;display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;gap:10px;flex-wrap:wrap}
+.sort-ct{font-size:13px;color:var(--g500)}
+.sort-ct strong{color:var(--navy);font-weight:700}
+.sort-r{display:flex;align-items:center;gap:8px}
+.sort-lbl{font-size:12px;color:var(--g500)}
+.sort-sel{height:34px;border:1.5px solid var(--g200);border-radius:var(--r);padding:0 10px;font-size:12.5px;font-family:var(--fb);outline:none;cursor:pointer;background:#fff;color:var(--g900)}
+.sort-sel:focus{border-color:var(--navy)}
+.vbtns{display:flex;gap:4px}
+.vbtn{width:32px;height:32px;border-radius:var(--r);border:1.5px solid var(--g200);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--t);color:var(--g500)}
+.vbtn:hover,.vbtn.on{border-color:var(--navy);background:var(--navy);color:#fff}
+.vbtn svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2}
+
+/* PRODUCT GRID */
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:700px){.pgrid{grid-template-columns:repeat(2,1fr);gap:10px}}
+
+/* PRODUCT CARD */
+.pc{background:#fff;border:1px solid var(--g200);border-radius:var(--rl);overflow:hidden;transition:border-color var(--t),box-shadow var(--t),transform var(--t);position:relative;display:flex;flex-direction:column;cursor:pointer}
+.pc:hover{border-color:var(--g300);box-shadow:var(--s2);transform:translateY(-3px)}
+@media(hover:none){.pc:hover{transform:none;box-shadow:none}}
+.pc-img{position:relative;background:var(--g50);padding-top:85%;overflow:hidden}
+.pc-img-in{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:clamp(52px,8vw,80px);transition:transform .3s}
+.pc:hover .pc-img-in{transform:scale(1.06)}
+.pc-tag{position:absolute;top:8px;left:8px;z-index:2;color:#fff;font-size:10px;font-weight:800;padding:3px 8px;border-radius:4px;font-family:var(--fh)}
+.pc-wsh{position:absolute;top:7px;right:7px;z-index:2;width:30px;height:30px;border-radius:50%;background:#fff;border:1px solid var(--g200);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--t)}
+.pc-wsh:hover{border-color:var(--red);background:#fff0f0}
+.pc-wsh svg{width:13px;height:13px;stroke:var(--g300);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:var(--t)}
+.pc-wsh.on svg{stroke:var(--red);fill:var(--red)}
+.pc-body{padding:11px 11px 13px;display:flex;flex-direction:column;flex:1}
+.pc-brand{font-size:9.5px;font-weight:700;color:var(--g500);text-transform:uppercase;letter-spacing:1px;margin-bottom:3px;font-family:var(--fh)}
+.pc-name{font-size:12.5px;font-weight:600;color:var(--g900);line-height:1.38;margin-bottom:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;flex:1}
+.pc-st{display:flex;align-items:center;gap:3px;margin-bottom:7px}
+.stars{color:var(--gold);font-size:11px;letter-spacing:.3px}
+.stars-n{font-size:10px;color:var(--g500)}
+.pc-pr{display:flex;align-items:baseline;gap:6px;margin-bottom:3px;flex-wrap:wrap}
+.p-now{font-family:var(--fh);font-size:17px;font-weight:900;color:var(--red);line-height:1}
+.p-old{font-size:12px;color:var(--g300);text-decoration:line-through}
+.pc-inst{font-size:10.5px;color:var(--g500);margin-bottom:10px}
+.pc-inst strong{color:var(--navy);font-weight:700}
+.pc-atc{width:100%;background:var(--navy);color:#fff;border-radius:var(--r);padding:9px 0;font-size:12px;font-weight:700;font-family:var(--fh);transition:background var(--t),color var(--t);min-height:38px;display:flex;align-items:center;justify-content:center;gap:5px;margin-top:auto}
+.pc-atc:hover{background:var(--gold);color:var(--navy)}
+.pc-atc:active{transform:scale(.98)}
+.pc-atc.done{background:var(--green)!important;color:#fff!important}
+
+/* PAGINATION */
+.pag{display:flex;align-items:center;justify-content:center;gap:5px;margin-top:28px;flex-wrap:wrap}
+.pg-btn{width:36px;height:36px;border-radius:var(--r);border:1.5px solid var(--g200);background:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:var(--g700);cursor:pointer;transition:var(--t);font-family:var(--fh)}
+.pg-btn:hover{border-color:var(--navy);color:var(--navy)}
+.pg-btn.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.pg-dots{color:var(--g300);padding:0 2px}
+
+/* MOB FILTER BTN */
+.mob-filter{display:none;position:fixed;bottom:70px;left:50%;transform:translateX(-50%);background:var(--navy);color:#fff;border-radius:24px;padding:12px 28px;font-size:13.5px;font-weight:700;font-family:var(--fh);box-shadow:var(--s3);z-index:700;gap:8px;align-items:center;white-space:nowrap;border:none;min-height:46px}
+@media(max-width:860px){.mob-filter{display:flex}}
+.mob-filter svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round}
+
+/* FILTER DRAWER */
+.fdrawer{position:fixed;inset:0;z-index:900;display:none}
+.fdrawer.open{display:block}
+.fd-ov{position:absolute;inset:0;background:rgba(4,18,42,.55)}
+.fd-panel{position:absolute;bottom:0;left:0;right:0;background:#fff;border-radius:20px 20px 0 0;max-height:82vh;overflow-y:auto;padding-bottom:env(safe-area-inset-bottom)}
+.fd-head{padding:14px 18px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--g200);position:sticky;top:0;background:#fff;z-index:2}
+.fd-title{font-family:var(--fh);font-size:14px;font-weight:800;color:var(--navy)}
+.fd-close{width:30px;height:30px;border-radius:50%;background:var(--g100);display:flex;align-items:center;justify-content:center;font-size:17px;cursor:pointer}
+.fd-body{padding:16px 18px}
+.fd-apply{width:calc(100% - 36px);margin:0 18px 18px;background:var(--navy);color:#fff;border-radius:var(--r);padding:13px;font-size:13.5px;font-weight:700;font-family:var(--fh);transition:background var(--t)}
+.fd-apply:hover{background:var(--navy2)}
+.fd-sec-title{font-family:var(--fh);font-size:12px;font-weight:700;color:var(--navy);margin-bottom:10px;text-transform:uppercase;letter-spacing:.5px}
+.fd-chips{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:18px}
+.fd-chip{padding:6px 14px;border-radius:20px;border:1.5px solid var(--g200);font-size:12.5px;font-weight:600;color:var(--g700);cursor:pointer;transition:var(--t);font-family:var(--fh)}
+.fd-chip.on,.fd-chip:hover{border-color:var(--navy);background:var(--navy);color:#fff}
+
+/* BOTTOM NAV */
+.mnav{display:none;position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--g200);z-index:800;padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -2px 12px rgba(0,0,0,.08)}
+@media(max-width:768px){.mnav{display:block};body{padding-bottom:calc(60px + env(safe-area-inset-bottom))}}
+.mnav-in{display:grid;grid-template-columns:repeat(5,1fr);height:54px}
+.mni{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;cursor:pointer;transition:var(--t);position:relative}
+.mni svg{width:20px;height:20px;stroke:var(--g300);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:stroke var(--t)}
+.mni span{font-size:9px;font-weight:600;color:var(--g300);font-family:var(--fh);transition:color var(--t)}
+.mni.on svg{stroke:var(--navy)}
+.mni.on span{color:var(--navy)}
+.mni-bdg{position:absolute;top:5px;right:calc(50% - 18px);background:var(--gold);color:var(--navy);font-size:8.5px;font-weight:800;min-width:15px;height:15px;border-radius:8px;display:flex;align-items:center;justify-content:center;padding:0 3px}
+
+/* TOAST */
+.toast{position:fixed;top:68px;left:50%;transform:translateX(-50%) translateY(-20px);background:var(--green);color:#fff;font-size:13px;font-weight:700;padding:10px 22px;border-radius:8px;z-index:999;opacity:0;transition:opacity .2s,transform .2s;white-space:nowrap;pointer-events:none;font-family:var(--fh);box-shadow:var(--s3)}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.prg{position:fixed;top:0;left:0;height:2px;background:var(--gold);z-index:1000;pointer-events:none;transition:width .1s}
+</style>
+</head>
+<body>
+<div class="prg" id="prg"></div>
+
+<!-- ANN -->
+<div class="ann">
+  <div class="ann-in">
+    <div class="ann-item">🚚 <b>Δωρεάν μεταφορά</b> σε όλη την Ελλάδα</div>
+    <div class="ann-item">💳 <b>Άτοκες δόσεις</b> έως 24 μήνες</div>
+    <div class="ann-item">📞 <b>2634 027227</b></div>
+    <div class="ann-item">🔧 <b>Επαγγελματική εγκατάσταση</b></div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="hdr" id="hdr">
+  <div class="hdr-in">
+    <a href="index.html" class="logo">
+      <span class="logo-top">KONIDAS STORE</span>
+      <div class="logo-bot"><span class="logo-star">✦</span><span class="logo-eur">euronics</span></div>
+    </a>
+    <div class="srch">
+      <input type="search" placeholder="Αναζήτηση προϊόντων..." autocomplete="off">
+      <button class="srch-btn"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+    </div>
+    <div class="hdr-acts">
+      <div class="hact"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Λογαριασμός</span></div>
+      <div class="hact" style="position:relative">
+        <svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="hact-bdg" id="cartN">2</span>
+        <span>Καλάθι</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- NAVBAR -->
+<nav class="nb">
+  <div class="ct">
+    <div class="nb-in">
+      <a href="index.html" class="nb-home">← Αρχική</a>
+      <a class="nb-a " href="cat-psyxi.html">Ψύξη</a>
+<a class="nb-a " href="cat-plisi.html">Πλύση & Στέγνωση</a>
+<a class="nb-a " href="cat-kouzina.html">Κουζίνα</a>
+<a class="nb-a " href="cat-klimatismos.html">Κλιματισμός</a>
+<a class="nb-a " href="cat-tv.html">TV & Ήχος</a>
+<a class="nb-a " href="cat-mikro.html">Μικροσυσκευές</a>
+<a class="nb-a on sale" href="cat-prosfores.html">🔥 Προσφορές</a>
+
+    </div>
+  </div>
+</nav>
+
+<!-- BREADCRUMB -->
+<div class="bc">
+  <div class="ct">
+    <div class="bc-in">
+      <a href="index.html">Αρχική</a>
+      <span class="bc-sep">›</span>
+      <span class="bc-cur">Προσφορές</span>
+    </div>
+  </div>
+</div>
+
+<!-- CAT HERO -->
+<div class="cat-hero">
+  <div class="ct">
+    <div class="ch-in">
+      <div>
+        <div class="ch-eye">🔥 Κατηγορία</div>
+        <h1 class="ch-title">Προσφορές</h1>
+        <p class="ch-sub">Εκπτώσεις έως -50% — Περιορισμένα τεμάχια</p>
+      </div>
+      <div class="ch-stats">
+        <div><div class="ch-stat-v">186</div><div class="ch-stat-k">Προϊόντα</div></div>
+        <div><div class="ch-stat-v">15</div><div class="ch-stat-k">Brands</div></div>
+        <div><div class="ch-stat-v">A+++</div><div class="ch-stat-k">Ενεργ.</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SUBCAT PILLS -->
+<div class="subcat-bar">
+  <div class="subcat-sc">
+    <div class="subcat-pill on" onclick="selSub(this)">Όλα</div>
+<div class="subcat-pill" onclick="selSub(this)">-10% έως -20%</div>
+<div class="subcat-pill" onclick="selSub(this)">-20% έως -30%</div>
+<div class="subcat-pill" onclick="selSub(this)">-30%+</div>
+<div class="subcat-pill" onclick="selSub(this)">Ψύξη</div>
+<div class="subcat-pill" onclick="selSub(this)">Πλύση</div>
+<div class="subcat-pill" onclick="selSub(this)">Κουζίνα</div>
+<div class="subcat-pill" onclick="selSub(this)">TV & Ήχος</div>
+
+  </div>
+</div>
+
+<!-- MAIN -->
+<div class="ct">
+  <div class="cat-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sf-head"><span class="sf-title">Φίλτρα</span><span class="sf-clear">Καθαρισμός</span></div>
+      <!-- Brand -->
+      <div class="sf-sec">
+        <div class="sf-sec-hd" onclick="toggleSec(this)"><span class="sf-sec-lbl">Brand</span><span class="sf-arr open">▼</span></div>
+        <div class="sf-body open">
+          <label class="sf-chk"><input type="checkbox" checked><span class="sf-chk-lbl">Bosch</span><span class="sf-chk-ct">(48)</span></label>
+          <label class="sf-chk"><input type="checkbox" checked><span class="sf-chk-lbl">Siemens</span><span class="sf-chk-ct">(36)</span></label>
+          <label class="sf-chk"><input type="checkbox"><span class="sf-chk-lbl">Miele</span><span class="sf-chk-ct">(24)</span></label>
+          <label class="sf-chk"><input type="checkbox" checked><span class="sf-chk-lbl">LG</span><span class="sf-chk-ct">(42)</span></label>
+          <label class="sf-chk"><input type="checkbox"><span class="sf-chk-lbl">Samsung</span><span class="sf-chk-ct">(38)</span></label>
+          <label class="sf-chk"><input type="checkbox"><span class="sf-chk-lbl">AEG</span><span class="sf-chk-ct">(28)</span></label>
+        </div>
+      </div>
+      <!-- Price -->
+      <div class="sf-sec">
+        <div class="sf-sec-hd" onclick="toggleSec(this)"><span class="sf-sec-lbl">Τιμή</span><span class="sf-arr open">▼</span></div>
+        <div class="sf-body open">
+          <div class="price-inps">
+            <input class="price-inp" type="number" value="0" placeholder="Από">
+            <span class="price-sep">—</span>
+            <input class="price-inp" type="number" value="2000" placeholder="Έως">
+          </div>
+          <input class="price-sldr" type="range" min="0" max="5000" value="2000">
+        </div>
+      </div>
+      <!-- Energy -->
+      <div class="sf-sec">
+        <div class="sf-sec-hd" onclick="toggleSec(this)"><span class="sf-sec-lbl">Ενεργειακή Κλάση</span><span class="sf-arr open">▼</span></div>
+        <div class="sf-body open">
+          <label class="sf-chk"><input type="checkbox" checked><span class="sf-chk-lbl" style="background:#006400;color:#fff;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:700">A+++</span></label>
+          <label class="sf-chk"><input type="checkbox" checked><span class="sf-chk-lbl" style="background:#2e8b00;color:#fff;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:700">A++</span></label>
+          <label class="sf-chk"><input type="checkbox"><span class="sf-chk-lbl" style="background:#70ab00;color:#fff;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:700">A+</span></label>
+          <label class="sf-chk"><input type="checkbox"><span class="sf-chk-lbl" style="background:#c8d400;color:#333;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:700">A</span></label>
+        </div>
+      </div>
+      <div style="padding:12px 16px"><button class="apply-btn">Εφαρμογή Φίλτρων</button></div>
+    </aside>
+
+    <!-- PRODUCTS -->
+    <div>
+      <!-- Sort bar -->
+      <div class="sort-bar">
+        <div class="sort-ct">Εμφάνιση <strong>12</strong> από <strong>186</strong> προϊόντα</div>
+        <div class="sort-r">
+          <span class="sort-lbl">Ταξινόμηση:</span>
+          <select class="sort-sel">
+            <option>Δημοφιλέστερα</option>
+            <option>Τιμή: Χαμηλή → Υψηλή</option>
+            <option>Τιμή: Υψηλή → Χαμηλή</option>
+            <option>Μεγαλύτερη Έκπτωση</option>
+            <option>Νεότερα</option>
+          </select>
+          <div class="vbtns">
+            <div class="vbtn on" onclick="setView('grid')" title="Grid"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
+            <div class="vbtn" onclick="setView('list')" title="List"><svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product grid -->
+      <div class="pgrid" id="pgrid">
+        
+      <div class="pc" onclick="location.href='product.html'">
+        <div class="pc-img">
+          <span class="pc-tag" style="background:var(--red)">-30%</span>
+          <button class="pc-wsh" onclick="event.stopPropagation();twish(this)">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </button>
+          <div class="pc-img-in">🧊</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-brand">LG</div>
+          <div class="pc-name">GSXV91BSAF Side by Side 635L Inox A+++</div>
+          <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(19)</span></div>
+          <div class="pc-pr"><span class="p-now">1.399€</span><span class="p-old">1.999€</span></div>
+          <div class="pc-inst">ή από <strong>58,29€/μήνα</strong> · 24 άτοκες δόσεις</div>
+          <button class="pc-atc" onclick="event.stopPropagation();atc(this)">+ Προσθήκη στο Καλάθι</button>
+        </div>
+      </div>
+      <div class="pc" onclick="location.href='product.html'">
+        <div class="pc-img">
+          <span class="pc-tag" style="background:var(--red)">-21%</span>
+          <button class="pc-wsh" onclick="event.stopPropagation();twish(this)">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </button>
+          <div class="pc-img-in">📺</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-brand">Samsung</div>
+          <div class="pc-name">QE65Q80C 65" 4K QLED Smart TV</div>
+          <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(87)</span></div>
+          <div class="pc-pr"><span class="p-now">1.099€</span><span class="p-old">1.399€</span></div>
+          <div class="pc-inst">ή από <strong>45,79€/μήνα</strong> · 24 άτοκες δόσεις</div>
+          <button class="pc-atc" onclick="event.stopPropagation();atc(this)">+ Προσθήκη στο Καλάθι</button>
+        </div>
+      </div>
+      <div class="pc" onclick="location.href='product.html'">
+        <div class="pc-img">
+          <span class="pc-tag" style="background:var(--red)">-18%</span>
+          <button class="pc-wsh" onclick="event.stopPropagation();twish(this)">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </button>
+          <div class="pc-img-in">👕</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-brand">Bosch</div>
+          <div class="pc-name">WGB254A10 i-DOS 10kg 1400rpm A+++</div>
+          <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(27)</span></div>
+          <div class="pc-pr"><span class="p-now">899€</span><span class="p-old">1.099€</span></div>
+          <div class="pc-inst">ή από <strong>37,46€/μήνα</strong> · 24 άτοκες δόσεις</div>
+          <button class="pc-atc" onclick="event.stopPropagation();atc(this)">+ Προσθήκη στο Καλάθι</button>
+        </div>
+      </div>
+      <div class="pc" onclick="location.href='product.html'">
+        <div class="pc-img">
+          <span class="pc-tag" style="background:var(--red)">-20%</span>
+          <button class="pc-wsh" onclick="event.stopPropagation();twish(this)">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </button>
+          <div class="pc-img-in">❄️</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-brand">Midea</div>
+          <div class="pc-name">AG2Pro-18NXD0 Κλιματιστικό 18000 BTU A++</div>
+          <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(48)</span></div>
+          <div class="pc-pr"><span class="p-now">599€</span><span class="p-old">749€</span></div>
+          <div class="pc-inst">ή από <strong>24,96€/μήνα</strong> · 24 άτοκες δόσεις</div>
+          <button class="pc-atc" onclick="event.stopPropagation();atc(this)">+ Προσθήκη στο Καλάθι</button>
+        </div>
+      </div>
+      <div class="pc" onclick="location.href='product.html'">
+        <div class="pc-img">
+          <span class="pc-tag" style="background:var(--red)">-20%</span>
+          <button class="pc-wsh" onclick="event.stopPropagation();twish(this)">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </button>
+          <div class="pc-img-in">☕</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-brand">DeLonghi</div>
+          <div class="pc-name">Magnifica S ECAM22.110.B Espresso</div>
+          <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(65)</span></div>
+          <div class="pc-pr"><span class="p-now">399€</span><span class="p-old">499€</span></div>
+          <div class="pc-inst">ή από <strong>16,62€/μήνα</strong> · 24 άτοκες δόσεις</div>
+          <button class="pc-atc" onclick="event.stopPropagation();atc(this)">+ Προσθήκη στο Καλάθι</button>
+        </div>
+      </div>
+      <div class="pc" onclick="location.href='product.html'">
+        <div class="pc-img">
+          <span class="pc-tag" style="background:var(--red)">-25%</span>
+          <button class="pc-wsh" onclick="event.stopPropagation();twish(this)">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </button>
+          <div class="pc-img-in">🧊</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-brand">AEG</div>
+          <div class="pc-name">RCB736E5MB Ψυγειοκαταψύκτης 367L A++ Inox</div>
+          <div class="pc-st"><span class="stars">★★★★★</span><span class="stars-n">(29)</span></div>
+          <div class="pc-pr"><span class="p-now">599€</span><span class="p-old">799€</span></div>
+          <div class="pc-inst">ή από <strong>24,96€/μήνα</strong> · 24 άτοκες δόσεις</div>
+          <button class="pc-atc" onclick="event.stopPropagation();atc(this)">+ Προσθήκη στο Καλάθι</button>
+        </div>
+      </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="pag">
+        <div class="pg-btn">‹</div>
+        <div class="pg-btn on">1</div>
+        <div class="pg-btn">2</div>
+        <div class="pg-btn">3</div>
+        <div class="pg-dots">…</div>
+        <div class="pg-btn">21</div>
+        <div class="pg-btn">›</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- MOB FILTER BTN -->
+<button class="mob-filter" onclick="openFD()">
+  <svg viewBox="0 0 24 24"><line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="11" y1="18" x2="13" y2="18"/></svg>
+  Φίλτρα & Ταξινόμηση
+</button>
+
+<!-- FILTER DRAWER -->
+<div class="fdrawer" id="fdrawer">
+  <div class="fd-ov" onclick="closeFD()"></div>
+  <div class="fd-panel">
+    <div class="fd-head">
+      <span class="fd-title">Φίλτρα & Ταξινόμηση</span>
+      <div class="fd-close" onclick="closeFD()">✕</div>
+    </div>
+    <div class="fd-body">
+      <div class="fd-sec-title">Brand</div>
+      <div class="fd-chips">
+        <div class="fd-chip on">Bosch</div>
+        <div class="fd-chip on">Siemens</div>
+        <div class="fd-chip on">LG</div>
+        <div class="fd-chip">Miele</div>
+        <div class="fd-chip">Samsung</div>
+        <div class="fd-chip">AEG</div>
+        <div class="fd-chip">Pitsos</div>
+      </div>
+      <div class="fd-sec-title">Ταξινόμηση</div>
+      <div class="fd-chips">
+        <div class="fd-chip on">Δημοφιλέστερα</div>
+        <div class="fd-chip">Χαμηλότερη τιμή</div>
+        <div class="fd-chip">Υψηλότερη τιμή</div>
+        <div class="fd-chip">Μεγαλύτερη έκπτωση</div>
+        <div class="fd-chip">Νεότερα</div>
+      </div>
+      <div class="fd-sec-title">Ενεργειακή Κλάση</div>
+      <div class="fd-chips">
+        <div class="fd-chip on" style="background:#006400;border-color:#006400;color:#fff">A+++</div>
+        <div class="fd-chip on" style="background:#2e8b00;border-color:#2e8b00;color:#fff">A++</div>
+        <div class="fd-chip">A+</div>
+        <div class="fd-chip">A</div>
+      </div>
+    </div>
+    <button class="fd-apply" onclick="closeFD()">Εφαρμογή Φίλτρων</button>
+  </div>
+</div>
+
+<!-- BOTTOM NAV -->
+<nav class="mnav">
+  <div class="mnav-in">
+    <div class="mni" onclick="location.href='index.html'"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 0-2 2H5a2 2 0 0 0-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg><span>Αρχική</span></div>
+    <div class="mni on"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="9" height="9" rx="1"/><rect x="13" y="2" width="9" height="9" rx="1"/><rect x="2" y="13" width="9" height="9" rx="1"/><rect x="13" y="13" width="9" height="9" rx="1"/></svg><span>Κατηγορίες</span></div>
+    <div class="mni"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><span>Αναζήτηση</span></div>
+    <div class="mni"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg><span>Αγαπημένα</span></div>
+    <div class="mni" style="position:relative"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span class="mni-bdg" id="mobCartN">2</span><span>Καλάθι</span></div>
+  </div>
+</nav>
+
+<div class="toast" id="toast"></div>
+<script>
+var hdr=document.getElementById('hdr'),prg=document.getElementById('prg');
+window.addEventListener('scroll',function(){
+  var s=window.scrollY,h=document.body.scrollHeight-window.innerHeight;
+  hdr.classList.toggle('sc',s>10);
+  prg.style.width=(h>0?(s/h*100):0)+'%';
+},{passive:true});
+function selSub(el){document.querySelectorAll('.subcat-pill').forEach(function(p){p.classList.remove('on');});el.classList.add('on');}
+function toggleSec(hd){var b=hd.nextElementSibling,a=hd.querySelector('.sf-arr');b.classList.toggle('open');a.classList.toggle('open');}
+var cart=2;
+function syncCart(){var b=document.getElementById('cartN');if(b)b.textContent=cart;var m=document.getElementById('mobCartN');if(m)m.textContent=cart;}
+function atc(btn){
+  if(btn.disabled)return;
+  var o=btn.innerHTML;
+  btn.innerHTML='✓ Προστέθηκε!';btn.classList.add('done');btn.disabled=true;
+  cart++;syncCart();
+  showToast('✓ Προστέθηκε στο καλάθι!');
+  setTimeout(function(){btn.innerHTML=o;btn.classList.remove('done');btn.disabled=false;},2200);
+}
+function twish(btn){btn.classList.toggle('on');showToast(btn.classList.contains('on')?'♥ Αποθηκεύτηκε στα Αγαπημένα':'Αφαιρέθηκε');}
+function showToast(msg){var t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(function(){t.classList.remove('show');},2400);}
+function openFD(){document.getElementById('fdrawer').classList.add('open');document.body.style.overflow='hidden';}
+function closeFD(){document.getElementById('fdrawer').classList.remove('open');document.body.style.overflow='';}
+function setView(v){
+  var g=document.getElementById('pgrid');
+  if(v==='list'){g.style.gridTemplateColumns='1fr';}
+  else{g.style.gridTemplateColumns='';}
+  document.querySelectorAll('.vbtn').forEach(function(b){b.classList.remove('on');});
+  event.currentTarget.classList.add('on');
+}
+</script>
+</body>
+</html>
