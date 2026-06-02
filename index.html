@@ -31,64 +31,171 @@ svg{display:block;flex-shrink:0}
 .ct{max-width:1380px;margin:0 auto;padding:0 16px}
 
 /* ── ANNOUNCEMENT ── */
-.ann{background:var(--navy);color:#fff;font-size:11px;font-weight:500;overflow:hidden}
-.ann-wrap{height:32px;display:flex;align-items:center;justify-content:center;gap:24px;overflow:hidden}
-.ann-item{display:flex;align-items:center;gap:5px;white-space:nowrap;opacity:.85}
-.ann-item b{color:var(--gold);font-weight:700}
-@media(max-width:600px){.ann-item:nth-child(n+3){display:none}}
+/* ── ANNOUNCEMENT ── */
+.ann{background:var(--navy);color:#fff;font-size:11px;overflow:hidden;border-bottom:1px solid rgba(255,255,255,.07)}
+.ann-in{height:30px;display:flex;align-items:center;justify-content:space-between;padding:0 20px}
+@media(max-width:768px){.ann-in{justify-content:center;padding:0 12px}}
+.ann-scroll{display:flex;align-items:center;overflow-x:auto;scrollbar-width:none;flex:1}
+.ann-scroll::-webkit-scrollbar{display:none}
+.ann-item{display:inline-flex;align-items:center;gap:5px;white-space:nowrap;padding:0 14px;border-right:1px solid rgba(255,255,255,.08);font-size:10.5px;color:rgba(255,255,255,.7);flex-shrink:0}
+.ann-item:last-child{border-right:none}
+.ann-item b{color:#fff;font-weight:600}
+.ann-right{display:flex;align-items:center;gap:14px;flex-shrink:0;padding-left:12px;border-left:1px solid rgba(255,255,255,.1)}
+.ann-phone{display:flex;align-items:center;gap:5px;font-size:11.5px;font-weight:700;color:var(--gold);white-space:nowrap}
+.ann-stores{font-size:11px;color:rgba(255,255,255,.5);white-space:nowrap;cursor:pointer;transition:color var(--t)}
+.ann-stores:hover{color:var(--gold)}
+@media(max-width:768px){.ann-right{display:none}}
 
 /* ── HEADER ── */
-.hdr{background:#fff;border-bottom:1px solid var(--g200);position:sticky;top:0;z-index:800;transition:box-shadow .2s}
-.hdr.sc{box-shadow:0 2px 12px rgba(0,0,0,.08)}
-.hdr-in{height:58px;display:flex;align-items:center;gap:12px;padding:0 16px}
-.hdr-menu{width:36px;height:36px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer;flex-shrink:0}
-.hdr-menu span{display:block;width:20px;height:2px;background:var(--g700);border-radius:2px;transition:var(--t)}
-.logo{display:flex;flex-direction:column;gap:1px;flex-shrink:0;line-height:1}
-.logo-top{font-family:var(--fh);font-size:15px;font-weight:900;color:var(--navy);letter-spacing:-.3px}
-.logo-bot{display:flex;align-items:center;gap:3px}
-.logo-star{color:var(--gold);font-size:10px;font-weight:900}
-.logo-eur{font-size:10px;font-weight:700;color:#0057b8;letter-spacing:.8px}
-.srch{flex:1;position:relative;max-width:560px;margin:0 auto}
-.srch input{width:100%;height:38px;border:1.5px solid var(--g200);border-radius:20px;padding:0 42px 0 16px;font-size:13.5px;font-family:var(--fb);color:var(--g900);background:var(--g50);outline:none;transition:var(--t)}
-.srch input:focus{border-color:var(--navy);background:#fff}
-.srch input::placeholder{color:var(--g300)}
-.srch-btn{position:absolute;right:0;top:0;height:38px;width:40px;background:var(--navy);border-radius:0 20px 20px 0;display:flex;align-items:center;justify-content:center}
-.srch-btn svg{width:15px;height:15px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round}
-.hdr-acts{display:flex;align-items:center;gap:2px;flex-shrink:0}
-.hact{display:flex;flex-direction:column;align-items:center;gap:2px;padding:4px 8px;border-radius:var(--r);color:var(--g500);font-size:9px;font-weight:600;position:relative;min-height:44px;justify-content:center;transition:var(--t)}
-.hact:hover{background:var(--g100);color:var(--navy)}
-.hact svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.hact-bdg{position:absolute;top:3px;right:3px;background:var(--gold);color:var(--navy);font-size:9px;font-weight:800;min-width:15px;height:15px;border-radius:8px;display:flex;align-items:center;justify-content:center;padding:0 3px;font-family:var(--fh)}
-@media(min-width:769px){.hdr-menu{display:none}}
-@media(max-width:600px){.hact span{display:none}}
+.hdr{background:#fff;position:sticky;top:0;z-index:800;transition:box-shadow .25s}
+.hdr.sc{box-shadow:0 2px 18px rgba(4,18,42,.1)}
+.hdr-top{border-bottom:1px solid var(--g200)}
+.hdr-in{height:62px;display:flex;align-items:center;padding:0 20px;max-width:1380px;margin:0 auto;gap:0}
+@media(max-width:768px){.hdr-in{height:54px;padding:0 12px}}
 
-/* ── NAVBAR (desktop) ── */
+/* Hamburger */
+.hdr-ham{display:none;flex-direction:column;justify-content:center;gap:4px;width:40px;height:40px;cursor:pointer;border-radius:var(--r);flex-shrink:0;margin-right:10px;transition:background var(--t)}
+.hdr-ham:hover{background:var(--g100)}
+.hdr-ham span{display:block;height:2px;border-radius:2px;background:var(--g700);transition:var(--t)}
+.hdr-ham span:nth-child(1){width:20px}
+.hdr-ham span:nth-child(2){width:14px}
+.hdr-ham span:nth-child(3){width:20px}
+@media(max-width:768px){.hdr-ham{display:flex}}
+
+/* Logo */
+.logo{display:flex;flex-direction:column;justify-content:center;gap:2px;flex-shrink:0;line-height:1;text-decoration:none;margin-right:24px}
+@media(max-width:768px){.logo{margin-right:auto}}
+.logo-main{font-family:var(--fh);font-size:18px;font-weight:900;color:var(--navy);letter-spacing:-.6px;display:flex;align-items:center;gap:0}
+.logo-divider{width:1px;height:16px;background:var(--g200);margin:0 8px;flex-shrink:0}
+.logo-eur-wrap{display:flex;align-items:center;gap:3px}
+.logo-star{color:var(--gold);font-size:11px;font-weight:900}
+.logo-eur{font-size:11px;font-weight:700;color:#0057b8;letter-spacing:.6px}
+.logo-tagline{font-size:9px;font-weight:600;color:var(--g500);letter-spacing:1px;text-transform:uppercase;margin-top:1px}
+@media(max-width:480px){.logo-main{font-size:15px}.logo-divider{margin:0 6px}.logo-tagline{display:none}}
+
+/* Search */
+.srch{flex:1;max-width:540px;position:relative;margin:0 20px}
+@media(max-width:900px){.srch{margin:0 12px}}
+@media(max-width:768px){.srch{display:none}}
+.srch input{width:100%;height:40px;border:1.5px solid var(--g200);border-radius:6px;padding:0 50px 0 16px;font-size:13.5px;font-family:var(--fb);color:var(--g900);background:var(--g50);outline:none;transition:border-color .2s,background .2s,box-shadow .2s}
+.srch input:focus{border-color:var(--navy);background:#fff;box-shadow:0 0 0 3px rgba(4,30,66,.07)}
+.srch input::placeholder{color:var(--g300);font-size:13px}
+.srch-btn{position:absolute;right:0;top:0;height:40px;width:44px;background:var(--navy);border-radius:0 6px 6px 0;display:flex;align-items:center;justify-content:center;cursor:pointer;border:none;transition:background var(--t)}
+.srch-btn:hover{background:var(--navy2)}
+.srch-btn svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round}
+
+/* K2B */
+.k2b-btn{display:flex;align-items:center;gap:8px;padding:7px 13px;border:1.5px solid var(--g200);border-radius:6px;cursor:pointer;transition:var(--t);white-space:nowrap;text-decoration:none;margin-right:8px;flex-shrink:0}
+.k2b-btn:hover{border-color:var(--navy);background:var(--navy)}
+.k2b-btn:hover .k2b-icon{background:rgba(245,166,35,.2)}
+.k2b-btn:hover .k2b-title{color:#fff}
+.k2b-btn:hover .k2b-sub{color:rgba(255,255,255,.6)}
+.k2b-icon{width:28px;height:28px;border-radius:5px;background:var(--g100);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background var(--t)}
+.k2b-icon svg{width:14px;height:14px;stroke:var(--navy);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.k2b-title{display:block;font-size:11px;font-weight:800;color:var(--navy);letter-spacing:.2px;font-family:var(--fh);line-height:1.2}
+.k2b-sub{display:block;font-size:9.5px;color:var(--g500);font-weight:500;line-height:1.2}
+@media(max-width:960px){.k2b-btn{display:none}}
+
+/* Actions */
+.hdr-acts{display:flex;align-items:center;gap:1px;margin-left:auto;flex-shrink:0}
+@media(max-width:768px){.hdr-acts{gap:0;margin-left:0}}
+.hact{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:5px 10px;border-radius:6px;color:var(--g700);cursor:pointer;transition:var(--t);position:relative;min-height:48px;min-width:48px}
+.hact:hover{background:var(--g100);color:var(--navy)}
+.hact svg{width:21px;height:21px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.hact-lbl{font-size:9.5px;font-weight:600;font-family:var(--fh);white-space:nowrap;letter-spacing:.1px}
+@media(max-width:768px){.hact-lbl{display:none}.hact{padding:6px 7px;min-width:40px;min-height:44px}}
+.hact-bdg{position:absolute;top:5px;right:4px;background:var(--gold);color:var(--navy);font-size:9px;font-weight:800;min-width:16px;height:16px;border-radius:8px;display:flex;align-items:center;justify-content:center;padding:0 3px;font-family:var(--fh)}
+
+/* Mobile search icon */
+.mob-srch{display:none;width:40px;height:44px;align-items:center;justify-content:center;cursor:pointer;border-radius:6px;transition:background var(--t);color:var(--g700)}
+.mob-srch:hover{background:var(--g100)}
+.mob-srch svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round}
+@media(max-width:768px){.mob-srch{display:flex}}
+
+/* Mobile search expand */
+.mob-srch-bar{display:none;padding:8px 12px;background:#fff;border-bottom:1px solid var(--g200)}
+.mob-srch-bar.open{display:block}
+.mob-srch-inner{position:relative}
+.mob-srch-inner input{width:100%;height:40px;border:1.5px solid var(--g200);border-radius:6px;padding:0 46px 0 14px;font-size:14px;font-family:var(--fb);color:var(--g900);background:var(--g50);outline:none}
+.mob-srch-inner input:focus{border-color:var(--navy);background:#fff}
+.mob-srch-inner button{position:absolute;right:0;top:0;height:40px;width:44px;background:var(--navy);border-radius:0 6px 6px 0;display:flex;align-items:center;justify-content:center;border:none;cursor:pointer}
+.mob-srch-inner button svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round}
+
+/* ── NAVBAR ── */
 .nb{background:var(--navy);display:none}
 @media(min-width:769px){.nb{display:block}}
-.nb-in{display:flex;align-items:stretch;height:40px;overflow-x:auto;scrollbar-width:none}
+.nb-in{max-width:1380px;margin:0 auto;padding:0 20px;display:flex;align-items:stretch;height:38px;overflow-x:auto;scrollbar-width:none}
 .nb-in::-webkit-scrollbar{display:none}
-.nb-a{display:flex;align-items:center;padding:0 14px;font-size:12.5px;font-weight:600;color:rgba(255,255,255,.78);white-space:nowrap;border-right:1px solid rgba(255,255,255,.06);transition:var(--t)}
-.nb-a:hover,.nb-a.on{background:rgba(255,255,255,.1);color:#fff}
+.nb-all{display:flex;align-items:center;gap:7px;padding:0 16px 0 0;margin-right:14px;font-size:12.5px;font-weight:700;color:#fff;cursor:pointer;white-space:nowrap;flex-shrink:0;font-family:var(--fh);transition:color var(--t);border-right:1px solid rgba(255,255,255,.12)}
+.nb-all:hover{color:var(--gold)}
+.nb-all svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;flex-shrink:0}
+.nb-links{display:flex;align-items:stretch;flex:1;overflow-x:auto;scrollbar-width:none}
+.nb-links::-webkit-scrollbar{display:none}
+.nb-a{display:flex;align-items:center;padding:0 13px;font-size:12px;font-weight:600;color:rgba(255,255,255,.7);white-space:nowrap;transition:color var(--t);position:relative;font-family:var(--fb);text-decoration:none;letter-spacing:.1px}
+.nb-a::after{content:'';position:absolute;bottom:0;left:13px;right:13px;height:2px;background:var(--gold);border-radius:2px 2px 0 0;transform:scaleX(0);transition:transform .22s cubic-bezier(.4,0,.2,1)}
+.nb-a:hover{color:#fff}
+.nb-a:hover::after,.nb-a.on::after{transform:scaleX(1)}
+.nb-a.on{color:#fff;font-weight:700}
 .nb-a.sale{color:var(--gold);font-weight:700}
-.nb-all{display:flex;align-items:center;gap:7px;padding:0 16px;background:rgba(255,255,255,.09);border-right:1px solid rgba(255,255,255,.12);font-size:12.5px;font-weight:700;color:#fff;cursor:pointer;flex-shrink:0;font-family:var(--fh);transition:var(--t)}
-.nb-all:hover{background:rgba(255,255,255,.16)}
-.nb-all svg{width:14px;height:14px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round}
+.nb-a.sale:hover{color:#ffd670}
 
 /* ── MOBILE DRAWER ── */
 .drawer{position:fixed;inset:0;z-index:900;display:none}
-.drawer.open{display:block}
-.drawer-overlay{position:absolute;inset:0;background:rgba(4,18,42,.55);backdrop-filter:blur(2px)}
-.drawer-panel{position:absolute;left:0;top:0;bottom:0;width:min(300px,85vw);background:#fff;overflow-y:auto;display:flex;flex-direction:column}
-.drawer-head{padding:16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--g200);background:var(--navy)}
-.drawer-logo{font-family:var(--fh);font-size:14px;font-weight:900;color:#fff}
-.drawer-close{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px;cursor:pointer}
-.drawer-cats{padding:8px 0}
-.drawer-cat{display:flex;align-items:center;gap:12px;padding:13px 16px;border-bottom:1px solid var(--g100);cursor:pointer;transition:background var(--t)}
-.drawer-cat:hover{background:var(--g50)}
-.drawer-cat-icon{width:38px;height:38px;border-radius:var(--r);background:var(--g100);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
-.drawer-cat-name{font-family:var(--fh);font-size:13px;font-weight:700;color:var(--navy)}
-.drawer-cat-sub{font-size:11px;color:var(--g500);margin-top:1px}
-.drawer-cat-arr{margin-left:auto;color:var(--g300);font-size:16px}
+.drawer.open{display:flex}
+.drawer-ov{position:absolute;inset:0;background:rgba(2,10,26,.55);backdrop-filter:blur(3px)}
+.drawer-panel{position:relative;width:min(310px,88vw);background:#fff;display:flex;flex-direction:column;overflow:hidden;animation:drwIn .22s cubic-bezier(.4,0,.2,1)}
+@keyframes drwIn{from{transform:translateX(-100%)}to{transform:translateX(0)}}
+
+/* Drawer header */
+.drw-hd{background:var(--navy);padding:0 16px;flex-shrink:0}
+.drw-hd-top{height:54px;display:flex;align-items:center;justify-content:space-between}
+.drw-logo{display:flex;flex-direction:column;gap:2px}
+.drw-logo-name{font-family:var(--fh);font-size:15px;font-weight:900;color:#fff;letter-spacing:-.4px;display:flex;align-items:center;gap:6px}
+.drw-logo-divider{width:1px;height:13px;background:rgba(255,255,255,.2)}
+.drw-logo-eur{display:flex;align-items:center;gap:3px}
+.drw-logo-star{color:var(--gold);font-size:10px}
+.drw-logo-etxt{font-size:10px;font-weight:700;color:rgba(255,255,255,.7);letter-spacing:.5px}
+.drw-logo-sub{font-size:8px;font-weight:600;color:rgba(255,255,255,.38);letter-spacing:1.5px;text-transform:uppercase}
+.drw-close{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;cursor:pointer;color:rgba(255,255,255,.8);font-size:16px;transition:background var(--t);flex-shrink:0;line-height:1}
+.drw-close:hover{background:rgba(255,255,255,.2)}
+
+/* Drawer search */
+.drw-srch{padding:10px 16px 14px;border-top:1px solid rgba(255,255,255,.09)}
+.drw-srch-wrap{position:relative}
+.drw-srch-wrap input{width:100%;height:38px;border:1.5px solid rgba(255,255,255,.18);border-radius:6px;padding:0 42px 0 14px;font-size:13px;font-family:var(--fb);color:#fff;background:rgba(255,255,255,.1);outline:none;transition:var(--t)}
+.drw-srch-wrap input::placeholder{color:rgba(255,255,255,.38)}
+.drw-srch-wrap input:focus{border-color:var(--gold);background:rgba(255,255,255,.14)}
+.drw-srch-wrap button{position:absolute;right:0;top:0;height:38px;width:40px;background:rgba(255,255,255,.12);border:none;border-radius:0 6px 6px 0;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background var(--t)}
+.drw-srch-wrap button:hover{background:rgba(255,255,255,.2)}
+.drw-srch-wrap button svg{width:15px;height:15px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round}
+
+/* Drawer body */
+.drw-body{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.drw-sec-lbl{font-family:var(--fh);font-size:9px;font-weight:700;color:var(--g500);letter-spacing:1.8px;text-transform:uppercase;padding:12px 16px 6px;background:var(--g50);border-bottom:1px solid var(--g200);display:block}
+.drw-cat{display:flex;align-items:center;gap:12px;padding:11px 16px;border-bottom:1px solid rgba(0,0,0,.05);cursor:pointer;transition:background var(--t);text-decoration:none}
+.drw-cat:active{background:var(--g50)}
+.drw-cat-ico{width:36px;height:36px;border-radius:8px;background:var(--g100);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.drw-cat-body{flex:1;min-width:0}
+.drw-cat-name{font-family:var(--fh);font-size:13px;font-weight:700;color:var(--navy);line-height:1.2}
+.drw-cat-sub{font-size:10.5px;color:var(--g500);margin-top:1px}
+.drw-cat-arr{color:var(--g300);font-size:15px;flex-shrink:0;transition:transform var(--t)}
+.drw-cat:hover .drw-cat-arr{transform:translateX(2px);color:var(--navy)}
+
+/* K2B in drawer */
+.drw-k2b{display:flex;align-items:center;gap:12px;margin:12px 16px;background:linear-gradient(105deg,var(--navy),#0c3570);border-radius:10px;padding:13px 14px;cursor:pointer;text-decoration:none;transition:opacity var(--t)}
+.drw-k2b:hover{opacity:.9}
+.drw-k2b-ico{width:38px;height:38px;border-radius:8px;background:rgba(245,166,35,.18);border:1px solid rgba(245,166,35,.28);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.drw-k2b-ico svg{width:19px;height:19px;stroke:var(--gold);fill:none;stroke-width:1.8;stroke-linecap:round}
+.drw-k2b-title{font-family:var(--fh);font-size:13px;font-weight:800;color:#fff;margin-bottom:2px}
+.drw-k2b-sub{font-size:10.5px;color:rgba(255,255,255,.52)}
+
+/* Drawer footer */
+.drw-foot{padding:14px 16px;border-top:1px solid var(--g200);background:var(--g50);flex-shrink:0}
+.drw-foot-phone{display:flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--navy);font-family:var(--fh);text-decoration:none;margin-bottom:10px}
+.drw-foot-phone svg{width:14px;height:14px;stroke:var(--navy);fill:none;stroke-width:2;stroke-linecap:round}
+.drw-foot-links{display:flex;gap:10px;flex-wrap:wrap}
+.drw-foot-link{font-size:11.5px;color:var(--g500);font-weight:600;font-family:var(--fh);text-decoration:none;transition:color var(--t)}
+.drw-foot-link:hover{color:var(--navy)}
 
 /* ── HERO SLIDER ── */
 .hero{position:relative;overflow:hidden;background:var(--navy);border-radius:0;margin-bottom:0}
@@ -309,81 +416,175 @@ svg{display:block;flex-shrink:0}
 
 <!-- ANNOUNCEMENT -->
 <div class="ann">
-  <div class="ann-wrap">
-    <div class="ann-item">🚚 <b>Δωρεάν μεταφορά</b> σε όλη την Ελλάδα</div>
-    <div class="ann-item">💳 <b>Άτοκες δόσεις</b> έως 24 μήνες</div>
-    <div class="ann-item">🔧 <b>Επαγγελματική εγκατάσταση</b></div>
-    <div class="ann-item">📞 <b>2634 027227</b></div>
+  <div class="ann-in">
+    <div class="ann-scroll">
+      <div class="ann-item">🚚 <b>Δωρεάν μεταφορά</b> σε όλη την Ελλάδα</div>
+      <div class="ann-item">💳 <b>Άτοκες δόσεις</b> έως 24 μήνες</div>
+      <div class="ann-item">🔧 <b>Επαγγελματική εγκατάσταση</b></div>
+      <div class="ann-item">🛡️ <b>After Sales Support</b> χωρίς συμβόλαιο</div>
+    </div>
+    <div class="ann-right">
+      <div class="ann-phone">📞 2634 027227</div>
+      <div class="ann-stores">📍 Κατάστημα Ναύπακτος</div>
+    </div>
   </div>
 </div>
 
 <!-- HEADER -->
 <header class="hdr" id="hdr">
-  <div class="hdr-in">
-    <div class="hdr-menu" onclick="openDrawer()" aria-label="Μενού">
-      <span></span><span></span><span></span>
-    </div>
-    <a href="index.html" class="logo">
-      <span class="logo-top">KONIDAS STORE</span>
-      <div class="logo-bot"><span class="logo-star">✦</span><span class="logo-eur">euronics</span></div>
-    </a>
-    <div class="srch">
-      <input type="search" placeholder="Αναζήτηση προϊόντων..." autocomplete="off">
-      <button class="srch-btn"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
-    </div>
-    <div class="hdr-acts">
-      <div class="hact"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Λογαριασμός</span></div>
-      <div class="hact" style="position:relative">
-        <svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-        <span class="hact-bdg" id="cartN">2</span>
-        <span>Καλάθι</span>
+  <div class="hdr-top">
+    <div class="hdr-in">
+
+      <!-- Hamburger (mobile) -->
+      <div class="hdr-ham" onclick="openDrawer()" aria-label="Μενού">
+        <span></span><span></span><span></span>
       </div>
-    </div>
-  </div>
-</header>
 
-<!-- DESKTOP NAVBAR -->
-<nav class="nb">
-  <div class="ct">
-    <div class="nb-in">
-      <div class="nb-all" onclick="openDrawer()"><svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>ΟΛΕΣ ΟΙ ΚΑΤΗΓΟΡΙΕΣ</div>
-      <a class="nb-a" href="cat-lefka.html">Λευκές Συσκευές</a>
-      <a class="nb-a" href="cat-kouzina.html">Κουζίνα</a>
-      <a class="nb-a" href="cat-plisi.html">Πλύση &amp; Στέγνωση</a>
-      <a class="nb-a" href="cat-psyxi.html">Ψύξη</a>
-      <a class="nb-a" href="cat-klimatismos.html">Κλιματισμός</a>
-      <a class="nb-a" href="cat-tv.html">TV &amp; Ήχος</a>
-      <a class="nb-a" href="cat-mikro.html">Μικροσυσκευές</a>
-      <a class="nb-a sale" href="cat-prosfores.html">🔥 Προσφορές</a>
-    </div>
-  </div>
-</nav>
+      <!-- Logo -->
+      <a href="index.html" class="logo" aria-label="KONIDAS EURONICS Αρχική">
+        <div class="logo-main">
+          KONIDAS
+          <div class="logo-divider"></div>
+          <div class="logo-eur-wrap">
+            <span class="logo-star">✦</span>
+            <span class="logo-eur">EURONICS</span>
+          </div>
+        </div>
+        <div class="logo-tagline">40 Χρόνια Εμπειρίας · Ναύπακτος</div>
+      </a>
 
-<!-- MOBILE DRAWER -->
+      <!-- Search (desktop) -->
+      <div class="srch">
+        <input type="search" placeholder="Αναζήτηση προϊόντων, brands, κατηγοριών..." autocomplete="off">
+        <button class="srch-btn" aria-label="Αναζήτηση">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+      </div>
+
+      <!-- K2B (desktop) -->
+      <a href="k2b.html" class="k2b-btn" title="Επαγγελματικές Αγορές">
+        <div class="k2b-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+        </div>
+        <div class="k2b-text">
+          <span class="k2b-title">K2B</span>
+          <span class="k2b-sub">Επαγγελματίας;</span>
+        </div>
+      </a>
+
+      <!-- Mobile search -->
+      <div class="mob-srch" onclick="toggleMobSearch()" aria-label="Αναζήτηση">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </div>
+
+      <!-- Actions -->
+      <div class="hdr-acts">
+        <div class="ha<!-- MOBILE DRAWER -->
 <div class="drawer" id="drawer">
-  <div class="drawer-overlay" onclick="closeDrawer()"></div>
+  <div class="drawer-ov" onclick="closeDrawer()"></div>
   <div class="drawer-panel">
-    <div class="drawer-head">
-      <span class="drawer-logo">KONIDAS STORE ✦euronics</span>
-      <div class="drawer-close" onclick="closeDrawer()">✕</div>
+
+    <!-- Header -->
+    <div class="drw-hd">
+      <div class="drw-hd-top">
+        <div class="drw-logo">
+          <div class="drw-logo-name">
+            KONIDAS
+            <div class="drw-logo-divider"></div>
+            <div class="drw-logo-eur">
+              <span class="drw-logo-star">✦</span>
+              <span class="drw-logo-etxt">EURONICS</span>
+            </div>
+          </div>
+          <div class="drw-logo-sub">40 Χρόνια Εμπειρίας</div>
+        </div>
+        <div class="drw-close" onclick="closeDrawer()">✕</div>
+      </div>
+      <div class="drw-srch">
+        <div class="drw-srch-wrap">
+          <input type="search" placeholder="Αναζήτηση προϊόντων...">
+          <button><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+        </div>
+      </div>
     </div>
-    <div class="drawer-cats">
-      <div class="drawer-cat" onclick="location.href='cat-lefka.html'">
-        <div class="drawer-cat-icon">🏠</div>
-        <div><div class="drawer-cat-name">Λευκές Συσκευές</div><div class="drawer-cat-sub">Ψυγεία, Πλυντήρια, Κουζίνες</div></div>
-        <span class="drawer-cat-arr">›</span>
+
+    <!-- Body -->
+    <div class="drw-body">
+
+      <!-- K2B -->
+      <a href="k2b.html" class="drw-k2b" onclick="closeDrawer()">
+        <div class="drw-k2b-ico">
+          <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+        </div>
+        <div>
+          <div class="drw-k2b-title">K2B — Είσαι Επαγγελματίας;</div>
+          <div class="drw-k2b-sub">Ειδικές τιμές & υπηρεσίες για επιχειρήσεις</div>
+        </div>
+      </a>
+
+      <span class="drw-sec-lbl">Κατηγορίες</span>
+
+      <a href="cat-lefka.html" class="drw-cat" onclick="closeDrawer()">
+        <div class="drw-cat-ico">🏠</div>
+        <div class="drw-cat-body"><div class="drw-cat-name">Λευκές Συσκευές</div><div class="drw-cat-sub">Ψυγεία, Πλυντήρια, Κουζίνες</div></div>
+        <span class="drw-cat-arr">›</span>
+      </a>
+      <a href="cat-psyxi.html" class="drw-cat" onclick="closeDrawer()">
+        <div class="drw-cat-ico">🧊</div>
+        <div class="drw-cat-body"><div class="drw-cat-name">Ψύξη</div><div class="drw-cat-sub">Ψυγεία & Καταψύκτες</div></div>
+        <span class="drw-cat-arr">›</span>
+      </a>
+      <a href="cat-plisi.html" class="drw-cat" onclick="closeDrawer()">
+        <div class="drw-cat-ico">👕</div>
+        <div class="drw-cat-body"><div class="drw-cat-name">Πλύση & Στέγνωση</div><div class="drw-cat-sub">Πλυντήρια, Στεγνωτήρια, Πιατοπλύστες</div></div>
+        <span class="drw-cat-arr">›</span>
+      </a>
+      <a href="cat-kouzina.html" class="drw-cat" onclick="closeDrawer()">
+        <div class="drw-cat-ico">🍳</div>
+        <div class="drw-cat-body"><div class="drw-cat-name">Κουζίνα</div><div class="drw-cat-sub">Φούρνοι, Εστίες, Απορροφητήρες</div></div>
+        <span class="drw-cat-arr">›</span>
+      </a>
+      <a href="cat-klimatismos.html" class="drw-cat" onclick="closeDrawer()">
+        <div class="drw-cat-ico">❄️</div>
+        <div class="drw-cat-body"><div class="drw-cat-name">Κλιματισμός</div><div class="drw-cat-sub">Inverter, Multi Split, Αερόθερμα</div></div>
+        <span class="drw-cat-arr">›</span>
+      </a>
+      <a href="cat-tv.html" class="drw-cat" onclick="closeDrawer()">
+        <div class="drw-cat-ico">📺</div>
+        <div class="drw-cat-body"><div class="drw-cat-name">Εικόνα & Ήχος</div><div class="drw-cat-sub">TV, Soundbars, Home Cinema</div></div>
+        <span class="drw-cat-arr">›</span>
+      </a>
+      <a href="cat-mikro.html" class="drw-cat" onclick="closeDrawer()">
+        <div class="drw-cat-ico">☕</div>
+        <div class="drw-cat-body"><div class="drw-cat-name">Μικροσυσκευές</div><div class="drw-cat-sub">Καφετιέρες, Σκούπες, Blenders</div></div>
+        <span class="drw-cat-arr">›</span>
+      </a>
+      <a href="cat-prosfores.html" class="drw-cat" onclick="closeDrawer()" style="background:#fff8f0">
+        <div class="drw-cat-ico" style="background:#fff0e0">🔥</div>
+        <div class="drw-cat-body"><div class="drw-cat-name" style="color:var(--red)">Προσφορές</div><div class="drw-cat-sub">Εκπτώσεις έως -50%</div></div>
+        <span class="drw-cat-arr">›</span>
+      </a>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="drw-foot">
+      <a href="tel:2634027227" class="drw-foot-phone">
+        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.95a16 16 0 0 0 6.29 6.29l.98-.98a2 2 0 0 1 2.1-.45c.91.339 1.853.573 2.81.7a2 2 0 0 1 1.72 2.01z"/></svg>
+        2634 027227
+      </a>
+      <div class="drw-foot-links">
+        <a href="#" class="drw-foot-link">Επικοινωνία</a>
+        <a href="#" class="drw-foot-link">Καταστήματα</a>
+        <a href="#" class="drw-foot-link">Εγγύηση</a>
+        <a href="#" class="drw-foot-link">After Sales</a>
       </div>
-      <div class="drawer-cat" onclick="location.href='cat-psyxi.html'">
-        <div class="drawer-cat-icon">🧊</div>
-        <div><div class="drawer-cat-name">Ψύξη</div><div class="drawer-cat-sub">Ψυγεία & Καταψύκτες</div></div>
-        <span class="drawer-cat-arr">›</span>
-      </div>
-      <div class="drawer-cat" onclick="location.href='cat-plisi.html'">
-        <div class="drawer-cat-icon">👕</div>
-        <div><div class="drawer-cat-name">Πλύση & Στέγνωση</div><div class="drawer-cat-sub">Πλυντήρια, Στεγνωτήρια</div></div>
-        <span class="drawer-cat-arr">›</span>
-      </div>
-      <div class="drawer-cat" onclick="location.href='cat-kouzina.html'">
+    </div>
+
+  </div>
+</div>
+
+'">
         <div class="drawer-cat-icon">🍳</div>
         <div><div class="drawer-cat-name">Κουζίνα</div><div class="drawer-cat-sub">Φούρνοι, Εστίες, Απορροφητήρες</div></div>
         <span class="drawer-cat-arr">›</span>
@@ -828,8 +1029,15 @@ window.addEventListener('scroll',function(){
 },{passive:true});
 
 /* DRAWER */
-function openDrawer(){document.getElementById('drawer').classList.add('open');document.body.style.overflow='hidden';}
-function closeDrawer(){document.getElementById('drawer').classList.remove('open');document.body.style.overflow='';}
+function openDrawer(){var d=document.getElementById('drawer');d.classList.add('open');document.body.style.overflow='hidden';}
+function closeDrawer(){var d=document.getElementById('drawer');d.classList.remove('open');document.body.style.overflow='';}
+
+/* MOBILE SEARCH */
+function toggleMobSearch(){
+  var bar=document.getElementById('mobSrchBar');
+  bar.classList.toggle('open');
+  if(bar.classList.contains('open')){setTimeout(function(){document.getElementById('mobSrchInput').focus();},50);}
+}
 
 /* CART */
 var cart=2;
